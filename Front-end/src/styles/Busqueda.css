@@ -1,0 +1,91 @@
+.container-2{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+}
+.container-up{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    font-family: 'Outfit', sans-serif;
+}
+.titulo{
+    align-content: center;
+    padding: 0 2rem;
+    border-right: 2px solid #24221e;
+}
+.verne-titulo{
+    font-size: 3vh;
+}
+.verne-subt{
+    padding-left: 1vh;
+    font-size: 2vh;
+}
+.busqueda{
+    width: 75%;
+}
+.input-busqueda{
+    height: 4.5vh;
+    width: 50%;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 10px;
+    border: 1px solid #24221e;
+    margin: 0 0.2vh 1vh 0;
+    padding: 0 1vh;
+    font-size: 1.6vh;
+}
+.select-categorias{
+    height: 4.5vh;
+    width: 15%;
+    font-size: 1.6vh;
+    text-align: center;
+    border: 1px solid #24221e;
+    font-family: 'Varela Round', sans-serif;
+    border-radius: 10px;
+    margin: 0 0.2vh 0 0;
+    cursor: pointer;
+}
+.btn-buscar{
+    border-radius: 50%;
+    padding: 1.6vh;
+    margin: 0 2vh 2vh 0.5vh;
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: #FF6F61;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-buscar:hover{
+    transform: scale(1.2);
+}
+.btn-buscar .bi{
+    font-size: 2vh;
+    font-weight: 700;
+}
+.iconos{
+    background-color: #FF6F61;
+}
+.btn-persona{
+    padding: 1.2vh;
+    border-radius: 50%;
+    border: 0.5px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-carrito{
+    padding: 0.1vh;
+    border-radius: 50%;
+    border: 0.5px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+.bi-person-fill, .bi-cart-fill{
+    font-size: 3vh;
+}

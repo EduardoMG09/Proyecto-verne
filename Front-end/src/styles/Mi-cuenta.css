@@ -1,0 +1,78 @@
+.mi-cuenta{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 2fr;
+    gap: 1vh;
+}
+.titulo-micuenta{
+    display: flex;
+    grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
+    color: #F5ebd7;
+}
+.titulo-cuenta{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #9d8161;
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: 1vh 2vh;
+}
+.login-side{    
+    grid-area: 2 / 1 / 2 / 2;
+    padding: 2vh 1vh;
+    border-radius: 20px;
+    background-color: #E2D7C8;
+}
+.sign-side{
+    grid-area: 2 / 2 / 2 / 3;
+    padding: 2vh 1vh;
+    border-radius: 20px;
+    background-color: #E2D7C8;
+}
+.login, .sign-up{
+    display: flex;
+    flex-direction: column;
+}
+h2, .email-items, .password-items{
+    padding: 1vh 0;
+}
+.email-items, .password-items{
+    display: flex;
+    flex-direction: column;
+}
+.password-label, .email-label{
+    padding: 1vh 0;
+    font-size: 2vh;
+}
+.password-input, .email-input{
+    border-radius: 5px;
+    height: 4vh;
+    border: 2px solid transparent;
+}
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 0;
+    margin: 2.5vh 0;
+}
+.submit{
+    padding: 1.2vh 2.2vh;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1px solid transparent; 
+    color: #F5ebd7;
+    background-color: #FF6F61;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.submit:hover{
+    transform: scale(1.03);
+    background-color: #CC594E;
+}

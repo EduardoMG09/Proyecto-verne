@@ -1,0 +1,10 @@
+{
+    "secciones":
+    [
+        {"nombre":"Inicio","ruta":"/"},
+        {"nombre":"Mi cuenta","ruta":"/mi_cuenta"},
+        {"nombre":"Productos","ruta":"/productos"},
+        {"nombre":"Carrito","ruta":"/carrito"},
+        {"nombre":"Verificar","ruta":"/verificar"}
+    ]
+}

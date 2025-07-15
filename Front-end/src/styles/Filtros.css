@@ -1,0 +1,91 @@
+.container-5{
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    width: 20%;
+}    
+.contenedor-filtros{
+    position: fixed;
+    width: 20%;
+    padding: 2vh 2vh;
+    border-radius: 20px;
+    background-color: #D6C9B4;
+}
+.titulo-filtros{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+.filtro-seccion{
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+}
+.filtro-titulo{
+    font-size: 2vh;
+}
+
+
+/*Barra Price*/
+.Price-filter{
+    padding: 1vh 1vh;
+}
+.Barr-Price{
+    -webkit-appearance: none !important;
+    width: 80%;
+    height: 2vh;
+    background: transparent;
+}
+.Barr-Price::-webkit-slider-runnable-track {
+    height: 50%;
+    background: #CC594E; /* Color de tu preferencia */
+    border-radius: 100px;
+    border-color: 1px solid #D6C9B4;
+}
+.Barr-Price::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background: #993F38; /* Mismo color o diferente */
+    border-radius: 50%;
+    margin-top: -3px; /* Alinea verticalmente */
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.Barr-Price::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/*Check box */
+.check-box-container{
+    display: flex;
+    padding: 1.5vh 2vh;
+}
+.check input[type="checkbox"] {
+  display: none;
+}
+/*Caja*/
+.custom-checkmark {
+    margin: 0 1vh;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* Checkmark visible cuando está seleccionado */
+.check input[type="checkbox"]:checked + .custom-checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid #993F38;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

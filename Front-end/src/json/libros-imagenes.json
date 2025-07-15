@@ -1,0 +1,326 @@
+{
+  "libros": {
+    "Los 4 Acuerdos": {
+      "calificacion": 4.8,
+      "precio": 150,
+      "categoria":["Motivacional"],
+      "imagen": "/Image/4 acuerdos.jpg"
+    },
+    "100 años de soledad": {
+      "calificacion": 4.7,
+      "precio": 250,
+      "categoria": ["Novela"],
+      "imagen": "/Image/110 años.webp"
+    },
+    "Alas de sangre": {
+      "calificacion": 4.6,
+      "precio": 500,
+      "categoria": ["Fantasia"],
+      "imagen": "/Image/alas de sangre.webp"
+    },
+    "Ángeles y demonios":{
+      "calificacion":5,
+      "precio":140,
+      "categoria": ["Fantasia"],
+      "imagen":"/Image/angeles y demonios.jpg"
+    },
+    "Bruja": {
+      "calificacion": 4.5,
+      "precio": 1000,
+      "categoria":["Motivacional","Juvenil","Novela"],
+      "imagen": "/Image/bruja.webp"
+    },
+    "El Camino al éxito": {
+      "calificacion": 4.1,
+      "precio": 450,
+      "categoria": ["Motivacional"],
+      "imagen": "/Image/camino al exito.jpg"
+    },
+    "Caballo de Troya":{
+      "calificacion":4.5,
+      "precio":437,
+      "categoria":["Novela","Fantasia"],
+      "imagen":"Image/caballo de troya.jpg"
+    },
+    "Cartas": {
+      "calificacion": 3.8,
+      "precio": 400,
+      "categoria":["Novela"],
+      "imagen": "/Image/cartas.jpg"
+    },
+    "Cuentos góticos": {
+      "calificacion": 3.5,
+      "precio": 780,
+      "categoria":["Terror"],
+      "imagen": "/Image/cuentos goticos.jpg"
+    },
+    "Cuentos para una noche de imsomnio": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Fantasia"],
+      "imagen": "/Image/cuentos para una noche de insomnio.png"
+    },
+    "Día": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela","Fantasia"],
+      "imagen": "/Image/dia.webp"
+    },
+    "Dracula": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Terror","Novela"],
+      "imagen": "/Image/drac2.jpg"
+    },
+    "Ejercito": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Historia"],
+      "imagen": "/Image/ejercito.jpg"
+    },
+    "El arte de la guerre": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Historia"],
+      "imagen": "/Image/el arte de la guerra.webp"
+    },
+    "El hombre en busca del sentido": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Motivacional"],
+      "imagen": "/Image/el hombre en busca de sentido.jpg"
+    },
+    "El llano en llamas": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Fantasia"],
+      "imagen": "/Image/el llano en llamas.webp"
+    },
+    "El millonario": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Finanzas"],
+      "imagen": "/Image/el millonario.jpg"
+    },
+    "El poder del ahora": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Motivacional"],
+      "imagen": "/Image/el poder del ahora.webp"
+    },
+    "El principe": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Politica","Historia"],
+      "imagen": "/Image/EL PRINCIPE.webp"
+    },
+    "El principito": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Infantil"],
+      "imagen": "/Image/El principito.webp"
+    },
+    "El resplandor": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela","Terror"],
+      "imagen": "/Image/el resplandor.webp"
+    },
+    "El tercer amor": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Romance"],
+      "imagen": "/Image/el tercer amor.webp"
+    },
+    "En agosto nos vemos": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Fantasia"],
+      "imagen": "/Image/en agosto nos vemos.webp"
+    },
+    "Frankenstein": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Fantasia","Infantil"],
+      "imagen": "/Image/frankestein.jpg"
+    },
+    "Gracias": {
+      "calificacion": 5,
+      "precio": 920,
+      "imagen": "/Image/GRACIAS.webp"
+    },
+    "Guerra y paz": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela","Paz"],
+      "imagen": "/Image/guerra y paz.webp"
+    },
+    "Hadas": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Fantasia","Mitologia"],
+      "imagen": "/Image/hadas.jpg"
+    },
+    "Heartstopper": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Fantasia","Novela"],
+      "imagen": "/Image/hearstopper1.jpg"
+    },
+    "Herbario": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Ecologia"],
+      "imagen": "/Image/herbario.webp"
+    },
+    "La iliada": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela","Historia"],
+      "imagen": "/Image/iliada.jpg"
+    },
+    "Infraespecie": {
+      "calificacion": 5,
+      "precio": 920,
+      "Categoria":["Ecologia","Historia"],
+      "imagen": "/Image/infraespecie.webp"
+    },
+    "Inteligencia emocional": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Motivacional"],
+      "imagen": "/Image/inteligencia emocional.webp"
+    },
+    "Izquierda": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Politica"],
+      "imagen": "/Image/izquierda.webp"
+    },
+    "La bailarina": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela","Historia"],
+      "imagen": "/Image/la bailarina.webp"
+    },
+    "La camara de los secretos": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Fantasia","Juvenil"],
+      "imagen": "/Image/la canara de los secretos.webp"
+    },
+    "La casa en el lago": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Drama","Novela"],
+      "imagen": "/Image/LA CASA EN EL LAGO.webp"
+    },
+    "La historia de un muro": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela","Fantasia"],
+      "imagen": "/Image/LA HISTORIA DE UN MURO.jpg"
+    },
+    "La piedra filosofal": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela","Fantasia"],
+      "imagen": "/Image/la piedra silosofal.webp"
+    },
+    "Libro de Bill": {
+      "calificacion": 5,
+      "precio": 920,
+      "imagen": "/Image/LIBRO DE BILL.webp"
+    },
+    "Maze runner":{
+      "calificacion":4,
+      "precio":160,
+      "categoria":["Fantasia","Juvenil","Drama"],
+      "imagen":"/Image/maze runner.jpg"
+    },
+    "Los monstruos": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Infantil"],
+      "imagen": "/Image/los monstruos.png"
+    },
+    "Meditaciones": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Filosofia"],
+      "imagen": "/Image/meditaciones.jpg"
+    },
+    "La metamorfosis": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Fantasia"],
+      "imagen": "/Image/metamorfosis.webp"
+    },
+    "Mitología azteca": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Historia","Mitologia"],
+      "imagen": "/Image/mitologia azteca.webp"
+    },
+    "La odisea": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Historia","Mitologia"],
+      "imagen": "/Image/odisea.jpg"
+    },
+    "Osito tito": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Infantil"],
+      "imagen": "/Image/osito tito.webp"
+    },
+    "Pedro Paramo": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela","Fantasia"],
+      "imagen": "/Image/PEDRO PARAMO.jpg"
+    },
+    "El niño con la pijama de rayas": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela"],
+      "imagen": "/Image/pijama de rayas.webp"
+    },
+    "Proceso": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela"],
+      "imagen": "/Image/proceso}.jpg"
+    },
+    "Querido monstruo": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Infantil"],
+      "imagen": "/Image/querido monstruo.webp"
+    },
+    "Rebelion en la granja": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Novela"],
+      "imagen": "/Image/rebelion en la granja.webp"
+    },
+    "Romper el circulo": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria":["Romance","Juvenil"],
+      "imagen": "/Image/romper el circ.webp"
+    },
+    "Si lo crees, lo creas":{
+      "calificacion": 3.8,
+      "precio": 230,
+      "categoria":["Motivacional"],
+      "imagen":"/Image/si lo crees lo creas.jpg"
+    },
+    "Yo nunca vi television": {
+      "calificacion": 5,
+      "precio": 920,
+      "categoria": ["Infantil","Juvenil"],
+      "imagen": "/Image/Yo Nunca vi television.webp"
+    }
+  }
+}

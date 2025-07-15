@@ -1,0 +1,8 @@
+{
+    "filtros":
+    [
+        "Filtrar por precio", 
+        "Filtrar por existencia", 
+        "Filtrar por calificación"
+    ]
+}
