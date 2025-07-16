@@ -4,16 +4,19 @@ import Header from '../../components/Header.jsx';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Busqueda from '../../components/Busqueda.jsx';
 import Libros_categoria from "../../components/Libros-categoria.jsx";
+import Filtros from "../../components/Filtros.jsx";
 
-function Finanzas() {
+function Novela() {
   return (
     <>
     <Header />
     <Busqueda />
-    <Libros_categoria 
+    <Libros_categoria
+    categoria="Finanzas" 
     />
+    <Filtros/>
     </>
   )
 }
 
-export default Finanzas;
+export default Novela;

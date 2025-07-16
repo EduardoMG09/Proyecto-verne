@@ -35,6 +35,7 @@
     background-color: #FF6F61;
     color: #FFFFFF;
     text-decoration: none;
+    transform: translate(-1rem, 0);
 }
 .logo-img{
     aspect-ratio: 1/1;

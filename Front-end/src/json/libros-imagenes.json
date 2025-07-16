@@ -1,326 +1,484 @@
 {
   "libros": {
     "Los 4 Acuerdos": {
-      "calificacion": 4.8,
-      "precio": 150,
-      "categoria":["Motivacional"],
+      "calificacion": 4.2,
+      "precio": 199,
+      "categoria":["Motivacional","Filosofia"],
+      "autor": "Miguel Ruiz",
+      "reseña": "Una guía práctica basada en la sabiduría tolteca que presenta cuatro principios fundamentales para transformar tu vida y encontrar la libertad personal.",
       "imagen": "/Image/4 acuerdos.jpg"
     },
     "100 años de soledad": {
-      "calificacion": 4.7,
-      "precio": 250,
-      "categoria": ["Novela"],
+      "calificacion": 4.8,
+      "precio": 298,
+      "categoria": ["Novela","Literatura","Clasicos"],
+      "autor": "Gabriel García Márquez",
+      "reseña": "Obra maestra del realismo mágico que narra la historia de la familia Buendía a través de siete generaciones en el pueblo ficticio de Macondo.",
       "imagen": "/Image/110 años.webp"
     },
     "Alas de sangre": {
-      "calificacion": 4.6,
-      "precio": 500,
-      "categoria": ["Fantasia"],
+      "calificacion": 4.8,
+      "precio": 370,
+      "categoria": ["Fantasia","Juvenil","Romance"],
+      "autor": "Rebecca Yarros",
+      "reseña": "Primera entrega de la saga que sigue a Violet Sorrengail en su peligroso entrenamiento en el Colegio de Guerra de Basgiath, donde los dragones y la magia definen el destino.",
       "imagen": "/Image/alas de sangre.webp"
     },
     "Ángeles y demonios":{
-      "calificacion":5,
-      "precio":140,
-      "categoria": ["Fantasia"],
+      "calificacion": 4.8,
+      "precio": 428,
+      "categoria": ["Novela","Terror"],
+      "autor": "Dan Brown",
+      "reseña": "Thriller que combina ciencia, religión y misterio mientras Robert Langdon debe detener una conspiración que amenaza al Vaticano.",
       "imagen":"/Image/angeles y demonios.jpg"
     },
     "Bruja": {
-      "calificacion": 4.5,
-      "precio": 1000,
-      "categoria":["Motivacional","Juvenil","Novela"],
+      "calificacion": 4.1,
+      "precio": 420,
+      "categoria":["Fantasia","Terror"],
+      "autor": "Camilla Läckberg",
+      "reseña": "Novela gótica que mezcla elementos sobrenaturales con misterio, explorando los secretos oscuros de una pequeña comunidad.",
       "imagen": "/Image/bruja.webp"
     },
     "El Camino al éxito": {
-      "calificacion": 4.1,
-      "precio": 450,
-      "categoria": ["Motivacional"],
+      "calificacion": 4.9,
+      "precio": 150,
+      "categoria": ["Motivacional","Finanzas"],
+      "autor": "Napoleon Hill",
+      "reseña": "Guía práctica que revela los principios y estrategias utilizados por las personas más exitosas para alcanzar sus metas financieras y personales.",
       "imagen": "/Image/camino al exito.jpg"
     },
+    "Caballo de guerra":{
+      "calificacion": 4.6,
+      "precio": 391,
+      "categoria":["Historia","Drama"],
+      "autor": "Michael Morpurgo",
+      "reseña": "Conmovedora historia narrada desde la perspectiva de un caballo durante la Primera Guerra Mundial, explorando el vínculo entre humanos y animales en tiempos de guerra.",
+      "imagen": "/Image/caballo de guerra.jpg"
+    },
     "Caballo de Troya":{
-      "calificacion":4.5,
-      "precio":437,
-      "categoria":["Novela","Fantasia"],
+      "calificacion": 4.8,
+      "precio": 437,
+      "categoria":["Novela","Fantasia","Historia"],
+      "autor": "J.J. Benítez",
+      "reseña": "Primera entrega de la saga que combina ciencia ficción y elementos religiosos, siguiendo a un militar que viaja en el tiempo para presenciar la vida de Jesús.",
       "imagen":"Image/caballo de troya.jpg"
     },
     "Cartas": {
-      "calificacion": 3.8,
-      "precio": 400,
-      "categoria":["Novela"],
+      "calificacion": 3.7,
+      "precio": 250,
+      "categoria":["Novela","Romance"],
+      "autor": "Haruki Murakami",
+      "reseña": "Novela epistolar que explora las relaciones humanas a través de la correspondencia entre dos personas, mezclando elementos surrealistas con emociones profundas.",
       "imagen": "/Image/cartas.jpg"
     },
     "Cuentos góticos": {
-      "calificacion": 3.5,
-      "precio": 780,
-      "categoria":["Terror"],
+      "calificacion": 4.5,
+      "precio": 177,
+      "categoria":["Terror","Clasicos"],
+      "autor": "Edgar Allan Poe",
+      "reseña": "Colección de relatos que definen el género gótico, explorando los rincones más oscuros de la psique humana con maestría narrativa.",
       "imagen": "/Image/cuentos goticos.jpg"
     },
     "Cuentos para una noche de imsomnio": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Fantasia"],
+      "calificacion": 4.7,
+      "precio": 120,
+      "categoria":["Fantasia","Novela"],
+      "autor": "Varios autores",
+      "reseña": "Antología de relatos cortos que combinan elementos fantásticos y misteriosos, perfectos para leer en las horas de vigilia nocturna.",
       "imagen": "/Image/cuentos para una noche de insomnio.png"
     },
+    "La divina comedia":{
+      "calificacion": 4.8,
+      "precio": 275,
+      "categoria":["Clasicos","Filosofia","Fantasia"],
+      "autor": "Dante Alighieri",
+      "reseña": "Obra cumbre de la literatura universal que narra el viaje del poeta por el Infierno, Purgatorio y Paraíso, explorando temas de redención y justicia divina.",
+      "imagen": "/Image/divina comedia.jpg"
+    },
     "Día": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela","Fantasia"],
+      "calificacion": 4.3,
+      "precio": 380,
+      "categoria":["Novela","Drama"],
+      "autor": "Elie Wiesel",
+      "reseña": "Tercera parte de la trilogía nocturna del autor, explorando la búsqueda de sentido y esperanza después de sobrevivir al Holocausto.",
       "imagen": "/Image/dia.webp"
     },
     "Dracula": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Terror","Novela"],
+      "calificacion": 4.8,
+      "precio": 368,
+      "categoria":["Terror","Clasicos"],
+      "autor": "Bram Stoker",
+      "reseña": "Novela gótica que definió el mito moderno del vampiro, combinando horror, romance y crítica social en la Inglaterra victoriana.",
       "imagen": "/Image/drac2.jpg"
     },
-    "Ejercito": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Historia"],
+    "Don Quijote de la mancha": {
+      "calificacion": 4.7,
+      "precio": 440,
+      "categoria":["Novela","Clasicos","Drama"],
+      "autor": "Miguel de Cervantes",
+      "reseña": "Obra maestra de la literatura española que narra las aventuras del ingenioso hidalgo y su fiel escudero, explorando la realidad y la fantasía.",
+      "imagen": "/Image/don quijote.jpg"
+    },
+    "El ejercito Mexicano durante la segunda guerra mundial": {
+      "calificacion": 4.7,
+      "precio": 232,
+      "categoria":["Historia","Politica"],
+      "autor": "Blanca Torres Ramírez",
+      "reseña": "Análisis histórico detallado sobre la participación de México en la Segunda Guerra Mundial y el papel de sus fuerzas armadas.",
       "imagen": "/Image/ejercito.jpg"
     },
-    "El arte de la guerre": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Historia"],
+    "El arte de la guerra": {
+      "calificacion": 4.7,
+      "precio": 540,
+      "categoria":["Politica","Historia","Filosofia"],
+      "autor": "Sun Tzu",
+      "reseña": "Tratado militar clásico que trasciende el campo de batalla, ofreciendo estrategias aplicables a los negocios y la vida diaria.",
       "imagen": "/Image/el arte de la guerra.webp"
     },
     "El hombre en busca del sentido": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Motivacional"],
+      "calificacion": 4.6,
+      "precio": 296,
+      "categoria":["Motivacional","Drama","Filosofia"],
+      "autor": "Viktor Frankl",
+      "reseña": "Testimonio poderoso sobre la experiencia en campos de concentración y la búsqueda de sentido como fuerza fundamental de la existencia humana.",
       "imagen": "/Image/el hombre en busca de sentido.jpg"
     },
     "El llano en llamas": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Fantasia"],
+      "calificacion": 4.6,
+      "precio": 241,
+      "categoria":["Literatura","Clasicos"],
+      "autor": "Juan Rulfo",
+      "reseña": "Colección de cuentos que retrata la vida rural mexicana con un realismo crudo y poético, explorando temas de violencia y desesperanza.",
       "imagen": "/Image/el llano en llamas.webp"
     },
     "El millonario": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Finanzas"],
+      "calificacion": 4.2,
+      "precio": 380,
+      "categoria":["Finanzas","Motivacional"],
+      "autor": "Thomas J. Stanley",
+      "reseña": "Estudio revelador sobre los hábitos y características de las personas verdaderamente ricas, desmitificando conceptos sobre la riqueza.",
       "imagen": "/Image/el millonario.jpg"
     },
     "El poder del ahora": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.7,
+      "precio": 299,
       "categoria":["Motivacional"],
+      "autor": "Eckhart Tolle",
+      "reseña": "Guía espiritual que enseña a vivir plenamente en el presente, liberándose del sufrimiento mental y encontrando la paz interior.",
       "imagen": "/Image/el poder del ahora.webp"
     },
     "El principe": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Politica","Historia"],
+      "calificacion": 4.8,
+      "precio": 624,
+      "categoria":["Politica","Clasicos","Filosofia"],
+      "autor": "Nicolás Maquiavelo",
+      "reseña": "Tratado político fundamental que examina el poder y la naturaleza humana, estableciendo principios sobre el arte de gobernar.",
       "imagen": "/Image/EL PRINCIPE.webp"
     },
     "El principito": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Infantil"],
+      "calificacion": 4.8,
+      "precio": 199,
+      "categoria":["Infantil","Clasicos"],
+      "autor": "Antoine de Saint-Exupéry",
+      "reseña": "Fábula poética que, bajo la apariencia de un cuento infantil, reflexiona sobre la amistad, el amor y la esencia de la vida.",
       "imagen": "/Image/El principito.webp"
     },
     "El resplandor": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.8,
+      "precio": 409,
       "categoria":["Novela","Terror"],
+      "autor": "Stephen King",
+      "reseña": "Novela de terror psicológico que sigue a Jack Torrance en su descenso a la locura en el aislado Hotel Overlook durante el invierno.",
       "imagen": "/Image/el resplandor.webp"
     },
     "El tercer amor": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Romance"],
+      "calificacion": 4.2,
+      "precio": 369,
+      "categoria":["Romance","Novela"],
+      "autor": "Emma Straub",
+      "reseña": "Novela romántica que explora las complejidades del amor maduro y las segundas oportunidades en las relaciones humanas.",
       "imagen": "/Image/el tercer amor.webp"
     },
     "En agosto nos vemos": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Fantasia"],
+      "calificacion": 4.3,
+      "precio": 236,
+      "categoria":["Novela","Literatura"],
+      "autor": "Gabriel García Márquez",
+      "reseña": "Última novela del autor colombiano que narra la historia de Ana Magdalena Bach y su ritual anual de liberación personal.",
       "imagen": "/Image/en agosto nos vemos.webp"
     },
     "Frankenstein": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Fantasia","Infantil"],
+      "calificacion": 4.7,
+      "precio": 258,
+      "categoria":["Terror","Clasicos"],
+      "autor": "Mary Shelley",
+      "reseña": "Novela gótica pionera de la ciencia ficción que explora los límites de la ciencia y las consecuencias de jugar a ser Dios.",
       "imagen": "/Image/frankestein.jpg"
     },
     "Gracias": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 3.8,
+      "precio": 247,
+      "categoria":["Politica"],
+      "autor": "Andrés Manuel López Obrador",
+      "reseña": "Reflexiones del expresidente mexicano sobre su mandato y visión política, presentando su perspectiva sobre la transformación del país.",
       "imagen": "/Image/GRACIAS.webp"
     },
     "Guerra y paz": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela","Paz"],
+      "calificacion": 4.4,
+      "precio": 538,
+      "categoria":["Novela","Clasicos"],
+      "autor": "León Tolstói",
+      "reseña": "Épica novela que retrata la sociedad rusa durante las guerras napoleónicas, explorando temas de amor, guerra y el sentido de la historia.",
       "imagen": "/Image/guerra y paz.webp"
     },
     "Hadas": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.5,
+      "precio": 234,
       "categoria":["Fantasia","Mitologia"],
+      "autor": "Brian Froud",
+      "reseña": "Compendio ilustrado que explora el mundo de las hadas y criaturas mágicas, combinando mitología celta con arte fantástico.",
       "imagen": "/Image/hadas.jpg"
     },
     "Heartstopper": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Fantasia","Novela"],
+      "calificacion": 4.8,
+      "precio": 170,
+      "categoria":["Novela","Juvenil"],
+      "autor": "Alice Oseman",
+      "reseña": "Novela gráfica que narra la tierna historia de amor entre Charlie y Nick, explorando temas de identidad y aceptación en la adolescencia.",
       "imagen": "/Image/hearstopper1.jpg"
     },
     "Herbario": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.8,
+      "precio": 517,
       "categoria":["Ecologia"],
+      "autor": "Lucía Puenzo",
+      "reseña": "Novela que entrelaza la botánica con la memoria personal, explorando la relación entre los seres humanos y el mundo natural.",
       "imagen": "/Image/herbario.webp"
     },
     "La iliada": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela","Historia"],
+      "calificacion": 4.5,
+      "precio": 355,
+      "categoria":["Clasicos","Historia"],
+      "autor": "Homero",
+      "reseña": "Epopeya clásica que narra los eventos de la Guerra de Troya, explorando temas de honor, ira y destino en la antigua Grecia.",
       "imagen": "/Image/iliada.jpg"
     },
-    "Infraespecie": {
-      "calificacion": 5,
-      "precio": 920,
-      "Categoria":["Ecologia","Historia"],
+    "Infra especie": {
+      "calificacion": 5.0,
+      "precio": 416,
+      "categoria":["Ecologia","Historia"],
+      "autor": "Jorge Volpi",
+      "reseña": "Ensayo que examina la relación entre el ser humano y el medio ambiente, cuestionando nuestro papel en el ecosistema global.",
       "imagen": "/Image/infraespecie.webp"
     },
     "Inteligencia emocional": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Motivacional"],
+      "calificacion": 4.7,
+      "precio": 320,
+      "categoria":["Motivacional","Filosofia"],
+      "autor": "Daniel Goleman",
+      "reseña": "Obra revolucionaria que presenta la inteligencia emocional como factor clave para el éxito personal y profesional.",
       "imagen": "/Image/inteligencia emocional.webp"
     },
     "Izquierda": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Politica"],
+      "calificacion": 4.7,
+      "precio": 200,
+      "categoria":["Politica","Novela"],
+      "autor": "Héctor Aguilar Camín",
+      "reseña": "Novela política que explora las contradicciones y dilemas de la izquierda mexicana a través de personajes complejos y situaciones morales.",
       "imagen": "/Image/izquierda.webp"
     },
     "La bailarina": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela","Historia"],
+      "calificacion": 4.1,
+      "precio": 160,
+      "categoria":["Novela","Romance"],
+      "autor": "Siena Castellon",
+      "reseña": "Novela romántica que sigue la historia de una bailarina profesional mientras navega entre sus sueños artísticos y el amor.",
       "imagen": "/Image/la bailarina.webp"
     },
     "La camara de los secretos": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.9,
+      "precio": 399,
       "categoria":["Fantasia","Juvenil"],
+      "autor": "J.K. Rowling",
+      "reseña": "Segunda entrega de la saga de Harry Potter, donde el joven mago debe enfrentar una misteriosa amenaza en Hogwarts.",
       "imagen": "/Image/la canara de los secretos.webp"
     },
     "La casa en el lago": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Drama","Novela"],
+      "calificacion": 3.9,
+      "precio": 390,
+      "categoria":["Drama","Novela","Terror"],
+      "autor": "Kate Morton",
+      "reseña": "Thriller psicológico que entrelaza múltiples líneas temporales alrededor de una misteriosa casa y los secretos que guarda.",
       "imagen": "/Image/LA CASA EN EL LAGO.webp"
     },
     "La historia de un muro": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela","Fantasia"],
+      "calificacion": 3.0,
+      "precio": 450,
+      "categoria":["Novela","Drama"],
+      "autor": "Marcelo Birmajer",
+      "reseña": "Novela que utiliza la metáfora de un muro para explorar temas de separación, conflicto y la búsqueda de entendimiento mutuo.",
       "imagen": "/Image/LA HISTORIA DE UN MURO.jpg"
     },
     "La piedra filosofal": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela","Fantasia"],
+      "calificacion": 4.8,
+      "precio": 305,
+      "categoria":["Juvenil","Fantasia"],
+      "autor": "J.K. Rowling",
+      "reseña": "Primera entrega de la saga de Harry Potter que introduce el mundo mágico y las aventuras del joven mago en Hogwarts.",
       "imagen": "/Image/la piedra silosofal.webp"
     },
     "Libro de Bill": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.8,
+      "precio": 367,
+      "categoria":["Fantasia","Juvenil"],
+      "autor": "Alex Hirsch",
+      "reseña": "Compendio oficial de Gravity Falls que revela los secretos de Bill Cipher y expande el universo de la serie animada.",
       "imagen": "/Image/LIBRO DE BILL.webp"
     },
-    "Maze runner":{
-      "calificacion":4,
-      "precio":160,
+    "Maze Runner":{
+      "calificacion": 4.9,
+      "precio": 189,
       "categoria":["Fantasia","Juvenil","Drama"],
+      "autor": "James Dashner",
+      "reseña": "Distopía juvenil que sigue a Thomas y otros jóvenes atrapados en un laberinto, luchando por descubrir la verdad sobre su situación.",
       "imagen":"/Image/maze runner.jpg"
     },
     "Los monstruos": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.8,
+      "precio": 140,
       "categoria":["Infantil"],
+      "autor": "Maurice Sendak",
+      "reseña": "Clásico de la literatura infantil que ayuda a los niños a enfrentar sus miedos a través de la aventura imaginativa de Max.",
       "imagen": "/Image/los monstruos.png"
     },
     "Meditaciones": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.5,
+      "precio": 161,
       "categoria":["Filosofia"],
+      "autor": "Marco Aurelio",
+      "reseña": "Reflexiones filosóficas del emperador romano sobre la vida, el deber y la naturaleza humana, fundamentos del estoicismo.",
       "imagen": "/Image/meditaciones.jpg"
     },
     "La metamorfosis": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Fantasia"],
+      "calificacion": 4.6,
+      "precio": 612,
+      "categoria":["Filosofia","Clasicos"],
+      "autor": "Franz Kafka",
+      "reseña": "Relato existencial que narra la transformación de Gregor Samsa en un insecto, explorando temas de alienación y condición humana.",
       "imagen": "/Image/metamorfosis.webp"
     },
     "Mitología azteca": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.3,
+      "precio": 480,
       "categoria":["Historia","Mitologia"],
+      "autor": "María Tena",
+      "reseña": "Compendio completo de los mitos y leyendas del pueblo azteca, explorando su cosmogonía y sistema de creencias.",
       "imagen": "/Image/mitologia azteca.webp"
     },
     "La odisea": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Historia","Mitologia"],
+      "calificacion": 4.8,
+      "precio": 204,
+      "categoria":["Mitologia","Clasicos"],
+      "autor": "Homero",
+      "reseña": "Epopeya clásica que narra el épico viaje de Ulises de regreso a Ítaca, explorando temas de perseverancia y destino.",
       "imagen": "/Image/odisea.jpg"
     },
     "Osito tito": {
-      "calificacion": 5,
-      "precio": 920,
+      "calificacion": 4.8,
+      "precio": 218,
       "categoria":["Infantil"],
+      "autor": "Benji Davies",
+      "reseña": "Serie de libros interactivos para niños pequeños que fomenta la participación y el aprendizaje a través de solapas y elementos móviles.",
       "imagen": "/Image/osito tito.webp"
     },
+    "Orgullo y prejuicio": {
+      "calificacion": 4.8,
+      "precio": 339,
+      "categoria":["Romance","Novela","Clasicos"],
+      "autor": "Jane Austen",
+      "reseña": "Novela romántica que critica la sociedad inglesa del siglo XIX a través de la relación entre Elizabeth Bennet y Mr. Darcy.",
+      "imagen": "/Image/orgullo.jpg"
+    },
     "Pedro Paramo": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela","Fantasia"],
+      "calificacion": 4.7,
+      "precio": 377,
+      "categoria":["Terror","Literatura","Clasicos"],
+      "autor": "Juan Rulfo",
+      "reseña": "Obra maestra de la literatura mexicana que narra la búsqueda de un hombre por su padre en el pueblo fantasmal de Comala.",
       "imagen": "/Image/PEDRO PARAMO.jpg"
     },
     "El niño con la pijama de rayas": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela"],
+      "calificacion": 5.0,
+      "precio": 400,
+      "categoria":["Drama","Historia","Juvenil"],
+      "autor": "John Boyne",
+      "reseña": "Novela conmovedora que aborda el Holocausto desde la perspectiva inocente de un niño, explorando temas de amistad y humanidad.",
       "imagen": "/Image/pijama de rayas.webp"
     },
+    "Primavera Silenciosa":{
+      "calificacion": 4.7,
+      "precio": 429,
+      "categoria":["Ecologia"],
+      "autor": "Rachel Carson",
+      "reseña": "Obra pionera del movimiento ecologista que expone los peligros de los pesticidas y su impacto en el medio ambiente.",
+      "imagen": "/Image/primavera silenciosa.jpg"
+    },
     "Proceso": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela"],
+      "calificacion": 4.2,
+      "precio": 340,
+      "categoria":["Filosofia","Clasicos"],
+      "autor": "Franz Kafka",
+      "reseña": "Novela existencial que narra la pesadilla kafkiana de Josef K., acusado de un crimen que nunca se le revela.",
       "imagen": "/Image/proceso}.jpg"
     },
     "Querido monstruo": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Infantil"],
+      "calificacion": 4.7,
+      "precio": 149,
+      "categoria":["Juvenil","Romance"],
+      "autor": "Flor M. Salvador",
+      "reseña": "Novela juvenil que explora el primer amor y la autoaceptación a través de personajes complejos y situaciones contemporáneas.",
       "imagen": "/Image/querido monstruo.webp"
     },
     "Rebelion en la granja": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Novela"],
+      "calificacion": 4.8,
+      "precio": 269,
+      "categoria":["Drama","Clasicos","Politica"],
+      "autor": "George Orwell",
+      "reseña": "Fábula política que critica los regímenes totalitarios a través de la historia de una granja donde los animales se rebelan.",
       "imagen": "/Image/rebelion en la granja.webp"
     },
     "Romper el circulo": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria":["Romance","Juvenil"],
+      "calificacion": 4.8,
+      "precio": 358,
+      "categoria":["Romance","Drama"],
+      "autor": "Colleen Hoover",
+      "reseña": "Novela romántica que aborda temas difíciles como la violencia doméstica y el ciclo de abuso con sensibilidad y realismo.",
       "imagen": "/Image/romper el circ.webp"
     },
     "Si lo crees, lo creas":{
-      "calificacion": 3.8,
-      "precio": 230,
-      "categoria":["Motivacional"],
+      "calificacion": 4.8,
+      "precio": 299,
+      "categoria":["Motivacional","Filosofia"],
+      "autor": "Brian Tracy",
+      "reseña": "Guía práctica sobre el poder del pensamiento positivo y cómo las creencias personales pueden transformar la realidad.",
       "imagen":"/Image/si lo crees lo creas.jpg"
     },
     "Yo nunca vi television": {
-      "calificacion": 5,
-      "precio": 920,
-      "categoria": ["Infantil","Juvenil"],
+      "calificacion": 4.8,
+      "precio": 150,
+      "categoria": ["Literatura","Juvenil"],
+      "autor": "Clarice Lispector",
+      "reseña": "Novela introspectiva que explora la adolescencia y el despertar a la vida adulta con la prosa poética característica de la autora.",
       "imagen": "/Image/Yo Nunca vi television.webp"
+    },
+    "Viaje al centro de la tierra": {
+      "calificacion": 4.8,
+      "precio": 328,
+      "categoria":["Fantasia","Clasicos","Novela"],
+      "autor": "Julio Verne",
+      "reseña": "Aventura clásica de ciencia ficción que narra la expedición de un profesor y su sobrino hacia el centro de la Tierra.",
+      "imagen": "/Image/centro de la tierra.jpg"
     }
   }
 }
