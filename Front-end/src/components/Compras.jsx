@@ -57,7 +57,7 @@ function Compras(){
                         <thead>
                             <tr>
                                 <th className="tabla-imagen">Libro</th>
-                                <th className="tabla-titulo-libro">Titulo</th>
+                                <th className="tabla-titulo-libro">Título</th>
                                 <th className="tabla-stock-libro">Cantidad</th>
                                 <th className="tabla-precio-libro">Precio</th>
                                 <th className="tabla-acciones">Acciones</th>

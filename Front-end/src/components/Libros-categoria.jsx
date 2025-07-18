@@ -17,6 +17,7 @@ function Libros_categoria(props){
                 librosFiltrados.map(([nombre, info],index) =>(
                     <Libro
                     titulo={nombre}
+                    id={info.id}
                     key={index}
                     rate={info.calificacion}
                     precio={info.precio}

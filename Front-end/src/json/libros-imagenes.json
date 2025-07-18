@@ -2,6 +2,7 @@
   "libros": {
     "Los 4 Acuerdos": {
       "calificacion": 4.2,
+      "id":1,
       "precio": 199,
       "categoria":["Motivacional","Filosofia"],
       "autor": "Miguel Ruiz",
@@ -10,6 +11,7 @@
     },
     "100 años de soledad": {
       "calificacion": 4.8,
+      "id":2,
       "precio": 298,
       "categoria": ["Novela","Literatura","Clasicos"],
       "autor": "Gabriel García Márquez",
@@ -18,6 +20,7 @@
     },
     "Alas de sangre": {
       "calificacion": 4.8,
+      "id":3,
       "precio": 370,
       "categoria": ["Fantasia","Juvenil","Romance"],
       "autor": "Rebecca Yarros",
@@ -26,6 +29,7 @@
     },
     "Ángeles y demonios":{
       "calificacion": 4.8,
+      "id":4,
       "precio": 428,
       "categoria": ["Novela","Terror"],
       "autor": "Dan Brown",
@@ -34,6 +38,7 @@
     },
     "Bruja": {
       "calificacion": 4.1,
+      "id":5,
       "precio": 420,
       "categoria":["Fantasia","Terror"],
       "autor": "Camilla Läckberg",
@@ -42,6 +47,7 @@
     },
     "El Camino al éxito": {
       "calificacion": 4.9,
+      "id":6,
       "precio": 150,
       "categoria": ["Motivacional","Finanzas"],
       "autor": "Napoleon Hill",
@@ -50,6 +56,7 @@
     },
     "Caballo de guerra":{
       "calificacion": 4.6,
+      "id":7,
       "precio": 391,
       "categoria":["Historia","Drama"],
       "autor": "Michael Morpurgo",
@@ -58,6 +65,7 @@
     },
     "Caballo de Troya":{
       "calificacion": 4.8,
+      "id":8,
       "precio": 437,
       "categoria":["Novela","Fantasia","Historia"],
       "autor": "J.J. Benítez",
@@ -66,6 +74,7 @@
     },
     "Cartas": {
       "calificacion": 3.7,
+      "id":9,
       "precio": 250,
       "categoria":["Novela","Romance"],
       "autor": "Haruki Murakami",
@@ -74,6 +83,7 @@
     },
     "Cuentos góticos": {
       "calificacion": 4.5,
+      "id":10,
       "precio": 177,
       "categoria":["Terror","Clasicos"],
       "autor": "Edgar Allan Poe",
@@ -82,6 +92,7 @@
     },
     "Cuentos para una noche de imsomnio": {
       "calificacion": 4.7,
+      "id":11,
       "precio": 120,
       "categoria":["Fantasia","Novela"],
       "autor": "Varios autores",
@@ -90,6 +101,7 @@
     },
     "La divina comedia":{
       "calificacion": 4.8,
+      "id":12,
       "precio": 275,
       "categoria":["Clasicos","Filosofia","Fantasia"],
       "autor": "Dante Alighieri",
@@ -98,6 +110,7 @@
     },
     "Día": {
       "calificacion": 4.3,
+      "id":13,
       "precio": 380,
       "categoria":["Novela","Drama"],
       "autor": "Elie Wiesel",
@@ -106,6 +119,7 @@
     },
     "Dracula": {
       "calificacion": 4.8,
+      "id":14,
       "precio": 368,
       "categoria":["Terror","Clasicos"],
       "autor": "Bram Stoker",
@@ -114,6 +128,7 @@
     },
     "Don Quijote de la mancha": {
       "calificacion": 4.7,
+      "id":15,
       "precio": 440,
       "categoria":["Novela","Clasicos","Drama"],
       "autor": "Miguel de Cervantes",
@@ -122,6 +137,7 @@
     },
     "El ejercito Mexicano durante la segunda guerra mundial": {
       "calificacion": 4.7,
+      "id":16,
       "precio": 232,
       "categoria":["Historia","Politica"],
       "autor": "Blanca Torres Ramírez",
@@ -130,6 +146,7 @@
     },
     "El arte de la guerra": {
       "calificacion": 4.7,
+      "id":17,
       "precio": 540,
       "categoria":["Politica","Historia","Filosofia"],
       "autor": "Sun Tzu",
@@ -138,6 +155,7 @@
     },
     "El hombre en busca del sentido": {
       "calificacion": 4.6,
+      "id":18,
       "precio": 296,
       "categoria":["Motivacional","Drama","Filosofia"],
       "autor": "Viktor Frankl",
@@ -146,6 +164,7 @@
     },
     "El llano en llamas": {
       "calificacion": 4.6,
+      "id":19,
       "precio": 241,
       "categoria":["Literatura","Clasicos"],
       "autor": "Juan Rulfo",
@@ -154,6 +173,7 @@
     },
     "El millonario": {
       "calificacion": 4.2,
+      "id":20,
       "precio": 380,
       "categoria":["Finanzas","Motivacional"],
       "autor": "Thomas J. Stanley",
@@ -162,6 +182,7 @@
     },
     "El poder del ahora": {
       "calificacion": 4.7,
+      "id":21,
       "precio": 299,
       "categoria":["Motivacional"],
       "autor": "Eckhart Tolle",
@@ -170,6 +191,7 @@
     },
     "El principe": {
       "calificacion": 4.8,
+      "id":22,
       "precio": 624,
       "categoria":["Politica","Clasicos","Filosofia"],
       "autor": "Nicolás Maquiavelo",
@@ -178,6 +200,7 @@
     },
     "El principito": {
       "calificacion": 4.8,
+      "id":23,
       "precio": 199,
       "categoria":["Infantil","Clasicos"],
       "autor": "Antoine de Saint-Exupéry",
@@ -186,6 +209,7 @@
     },
     "El resplandor": {
       "calificacion": 4.8,
+      "id":24,
       "precio": 409,
       "categoria":["Novela","Terror"],
       "autor": "Stephen King",
@@ -194,6 +218,7 @@
     },
     "El tercer amor": {
       "calificacion": 4.2,
+      "id":25,
       "precio": 369,
       "categoria":["Romance","Novela"],
       "autor": "Emma Straub",
@@ -202,6 +227,7 @@
     },
     "En agosto nos vemos": {
       "calificacion": 4.3,
+      "id":26,
       "precio": 236,
       "categoria":["Novela","Literatura"],
       "autor": "Gabriel García Márquez",
@@ -210,6 +236,7 @@
     },
     "Frankenstein": {
       "calificacion": 4.7,
+      "id":27,
       "precio": 258,
       "categoria":["Terror","Clasicos"],
       "autor": "Mary Shelley",
@@ -218,6 +245,7 @@
     },
     "Gracias": {
       "calificacion": 3.8,
+      "id":28,
       "precio": 247,
       "categoria":["Politica"],
       "autor": "Andrés Manuel López Obrador",
@@ -226,6 +254,7 @@
     },
     "Guerra y paz": {
       "calificacion": 4.4,
+      "id":29,
       "precio": 538,
       "categoria":["Novela","Clasicos"],
       "autor": "León Tolstói",
@@ -234,6 +263,7 @@
     },
     "Hadas": {
       "calificacion": 4.5,
+      "id":30,
       "precio": 234,
       "categoria":["Fantasia","Mitologia"],
       "autor": "Brian Froud",
@@ -242,6 +272,7 @@
     },
     "Heartstopper": {
       "calificacion": 4.8,
+      "id":31,
       "precio": 170,
       "categoria":["Novela","Juvenil"],
       "autor": "Alice Oseman",
@@ -250,6 +281,7 @@
     },
     "Herbario": {
       "calificacion": 4.8,
+      "id":32,
       "precio": 517,
       "categoria":["Ecologia"],
       "autor": "Lucía Puenzo",
@@ -258,6 +290,7 @@
     },
     "La iliada": {
       "calificacion": 4.5,
+      "id":33,
       "precio": 355,
       "categoria":["Clasicos","Historia"],
       "autor": "Homero",
@@ -266,6 +299,7 @@
     },
     "Infra especie": {
       "calificacion": 5.0,
+      "id":34,
       "precio": 416,
       "categoria":["Ecologia","Historia"],
       "autor": "Jorge Volpi",
@@ -274,6 +308,7 @@
     },
     "Inteligencia emocional": {
       "calificacion": 4.7,
+      "id":35,
       "precio": 320,
       "categoria":["Motivacional","Filosofia"],
       "autor": "Daniel Goleman",
@@ -282,6 +317,7 @@
     },
     "Izquierda": {
       "calificacion": 4.7,
+      "id":36,
       "precio": 200,
       "categoria":["Politica","Novela"],
       "autor": "Héctor Aguilar Camín",
@@ -290,6 +326,7 @@
     },
     "La bailarina": {
       "calificacion": 4.1,
+      "id":37,
       "precio": 160,
       "categoria":["Novela","Romance"],
       "autor": "Siena Castellon",
@@ -298,6 +335,7 @@
     },
     "La camara de los secretos": {
       "calificacion": 4.9,
+      "id":38,
       "precio": 399,
       "categoria":["Fantasia","Juvenil"],
       "autor": "J.K. Rowling",
@@ -306,6 +344,7 @@
     },
     "La casa en el lago": {
       "calificacion": 3.9,
+      "id":39,
       "precio": 390,
       "categoria":["Drama","Novela","Terror"],
       "autor": "Kate Morton",
@@ -314,6 +353,7 @@
     },
     "La historia de un muro": {
       "calificacion": 3.0,
+      "id":40,
       "precio": 450,
       "categoria":["Novela","Drama"],
       "autor": "Marcelo Birmajer",
@@ -322,6 +362,7 @@
     },
     "La piedra filosofal": {
       "calificacion": 4.8,
+      "id":41,
       "precio": 305,
       "categoria":["Juvenil","Fantasia"],
       "autor": "J.K. Rowling",
@@ -330,6 +371,7 @@
     },
     "Libro de Bill": {
       "calificacion": 4.8,
+      "id":42,
       "precio": 367,
       "categoria":["Fantasia","Juvenil"],
       "autor": "Alex Hirsch",
@@ -338,6 +380,7 @@
     },
     "Maze Runner":{
       "calificacion": 4.9,
+      "id":43,
       "precio": 189,
       "categoria":["Fantasia","Juvenil","Drama"],
       "autor": "James Dashner",
@@ -346,6 +389,7 @@
     },
     "Los monstruos": {
       "calificacion": 4.8,
+      "id":44,
       "precio": 140,
       "categoria":["Infantil"],
       "autor": "Maurice Sendak",
@@ -354,6 +398,7 @@
     },
     "Meditaciones": {
       "calificacion": 4.5,
+      "id":45,
       "precio": 161,
       "categoria":["Filosofia"],
       "autor": "Marco Aurelio",
@@ -362,6 +407,7 @@
     },
     "La metamorfosis": {
       "calificacion": 4.6,
+      "id":46,
       "precio": 612,
       "categoria":["Filosofia","Clasicos"],
       "autor": "Franz Kafka",
@@ -370,6 +416,7 @@
     },
     "Mitología azteca": {
       "calificacion": 4.3,
+      "id":47,
       "precio": 480,
       "categoria":["Historia","Mitologia"],
       "autor": "María Tena",
@@ -378,6 +425,7 @@
     },
     "La odisea": {
       "calificacion": 4.8,
+      "id":48,
       "precio": 204,
       "categoria":["Mitologia","Clasicos"],
       "autor": "Homero",
@@ -386,6 +434,7 @@
     },
     "Osito tito": {
       "calificacion": 4.8,
+      "id":49,
       "precio": 218,
       "categoria":["Infantil"],
       "autor": "Benji Davies",
@@ -394,6 +443,7 @@
     },
     "Orgullo y prejuicio": {
       "calificacion": 4.8,
+      "id":50,
       "precio": 339,
       "categoria":["Romance","Novela","Clasicos"],
       "autor": "Jane Austen",
@@ -402,6 +452,7 @@
     },
     "Pedro Paramo": {
       "calificacion": 4.7,
+      "id":51,
       "precio": 377,
       "categoria":["Terror","Literatura","Clasicos"],
       "autor": "Juan Rulfo",
@@ -410,6 +461,7 @@
     },
     "El niño con la pijama de rayas": {
       "calificacion": 5.0,
+      "id":52,
       "precio": 400,
       "categoria":["Drama","Historia","Juvenil"],
       "autor": "John Boyne",
@@ -418,6 +470,7 @@
     },
     "Primavera Silenciosa":{
       "calificacion": 4.7,
+      "id":53,
       "precio": 429,
       "categoria":["Ecologia"],
       "autor": "Rachel Carson",
@@ -426,6 +479,7 @@
     },
     "Proceso": {
       "calificacion": 4.2,
+      "id":54,
       "precio": 340,
       "categoria":["Filosofia","Clasicos"],
       "autor": "Franz Kafka",
@@ -434,6 +488,7 @@
     },
     "Querido monstruo": {
       "calificacion": 4.7,
+      "id":55,
       "precio": 149,
       "categoria":["Juvenil","Romance"],
       "autor": "Flor M. Salvador",
@@ -442,6 +497,7 @@
     },
     "Rebelion en la granja": {
       "calificacion": 4.8,
+      "id":56,
       "precio": 269,
       "categoria":["Drama","Clasicos","Politica"],
       "autor": "George Orwell",
@@ -450,6 +506,7 @@
     },
     "Romper el circulo": {
       "calificacion": 4.8,
+      "id":57,
       "precio": 358,
       "categoria":["Romance","Drama"],
       "autor": "Colleen Hoover",
@@ -458,6 +515,7 @@
     },
     "Si lo crees, lo creas":{
       "calificacion": 4.8,
+      "id":58,
       "precio": 299,
       "categoria":["Motivacional","Filosofia"],
       "autor": "Brian Tracy",
@@ -466,6 +524,7 @@
     },
     "Yo nunca vi television": {
       "calificacion": 4.8,
+      "id":59,
       "precio": 150,
       "categoria": ["Literatura","Juvenil"],
       "autor": "Clarice Lispector",
@@ -474,6 +533,7 @@
     },
     "Viaje al centro de la tierra": {
       "calificacion": 4.8,
+      "id":60,
       "precio": 328,
       "categoria":["Fantasia","Clasicos","Novela"],
       "autor": "Julio Verne",
