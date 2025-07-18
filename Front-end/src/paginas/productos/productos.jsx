@@ -7,6 +7,7 @@ import Filtros from '../../components/Filtros.jsx';
 import Libreria from '../../components/Libreria.jsx';
 
 function Productos() {
+
   return (
     <>
     <Header />

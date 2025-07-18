@@ -12,6 +12,7 @@ function Libreria(){
                 <Libro 
                 titulo={libro}
                 key={index}
+                id={index}
                 img={info.imagen}
                 rate={info.calificacion}
                 precio={info.precio}

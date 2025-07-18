@@ -22,9 +22,11 @@ import Novela from "../src/paginas/novela/Novela.jsx"
 import Politica from "../src/paginas/politica/Politica.jsx"
 import Romance from "../src/paginas/romance/Romance.jsx"
 import Terror from "../src/paginas/terror/Terror.jsx"
+import { CartProvider } from "./context/Cart.jsx";
 
 function App(){
   return(
+    <CartProvider>
     <Routes>
       <Route path="/" element={<Inicio />} />  
       <Route path="/mi_cuenta" element={<My_cuenta />} />
@@ -48,6 +50,7 @@ function App(){
       <Route path="/categoria_romance" element={<Romance />} />
       <Route path="/categoria_terror" element={<Terror />} />
     </Routes>
+    </CartProvider>
   )
 }
 

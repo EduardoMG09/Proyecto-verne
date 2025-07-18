@@ -1,0 +1,257 @@
+.contenedor-compras {
+    position: absolute;
+    padding: 2vh;
+    left: 20%;
+    top: 20%;
+    width: 75%;
+}
+
+.contenedor-compras-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+}
+
+/* Tabla de productos */
+.tabla-productos {
+    background:  #4d5038;
+    border-radius: 8px 0 8px 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.tabla-productos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-productos thead {
+    background:  #2D1E17;
+}
+
+.tabla-productos th {
+    padding: 1vh 2vh;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #2D1E17;
+}
+
+.tabla-productos td {
+    padding: 2vh 3vh;
+    border-bottom: 1px solid transparent;
+}
+.tabla-productos tbody tr{
+    transition: 0.3s ease;
+}
+.tabla-productos tbody tr:hover{
+    background-color: #6a6f4c;
+}
+
+/* Imagen del libro */
+.imagen-libro-carrito {
+    width: 40%;
+    aspect-ratio: 2/3;
+    object-fit:fill;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0.1,0.4);
+}
+.celda-imagen {
+    text-align: center;
+}
+
+/* Información del libro */
+.info-libro h4 {
+    margin: 0 0 5px 0;
+    color: #FFF;
+    font-size: 2vh;
+}
+
+.calificacion {
+    margin: 0;
+    color: #9c9791;
+    font-size: 14px;
+}
+
+/* Controles de cantidad */
+.controles-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    justify-content: center;
+}
+
+.btn-cantidad {
+    width: 3vh;
+    height: 3vh;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn-cantidad:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.cantidad-actual {
+    min-width: 4vh;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5vh 0.5vh;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+/* Precios */
+.precio-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.precio-unitario {
+    font-size: 14px;
+    color: #d2cbc1;
+    margin-bottom: 0.5vh;
+}
+
+.precio-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    background-color: #9f5434;
+    color: white;
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.4s ease;
+}
+
+.btn-eliminar:hover {
+    transform: scale(1.1);
+}
+
+/* Resumen de compra */
+.resumen-compra {
+    background: #2D1E17;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+
+}
+
+.resumen-compra h3 {
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 1vh;
+}
+
+.resumen-detalle {
+    margin-bottom: 2rem;
+}
+
+.resumen-linea {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.resumen-linea.total {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    margin-top: 1vh;
+    padding-top: 1.2vh;
+}
+
+/* Botones de compra */
+.botones-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.btn-vaciar-carrito {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 1.2vh;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.btn-vaciar-carrito:hover {
+    background-color: #5a6268;
+}
+
+.btn-proceder-pago {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1.7vh;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-proceder-pago:hover {
+    background-color: #0056b3;
+}
+
+/* Carrito vacío */
+.carrito-vacio {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.carrito-vacio h2 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.carrito-vacio p {
+    color: #888;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-compras-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .tabla-productos {
+        overflow-x: auto;
+    }
+    
+    .tabla-productos table {
+        min-width: 600px;
+    }
+    
+    .resumen-compra {
+        position: static;
+    }
+}
