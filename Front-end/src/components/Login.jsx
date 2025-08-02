@@ -23,7 +23,7 @@ function Login(){
                     </div>
                     
                     <div className="btn-submit">
-                        <button className="submit" type="submit">Registrarse</button>
+                        <button className="submit" type="submit">Iniciar sesión</button>
                     </div>
                 </form>
             </div>

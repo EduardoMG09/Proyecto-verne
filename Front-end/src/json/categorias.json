@@ -1,6 +1,6 @@
 {
     "categorias":{
-        "Clasicos":{
+        "Clásicos":{
             "ruta":"/categoria_clasicos",
             "imagen":"/Image/categories/clasicos_icon.svg"
         },
@@ -12,10 +12,10 @@
             "ruta":"/categoria_ecologia",
             "imagen":"/Image/categories/ecologia_icon.svg"
         },
-        "Fantasia":{
+        "Fantasía":{
             "ruta":"/categoria_fantasia",
             "imagen":"/Image/categories/fantasia_icon.svg"},
-        "Filosofia":{
+        "Filosofía":{
             "ruta":"/categoria_filosofia",
             "imagen":"/Image/categories/filosofia_icon.svg"
         },
@@ -39,7 +39,7 @@
             "ruta":"/categoria_literatura",
             "imagen":"/Image/categories/literatura_mexicana_icon.svg"
         },
-        "Mitologia":{
+        "Mitología":{
             "ruta":"/categoria_mitologia",
             "imagen":"/Image/categories/mitologia_icon.svg"
         },
@@ -51,7 +51,7 @@
             "ruta":"/categoria_novela",
             "imagen":"/Image/categories/novela_icon.svg"
         },
-        "Politica":{
+        "Política":{
             "ruta":"/categoria_politica",
             "imagen":"/Image/categories/politica_icon.svg"
         },

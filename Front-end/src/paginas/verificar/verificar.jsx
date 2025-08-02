@@ -10,6 +10,7 @@ function Verificar() {
     <>
     <Header />
     <Busqueda />
+    <Checkout />
     </>
   )
 }
