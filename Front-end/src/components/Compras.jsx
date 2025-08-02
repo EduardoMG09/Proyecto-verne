@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Carrito.css";
 import { useCart } from "../hooks/useCart";
+import { Link } from "react-router-dom";
 
 function Compras(){
     const { 
@@ -153,15 +154,17 @@ function Compras(){
                         >
                             Vaciar Carrito
                         </button>
-                        <button 
-                            className="btn-proceder-pago"
-                            onClick={() => {
-                                // Aquí puedes agregar la lógica para proceder al pago
-                                alert('Procediendo al pago...');
-                            }}
-                        >
-                            Proceder al Pago
-                        </button>
+                        <Link to="/verificar">
+                            <button 
+                                className="btn-proceder-pago"
+                                onClick={() => {
+                                    // Aquí puedes agregar la lógica para proceder al pago
+                                    alert('Procediendo al pago...');
+                                }}
+                            >
+                                Proceder al Pago
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

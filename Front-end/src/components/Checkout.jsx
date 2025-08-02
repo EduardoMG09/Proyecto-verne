@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Verificar.css";
+import { Link } from "react-router-dom";
 import array from "../json/paises/estados.json";
 import { useCart } from "../hooks/useCart";
 
