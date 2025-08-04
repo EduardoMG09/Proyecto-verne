@@ -1,72 +1,65 @@
-import React, {useState} from "react";
-import { Link } from "react-router-dom";
+// src/components/Busqueda.jsx
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/Busqueda.css";
 import array from "../json/libro-categorias.json";
-import array_libros from "../json/libros-imagenes.json";
 
-function Busqueda(){
-    const [categoria, setCategoria] = useState("");
+function Busqueda() {
     const [busqueda, setBusqueda] = useState("");
+    const [categoria, setCategoria] = useState("");
+    const navigate = useNavigate();
 
-
+    const manejarBusqueda = (e) => {
+        e.preventDefault();
+        if (busqueda.trim() !== "") {
+            navigate(`/resultados?query=${encodeURIComponent(busqueda)}&categoria=${encodeURIComponent(categoria)}`);
+        }
+    };
 
     return (
         <div className="container-2">
             <div className="container-up">
                 <div className="titulo">
-                    <div className="verne-titulo">
-                        Verne
-                    </div>
-                    <div className="verne-subt">
-                        Learning
-                    </div>
+                    <div className="verne-titulo">Verne</div>
+                    <div className="verne-subt">Learning</div>
                 </div>
+
                 <div className="busqueda">
                     <div className="busqueda-contenedor">
                         <small className="nota">Sitio con fines académicos.</small>
-                        <div className="barra-busqueda">
+                        <form className="barra-busqueda" onSubmit={manejarBusqueda}>
                             <input
                                 type="text"
                                 placeholder="Buscar productos..."
                                 className="input-busqueda"
+                                value={busqueda}
+                                onChange={(e) => setBusqueda(e.target.value)}
                             />
 
                             <select
                                 className="select-categorias"
-                                name="Categorias"
                                 value={categoria}
                                 onChange={(e) => setCategoria(e.target.value)}
                             >
-                                <option value="" disabled>
-                                Categoría
-                                </option>
+                                <option value="">Categoría</option>
                                 {array.categorias.map((item, index) => (
-                                <option key={index} value={item}>
-                                    {item}
-                                </option>
+                                    <option key={index} value={item}>{item}</option>
                                 ))}
                             </select>
 
-                            <button className="btn-buscar">
-                                <i class="bi bi-search"></i>
+                            <button 
+                            className="btn-buscar" 
+                            type="submit" 
+                            onClick={manejarBusqueda}
+                            >
+                                <i className="bi bi-search"></i>
                             </button>
-                            
-                            <Link to="/mi_cuenta">
-                                <button className="btn-persona">
-                                    <i class="bi bi-person-fill"></i>
-                                </button>
-                            </Link>
-                            <Link to="/carrito">
-                                <button className="btn-carrito">
-                                    <i class="bi bi-cart-fill"></i>
-                                </button>
-                            </Link>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Busqueda;

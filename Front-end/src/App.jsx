@@ -8,6 +8,7 @@ import Carrito from "../src/paginas/carrito/carrito.jsx";
 import Verificar from "../src/paginas/verificar/verificar.jsx";
 import Clasicos from "../src/paginas/clasicos/clasicos.jsx";
 import Drama from "../src/paginas/drama/Drama.jsx";
+import Resultado from "../src/paginas/resultado/Resultado.jsx";
 import Ecologia from "../src/paginas/ecologia/Ecologia.jsx"
 import Fantasia from "../src/paginas/fantasia/Fantasia.jsx"
 import Filosofia from "../src/paginas/filosofia/Filosofia.jsx"
@@ -33,6 +34,7 @@ function App(){
       <Route path="/productos" element={<Productos />} />
       <Route path="/carrito" element={<Carrito />} />
       <Route path="/verificar" element={<Verificar />} />
+      <Route path="/resultados" element={<Resultado />} />
       <Route path="/categoria_clasicos" element={<Clasicos />} />
       <Route path="/categoria_drama" element={<Drama />} />
       <Route path="/categoria_ecologia" element={<Ecologia />} />
