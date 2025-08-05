@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import "../styles/Libros-categoria.css";
 import libros from "../json/libros-imagenes.json";
 import Libro from "../components/Libro.jsx";
+import { FiltrosContext } from "../context/Filtro.jsx";
 
 function Libros_categoria(props){
+    const { precioMaximo } = useContext(FiltrosContext);
+    
     const librosFiltrados = Object.entries(libros.libros).filter(([_, info]) =>
                     info.categoria && info.categoria.includes(props.categoria)
                 );
@@ -14,7 +17,9 @@ function Libros_categoria(props){
             </div>
             <div className="libreria-2">
             {
-                librosFiltrados.map(([nombre, info],index) =>(
+                librosFiltrados.filter(([_,info]) =>
+                info.precio <= precioMaximo)
+                .map(([nombre, info],index) =>(
                     <Libro
                     titulo={nombre}
                     id={info.id}
