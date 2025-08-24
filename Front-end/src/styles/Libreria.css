@@ -71,3 +71,20 @@
 .btn-agregar-carrito:hover{
     transform: scale(1.08);
 }
+/* Telefonos */
+@media (max-width: 768px) {
+    .container-libreria{
+        background-color: aqua !important;
+    }
+    .libreria {
+        background-color: #FF6F61;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets / iPads vertical */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

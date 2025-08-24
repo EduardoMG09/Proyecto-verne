@@ -12,9 +12,13 @@
     gap: 2rem 1rem;
 }
 .titulo-inicio-1{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
     font-size: 2.1rem;
+    padding: 1vh 0;
     font-family: 'Outfit', sans-serif;
-    margin: 0 0 2vh 0;
+    z-index: 5;
 }
 .categoria-contenedor{
     display: flex;
@@ -23,6 +27,9 @@
 }
 .categoria{
     display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
     justify-content: center;
     width: 90%;
 }
@@ -56,6 +63,54 @@
 a{
     text-decoration: none;
 }
-@media (min-width: 700px) and (max-width:1450px){
+/* Telefonos */
+@media (max-width: 768px) {
+    .categorias-container{
+        right: 15%;
+        top: 30%;
+    }
+    .categorias{
+        grid-template-columns: 1fr;
+    }
+    .categoria-contenedor{
+        align-items: center;
+    }
+    .categoria{
+        align-items: center;
+        width: 100%;
+    }
+    .titulo-inicio-1{
+        margin: -2vh 0 2vh 0;
+    }
+}
 
+/* Tablets / iPads vertical */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .categorias-container{
+        top: 20%;
+    }
+    .categorias{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .categoria-contenedor{
+        align-items: center;
+    }
+    .categoria{
+        align-items: center;
+        width: 90%;
+    }
+    .titulo-inicio-1{
+        margin: -4.5vh 0 2vh 0;
+    }
+}
+/* Laptops pequeñas */
+@media (min-width: 1025px) and (max-width: 1380px) {
+    .titulo-inicio-1{
+        margin: -8vh 0 2vh 0;
+    }
+}
+@media (min-width: 1381px) and (max-width: 1480px){
+    .titulo-inicio-1{
+        margin: -5.5vh 0 2vh 0;
+    }
 }

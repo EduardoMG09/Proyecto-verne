@@ -22,8 +22,30 @@
     width: 60%;
     background-color: #fff;
 }
-@media (min-width: 700px) and (max-width:1450px){
-.titulo-2{
-    margin: -2vh 0 0 0;
+/* Telefonos */
+@media (max-width: 768px) {
+    .container-cat-3{
+        top: 27%;
+    }
+    .libreria-2{
+        grid-template-columns: 1fr;
+    }
 }
+/* Tablets / iPads vertical */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-cat-3{
+        top: 14%;
+    }
+    .libreria-2{
+        grid-template-columns: 2fr 2fr;
+    }
+}
+/* Laptops pequeñas */
+@media (min-width: 1025px) and (max-width: 1380px) {
+   .container-cat-3{
+    top: 16%;
+   }
+}
+@media (min-width: 1381px) and (max-width: 1480px){
+    
 }
