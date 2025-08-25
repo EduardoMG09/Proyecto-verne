@@ -4,6 +4,7 @@ import Header from '../../components/Header.jsx';
 import Busqueda from '../../components/Busqueda.jsx';
 import Resultados from '../../components/Resultados.jsx';
 import NavbarMobile from '../../components/NavbarMobile.jsx';
+import BusquedaMobile from '../../components/BusquedaMobile.jsx';
 
 function Resultado() {
   const location = useLocation();
@@ -25,7 +26,7 @@ function Resultado() {
   return (
     <>
       {isMobile ? <NavbarMobile /> :<Header />}
-      <Busqueda />
+      {isMobile ? <BusquedaMobile /> :<Busqueda />}
       <Resultados busqueda={busqueda} />
     </>
   );

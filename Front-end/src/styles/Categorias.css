@@ -64,12 +64,16 @@ a{
     text-decoration: none;
 }
 /* Telefonos */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     .categorias-container{
-        right: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        right: 0;
         top: 30%;
     }
     .categorias{
+        width: 95%;
         grid-template-columns: 1fr;
     }
     .categoria-contenedor{
@@ -80,12 +84,23 @@ a{
         width: 100%;
     }
     .titulo-inicio-1{
-        margin: -2vh 0 2vh 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: -6vh 0 2vh 0;
     }
 }
-
+@media (min-width: 751px) and (max-width: 900px){
+    .categorias{
+        grid-template-columns: 1fr 1fr;
+    }
+    .titulo-inicio-1{
+        width: 100%;
+        margin: -10vh 0 2vh 0;
+    }
+}
 /* Tablets / iPads vertical */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 901px) and (max-width: 1324px) {
     .categorias-container{
         top: 20%;
     }
@@ -104,13 +119,13 @@ a{
     }
 }
 /* Laptops pequeñas */
-@media (min-width: 1025px) and (max-width: 1380px) {
+@media (min-width: 1325px) and (max-width: 1480px) {
     .titulo-inicio-1{
         margin: -8vh 0 2vh 0;
     }
 }
-@media (min-width: 1381px) and (max-width: 1480px){
+@media (min-width: 1481px){
     .titulo-inicio-1{
-        margin: -5.5vh 0 2vh 0;
+        margin: -9vh 0 2vh 0;
     }
 }

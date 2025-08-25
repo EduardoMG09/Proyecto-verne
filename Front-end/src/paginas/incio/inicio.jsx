@@ -3,6 +3,7 @@ import '../../styles/App.css';
 import Header from '../../components/Header.jsx';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Busqueda from '../../components/Busqueda.jsx';
+import BusquedaMobile from '../../components/BusquedaMobile.jsx';
 import Categorias from '../../components/Categorias.jsx';
 import NavbarMobile from '../../components/NavbarMobile.jsx';
 import "../../styles/Inicio.css";
@@ -25,7 +26,7 @@ function Inicio() {
   return (
     <>
     {isMobile ? <NavbarMobile /> :<Header />}
-    <Busqueda />
+    {isMobile ? <BusquedaMobile /> :<Busqueda />}
     <Categorias />
     </>
   )

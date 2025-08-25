@@ -5,6 +5,7 @@ import Header from '../../components/Header.jsx';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Busqueda from '../../components/Busqueda.jsx';
 import Compras from '../../components/Compras.jsx';
+import BusquedaMobile from '../../components/BusquedaMobile.jsx';
 
 function Carrito() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -24,7 +25,8 @@ function Carrito() {
   return (
     <>
     {isMobile ? <NavbarMobile /> :<Header />}
-    <Busqueda />
+    {isMobile ? <BusquedaMobile /> :<Busqueda />}
+    
     <Compras />
     </>
   )

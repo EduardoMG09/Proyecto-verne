@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Busqueda from '../../components/Busqueda.jsx';
 import Filtros from '../../components/Filtros.jsx';
 import Libreria from '../../components/Libreria.jsx';
+import BusquedaMobile from '../../components/BusquedaMobile.jsx';
 
 function Productos() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -25,7 +26,7 @@ function Productos() {
   return (
     <>
     {isMobile ? <NavbarMobile /> :<Header />}
-    <Busqueda />
+    {isMobile ? <BusquedaMobile /> :<Busqueda />}
     <Libreria />
     <Filtros />
     

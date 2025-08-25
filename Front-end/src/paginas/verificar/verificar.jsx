@@ -5,6 +5,7 @@ import Header from '../../components/Header.jsx';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Busqueda from '../../components/Busqueda.jsx';
 import Checkout from '../../components/Checkout.jsx';
+import BusquedaMobile from '../../components/BusquedaMobile.jsx';
 
 function Verificar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -24,7 +25,7 @@ function Verificar() {
   return (
     <>
     {isMobile ? <NavbarMobile /> :<Header />}
-    <Busqueda />
+    {isMobile ? <BusquedaMobile /> :<Busqueda />}
     <Checkout />
     </>
   )
