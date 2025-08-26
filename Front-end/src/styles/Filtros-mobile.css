@@ -1,0 +1,123 @@
+/* Botón con icono de filtros */
+.btn-icon-filtros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 1vh;
+    margin: 35vh 0 0 1vh;
+    border-radius: 10px;
+    font-size: 3vh;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 100;
+}
+
+.btn-icon-filtros:hover {
+    transform:  scale(1.05);
+}
+.bi{
+    color: #fff;
+}
+/* Fondo oscuro */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 998;
+}
+
+/* Contenedor modal */
+.modal-filtros {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: bottom 0.3s ease-in-out;
+}
+
+/* Mostrar modal */
+.modal-filtros.show {
+    bottom: 0;
+}
+
+/* Header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.modal-header h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.btn-close:hover {
+    color: #000;
+}
+
+/* Cuerpo */
+.modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px 0;
+}
+
+.filtro {
+    margin-bottom: 20px;
+}
+
+.filtro-titulo {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.modal-footer {
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.btn-apply {
+    width: 100%;
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #1565c0;
+}

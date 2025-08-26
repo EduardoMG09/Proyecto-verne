@@ -5,7 +5,6 @@ import PriceFilter from "./PriceFilter";
 import CheckBox from "./CheckboxFilter";
 
 function Filtros() {
-
     return (
         <div className="container-5">
             <div className="contenedor-filtros">

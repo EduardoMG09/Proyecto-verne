@@ -11,6 +11,9 @@
     display: flexbox;
 }
 .navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: 'Quicksand', sans-serif;
     padding: 4rem 1rem;
     border-right: 2px solid #24221e;
@@ -42,6 +45,10 @@
     border-radius: 20px;
     object-fit: contain;
     margin: 1vh;
+}
+
+.logo-img img{
+    width: 50%;
 }
 
 /* Tablet */
@@ -94,7 +101,7 @@
         padding: 1vh;
     }
     .logo-img{
-        width: 100%;
+        width: 20%;
     }
 }
 @media (min-width: 1381px){

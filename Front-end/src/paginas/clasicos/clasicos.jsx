@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Busqueda from '../../components/Busqueda.jsx';
 import Libros_categoria from "../../components/Libros-categoria.jsx";
 import Filtros from "../../components/Filtros.jsx";
+import FiltrosMobile from "../../components/Filtros-mobile.jsx";
 import BusquedaMobile from "../../components/BusquedaMobile.jsx";
 
 function Novela() {
@@ -30,7 +31,7 @@ function Novela() {
     <Libros_categoria
     categoria="Clasicos" 
     />
-    <Filtros/>
+    {isMobile ? <FiltrosMobile/> : <Filtros/> }
     </>
   )
 }
