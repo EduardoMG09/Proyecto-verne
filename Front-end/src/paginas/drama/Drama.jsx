@@ -26,7 +26,7 @@ function Novela() {
   return (
     <>
     {isMobile ? <NavbarMobile /> :<Header />}
-    <Busqueda />
+    {isMobile ? <BusquedaMobile /> : <Busqueda />}
     <Libros_categoria
     categoria="Drama" 
     />

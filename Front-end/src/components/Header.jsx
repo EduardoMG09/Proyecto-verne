@@ -10,7 +10,9 @@ function Header(){
             <div className="container-header">
                 <div className="logo">
                     <figure className="figure-logo">
-                        <img src={logo} alt="Aprendizaje continuo" className="logo-img"/>
+                        <a href="https://paolacortezeducacion.com/">
+                            <img src={logo} alt="Aprendizaje continuo" className="logo-img"/>
+                        </a>
                     </figure>
                 </div>
                 <div className="navbar">

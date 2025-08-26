@@ -13,7 +13,7 @@ function Categorias(){
             <div className="categorias">
             {
                 Object.entries(cat.categorias).map(([categoria, info], index) =>(
-                    <Link to={info.ruta}>
+                    <Link to={info.ruta} key={index}>
                         <Categoria 
                         name={categoria}
                         key={index}

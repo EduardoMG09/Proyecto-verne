@@ -73,11 +73,7 @@
 }
 /* Telefonos */
 @media (max-width: 768px) {
-    .container-libreria{
-        background-color: aqua !important;
-    }
     .libreria {
-        background-color: #FF6F61;
         grid-template-columns: 1fr;
     }
 }

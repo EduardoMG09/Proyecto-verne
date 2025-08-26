@@ -22,7 +22,9 @@ function Busqueda() {
             <div className="container-up-mobile">
                 <div className="container-logo-titulo">
                     <div className="logo-mobile">
-                        <img src={img} alt="paola-nayeli" />
+                        <a href="https://paolacortezeducacion.com/">
+                            <img src={img} alt="paola-nayeli" />
+                        </a>
                     </div>
                     <div className="titulo-mobile">
                         <div className="verne-titulo-mobile">Verne</div>
