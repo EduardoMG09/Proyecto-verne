@@ -8,8 +8,7 @@ import Checkout from '../../components/Checkout.jsx';
 import BusquedaMobile from '../../components/BusquedaMobile.jsx';
 
 function Verificar() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -22,7 +21,8 @@ function Verificar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  return (
+
+    return (
     <>
     {isMobile ? <NavbarMobile /> :<Header />}
     {isMobile ? <BusquedaMobile /> :<Busqueda />}
