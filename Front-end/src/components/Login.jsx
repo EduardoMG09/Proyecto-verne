@@ -31,7 +31,7 @@ function Login(){
                 </div>
             </div>
             <div className="login-side">
-                <form action="" className="login">
+                <form action="" className="login" onSubmit={handleSubmit}>
                     <h2>Iniciar Sesión</h2>
                     <div className="email-items">
                         <label htmlFor="email" name="email" className="email-label">Correo electrónico:</label>
@@ -74,7 +74,10 @@ function Login(){
                     </div>
                     
                     <div className="btn-submit">
-                        <button className="submit" type="submit">Iniciar sesión</button>
+                        <button 
+                        className="submit" 
+                        type="submit"
+                        >Iniciar sesión</button>
                     </div>
                 </form>
             </div>
