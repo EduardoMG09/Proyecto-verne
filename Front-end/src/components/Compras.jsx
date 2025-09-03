@@ -159,7 +159,8 @@ function Compras(){
                                 className="btn-proceder-pago"
                                 onClick={() => {
                                     // Aquí puedes agregar la lógica para proceder al pago
-                                    alert('Procediendo al pago...');
+                                    localStorage.setItem("librosCompra", JSON.stringify(cart));
+                                    alert('Libros añadidos correctamente, procediendo al pago...');
                                 }}
                             >
                                 Proceder al Pago

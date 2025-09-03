@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const checkoutRoutes = require('./routes/checkoutRoute.js');
+const mailRoutes = require("./routes/mailRoutes.js");
+const checkout = require("./routes/checkoutRoute.js");
 
 //configuraciion de variables de entorno
 dotenv.config();
@@ -14,7 +15,8 @@ app.use(cors());
 app.use(express.json());
 
 // Importar rutas
-app.use('/api/checkout', checkoutRoutes);
+app.use('/api/mail', mailRoutes);
+app.use('/api/checkout', checkout);
 
 // Endpoint raíz
 app.get('/', (req, res) => {

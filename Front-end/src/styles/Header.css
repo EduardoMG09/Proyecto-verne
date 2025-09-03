@@ -110,6 +110,9 @@
         display: flex;
     }
     .container-header{
-        width: 80%;
+        width: 90%;
+    }
+    .logo-img{
+        width: 110%;
     }
 }

@@ -4,6 +4,7 @@ import { useCart } from "../hooks/useCart";
 
 function Checkout() {
   const { cart, clearCart, getTotalItems, getTotalPrice } = useCart();
+  const [librosCompra, setLibrosCompra] = useState([]);
 
   const [formData, setFormData] = useState({
     nombre: "",
@@ -15,6 +16,7 @@ function Checkout() {
 
   useEffect(() => {
     const usuario = JSON.parse(localStorage.getItem("usuario"));
+    const librosGuardados = JSON.parse(localStorage.getItem("librosCompra")) || [];
     if (usuario) {
       setFormData((prev) => ({
         ...prev,
@@ -22,6 +24,7 @@ function Checkout() {
         correo: usuario.correo || "",
       }));
     }
+    setLibrosCompra(librosGuardados);
   }, []);
 
   const handleChange = (e) => {
@@ -52,22 +55,29 @@ function Checkout() {
     }
 
     const usuario = JSON.parse(localStorage.getItem("usuario"));
+    const libros = JSON.parse(localStorage.getItem("librosCompra")) || [];
 
     try {
-      const res = await fetch("http://localhost:3000/api/compra", {
+      const res = await fetch("http://localhost:5000/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           nombre: usuario.nombre,
           correo: usuario.correo,
-          libro: "Compra de libros",
-          total: Math.round(getTotalPrice() * 1.16),
+          libros: libros.map((l) => ({
+          titulo: l.titulo,
+          cantidad: l.quantity,
+          precio: l.precio,
+          total: l.precio * l.quantity,
+        })),
+        total: Math.round(getTotalPrice() * 1.16),
         }),
       });
 
       const data = await res.json();
       alert(data.message);
 
+      localStorage.removeItem("librosCompra");
       clearCart(); // Vacía el carrito tras comprar
     } catch (error) {
       console.error("Error en el pago:", error);
