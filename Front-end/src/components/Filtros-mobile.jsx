@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Filtros-Mobile.css";
+import "../styles/Filtros-mobile.css";
 import "rc-slider/assets/index.css";
 import PriceFilter from "./PriceFilter";
 import CheckBox from "./CheckboxFilter";
