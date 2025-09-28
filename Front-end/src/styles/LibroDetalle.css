@@ -1,0 +1,15 @@
+.detalle-container{
+    width: 100%;
+    height: 100%;
+}
+.container-detalle-inner{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    padding: 2vh 1vh;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}

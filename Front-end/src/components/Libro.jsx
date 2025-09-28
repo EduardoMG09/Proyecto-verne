@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Libreria.css";
 import { useCart } from "../hooks/useCart";
+import { Link } from "react-router-dom";
 
 function Libro(props){
     const { addToCart, isInCart, getItemQuantity } = useCart();
@@ -25,6 +26,7 @@ function Libro(props){
     };
 
     return(
+        <Link to={`/libro/${props.id}`}>
         <div className="container-libro">
             <div className="imagen-libro">
                 <div className="libro">
@@ -53,6 +55,7 @@ function Libro(props){
                 </button>
             </div>
         </div>
+        </Link>
     )
 }
 
