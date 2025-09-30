@@ -10,7 +10,6 @@
     width: 80%;
     height: 95%;
     padding: 2vh 1vh;
-    background-color: #FFF2DF;
     display: flex;
     flex-direction: column;
 }
@@ -66,7 +65,6 @@
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: aliceblue;
     padding: 3vh;
 }
 .container-right-down{
