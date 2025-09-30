@@ -1,78 +1,155 @@
-.mi-cuenta{
-    position: absolute;
-    right: 10%;
-    top: 30%;
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.7fr 2fr;
-    gap: 1vh;
+/* Complete redesign with liquid glass/glassmorphism aesthetic */
+.mi-cuenta {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.7fr 2fr;
+  gap: 2rem;
 }
-.titulo-micuenta{
-    display: flex;
-    grid-area: 1 / 1 / 2 / 3;
-    width: 100%;
-    color: #F5ebd7;
+
+.titulo-micuenta {
+  display: flex;
+  grid-area: 1 / 1 / 2 / 3;
+  width: 100%;
 }
-.titulo-cuenta{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #9d8161;
-    font-size: 2rem;
-    border-radius: 20px;
-    padding: 1vh 2vh;
+
+.titulo-cuenta {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 2rem;
+  /* Liquid glass effect */
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  color: #000000;
 }
-.login-side{    
-    grid-area: 2 / 1 / 2 / 2;
-    padding: 2vh 1vh;
-    border-radius: 20px;
-    background-color: #E2D7C8;
+
+.login-side,
+.sign-side {
+  padding: 2.5rem;
+  border-radius: 24px;
+  /* Liquid glass effect */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
-.sign-side{
-    grid-area: 2 / 2 / 2 / 3;
-    padding: 2vh 1vh;
-    border-radius: 20px;
-    background-color: #E2D7C8;
+
+.login-side {
+  grid-area: 2 / 1 / 2 / 2;
 }
-.login, .sign-up{
-    display: flex;
-    flex-direction: column;
+
+.sign-side {
+  grid-area: 2 / 2 / 2 / 3;
 }
-h2, .email-items, .password-items{
-    padding: 1vh 0;
+
+.login,
+.sign-up {
+  display: flex;
+  flex-direction: column;
 }
-.email-items, .password-items{
-    display: flex;
-    flex-direction: column;
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  font-family: "Outfit", sans-serif;
 }
-.password-label, .email-label{
-    padding: 1vh 0;
-    font-size: 2vh;
+
+.email-items,
+.password-items {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
 }
-.password-input, .email-input{
-    border-radius: 5px;
-    height: 4vh;
-    border: 2px solid transparent;
+
+.password-label,
+.email-label {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
 }
-.btn-submit{
-    display: flex;
-    justify-content: center;
-    padding: 1vh 0;
-    margin: 2.5vh 0;
+
+.password-input,
+.email-input {
+  border-radius: 16px;
+  height: 3.5rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* Subtle glass effect on inputs */
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
-.submit{
-    padding: 1.2vh 2.2vh;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    border: 1px solid transparent; 
-    color: #F5ebd7;
-    background-color: #FF6F61;
-    transition: 0.5s;
-    cursor: pointer;
+
+.password-input:focus,
+.email-input:focus {
+  outline: none;
+  border: 2px solid #fca311;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.2);
 }
-.submit:hover{
-    transform: scale(1.03);
-    background-color: #CC594E;
+
+.btn-submit {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 2rem 0 0 0;
+}
+
+.submit {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 16px;
+  border: none;
+  color: #000000;
+  background: #fca311;
+  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(252, 163, 17, 0.4);
+  background: #e89500;
+}
+
+/* Mobile responsive */
+@media (max-width: 1024px) {
+  .mi-cuenta {
+    width: 90%;
+    right: 5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
+  }
+
+  .titulo-micuenta {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .login-side {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .sign-side {
+    grid-area: 3 / 1 / 4 / 2;
+  }
 }

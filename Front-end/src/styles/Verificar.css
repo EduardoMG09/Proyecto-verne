@@ -1,100 +1,263 @@
-.checkout-container{
-    position: absolute;
-    display: flex;
+/* Complete redesign with liquid glass/glassmorphism aesthetic */
+.checkout-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  left: 19%;
+  top: 20%;
+  width: 80%;
+  gap: 2rem;
+}
+
+.contenedor-checkout-formulario {
+  display: flex;
+  width: 50%;
+  padding: 2.5rem;
+  border-radius: 24px;
+  gap: 1.5rem;
+  /* Liquid glass effect */
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.checkout h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+  font-family: "Outfit", sans-serif;
+}
+
+.email-items-checkout {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.email-label-checkout h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.email-input-checkout,
+.tarjeta-input,
+.direccion-input,
+.pais-input {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.email-input-checkout {
+  width: 70%;
+}
+
+.tarjeta-input {
+  width: 70%;
+}
+
+.email-input-checkout:focus,
+.tarjeta-input:focus,
+.direccion-input:focus,
+.pais-input:focus {
+  outline: none;
+  border: 2px solid #fca311;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.2);
+}
+
+.billing-address-checkout {
+  padding: 1rem 0;
+}
+
+.bill-label-checkout h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.full-name input {
+  padding: 1rem 1.5rem;
+  width: 48%;
+  font-size: 1rem;
+  border-radius: 16px;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.full-name input:focus {
+  outline: none;
+  border: 2px solid #fca311;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.2);
+}
+
+.pais-input {
+  width: 40%;
+}
+
+.direccion-input {
+  width: 50%;
+}
+
+.ciudad-estado,
+.postcode-number,
+.cvc-input,
+.date-input {
+  padding: 0.5rem 0;
+}
+
+.ciudad-estado input,
+.postcode-number input,
+.cvc-input input,
+.date-input input {
+  padding: 1rem 1.5rem;
+  width: 48%;
+  font-size: 1rem;
+  border-radius: 16px;
+  margin: 0 0.5rem 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.ciudad-estado input:focus,
+.postcode-number input:focus,
+.cvc-input input:focus,
+.date-input input:focus {
+  outline: none;
+  border: 2px solid #fca311;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.2);
+}
+
+.btn-submit-checkout {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0 0 0;
+}
+
+.submit-checkout {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #000000;
+  border: none;
+  transition: all 0.3s ease;
+  background: #fca311;
+  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.3);
+}
+
+.submit-checkout:hover {
+  background: #e89500;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(252, 163, 17, 0.4);
+}
+
+.resumen-compra-2 {
+  position: absolute;
+  border-radius: 24px;
+  padding: 2.5rem;
+  left: 50%;
+  top: 2rem;
+  width: 45%;
+  /* Dark liquid glass effect */
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.resumen-compra-2 h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fca311;
+  font-family: "Outfit", sans-serif;
+}
+
+.resumen-detalle {
+  margin-bottom: 2rem;
+}
+
+.resumen-linea {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.resumen-linea.total {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fca311;
+  border-bottom: 2px solid #fca311;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.botones-compra {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-proceder-pago {
+  background: #fca311;
+  color: #000000;
+  border: none;
+  padding: 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.3);
+}
+
+.btn-proceder-pago:hover {
+  background: #e89500;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(252, 163, 17, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .checkout-container {
+    left: 5%;
+    width: 90%;
     flex-direction: column;
-    padding: 2vh;
-    left: 19%;
-    top: 20%;
-    width: 80%;
-}
-.contenedor-checkout-formulario{
-    display:flex;
-    width: 50%;
-    padding: 2vh 3vh;
-    border-radius: 4px;
-    gap: 1vh;
-    background-color: #E3DED1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-.email-items-checkout{
-    display: flex;
-    flex-direction: column; 
-    padding: 1vh;
-}
-.email-input-checkout{
-    margin: 1vh 0;
-    font-size: 1rem;
-    border-radius: 5px;
-    padding: 1.5vh 1vh;
-    width: 70%;
-}
-.tarjeta-input{
-    margin: 1vh 0;
-    font-size: 1rem;
-    border-radius: 5px;
-    padding: 1.5vh 1vh;
-    width: 70%;
-}
-.billing-address-checkout{
-    padding: 1vh;
-}
-.full-name input{
-    padding: 1.5vh 1vh;
-    width: 35%;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin: 1vh 1vh 1vh 0;
-}
-.pais-input{
-    padding: 1.5vh 1vh;
-    margin: 1vh 0;
-    font-size: 1rem;
-    border-radius: 5px;
-    width: 40%;
-}
-.direccion-input{
-    padding: 1.5vh 1vh;
-    margin: 1vh 0;
-    font-size: 1rem;
-    border-radius: 5px;
-    width: 50%;
-}
-.ciudad-estado, .postcode-number, .cvc-input, .date-input{
-    padding: 1vh;
-}
-.ciudad-estado input, .postcode-number input, .cvc-input, .date-input{
-    padding: 1.5vh 1vh;
-    width: 35%;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin: 0 1vh 0 0;
-}
-.btn-submit-checkout{
-    display: flex;
-    justify-content: center;
-    padding: 1vh;
-}
-.submit-checkout{
-    padding: 1.5vh 2vh;
-    font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    border: 1px solid transparent;
-    transition: 0.7s ease;
-    background-color: #426bc2;
-}
-.submit-checkout:hover{
-    background-color: #1e2e4f;
-    transform: scale(1.07);
-}
-.resumen-compra-2{
-    position: absolute;
-    border-radius: 0 10px 10px 0;
-    padding: 2vh;
-    left: 50%;
-    top: 2vh;
-    width: 45%;
-    background-color: #1e2e4f;
-    color: white;
+  }
+
+  .contenedor-checkout-formulario {
+    width: 100%;
+  }
+
+  .resumen-compra-2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }

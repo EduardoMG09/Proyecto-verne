@@ -1,118 +1,135 @@
-.container{
-    display: flex;
-    width: 15%;
-    height: 100%;
-    background-color: #F5ebd7; /* o tu color base */
-    position: fixed;
-    z-index: 2;
-}
-.container-header{
-    width: 90%;
-    display: flexbox;
-}
-.navbar{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Quicksand', sans-serif;
-    padding: 4rem 1rem;
-    border-right: 2px solid #24221e;
-}
-.item-navbar{
-    text-decoration: none;
-    margin: 1rem 2rem;
-    padding: 0.5rem 1rem;
-    color: #24221e;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.35s;
-}
-.btn-navbar{
-    padding: 0;
-    text-decoration: none;
-    background: transparent;
-    border: 0;
-}
-.item-navbar:hover{
-    background-color: #FF6F61;
-    color: #FFFFFF;
-    text-decoration: none;
-    transform: translate(-1rem, 0);
-}
-.logo-img{
-    aspect-ratio: 1/1;
-    border-radius: 20px;
-    object-fit: contain;
-    margin: 1vh;
+/* Enhanced with liquid glass/glassmorphism aesthetic */
+.container {
+  display: flex;
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  /* Liquid glass effect */
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0 32px rgba(0, 0, 0, 0.1);
 }
 
-.logo-img img{
-    width: 50%;
+.container-header {
+  width: 90%;
+  display: flexbox;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  padding: 4rem 1rem;
+}
+
+.item-navbar {
+  text-decoration: none;
+  margin: 1rem 2rem;
+  padding: 0.75rem 1.25rem;
+  color: #000000;
+  font-size: 1.3rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  font-weight: 500;
+  /* Subtle glass effect */
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.btn-navbar {
+  padding: 0;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+}
+
+.item-navbar:hover {
+  background: #fca311;
+  color: #000000;
+  text-decoration: none;
+  transform: translateX(-0.5rem);
+  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.3);
+}
+
+.logo-img {
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  object-fit: contain;
+  margin: 1vh;
+}
+
+.logo-img img {
+  width: 50%;
 }
 
 /* Tablet */
-@media (min-width: 769px)and (max-width:1024px){
-    .container{
-        width: 20%;
-    }
-    .container-header{
-        width: 100%;
-    }
-    .navbar{
-        height: 50vh;
-        margin-top: 5vh;
-        padding: 1rem 1vh;
-        color: #FFF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .item-navbar{
-        margin: 1vh 0;
-        padding: 1vh;
-    }
-    .logo-img{
-        width: 100%;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 20%;
+  }
+  .container-header {
+    width: 100%;
+  }
+  .navbar {
+    height: 50vh;
+    margin-top: 5vh;
+    padding: 1rem 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .item-navbar {
+    margin: 1vh 0;
+    padding: 1vh;
+  }
+  .logo-img {
+    width: 100%;
+  }
 }
 
 /* Laptops pequeñas */
 @media (min-width: 1025px) and (max-width: 1380px) {
-    .container{
-        width: 16%;
-    }
-    .container-header{
-        width: 95%;
-    }
-    .navbar{
-        height: 30vh;
-        margin-top: 5vh;
-        padding: 1rem 1vh;
-        color: #FFF;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .item-navbar{
-        margin: 1vh 0;
-        padding: 1vh;
-    }
-    .logo-img{
-        width: 20%;
-    }
+  .container {
+    width: 16%;
+  }
+  .container-header {
+    width: 95%;
+  }
+  .navbar {
+    height: 30vh;
+    margin-top: 5vh;
+    padding: 1rem 1vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .item-navbar {
+    margin: 1vh 0;
+    padding: 1vh;
+  }
+  .logo-img {
+    width: 20%;
+  }
 }
-@media (min-width: 1381px){
-   .container{
-        width: 15%;
-        display: flex;
-    }
-    .container-header{
-        width: 90%;
-    }
-    .logo-img{
-        width: 110%;
-    }
+
+@media (min-width: 1381px) {
+  .container {
+    width: 15%;
+    display: flex;
+  }
+  .container-header {
+    width: 90%;
+  }
+  .logo-img {
+    width: 110%;
+  }
 }

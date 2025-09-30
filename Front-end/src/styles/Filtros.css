@@ -1,91 +1,258 @@
-.container-5{
-    position: absolute;
-    right: 3%;
-    top: 25%;
-    width: 20%;
-}    
-.contenedor-filtros{
-    position: fixed;
-    width: 20%;
-    padding: 2vh 2vh;
-    border-radius: 20px;
-    background-color: #D6C9B4;
-}
-.titulo-filtros{
-    padding: 1rem 0;
-    font-size: 2rem;
-}
-.filtro-seccion{
-    font-size: 1.2rem;
-    padding: 1rem 0.5rem;
-}
-.filtro-titulo{
-    font-size: 2vh;
+/* Redesigned for modal with liquid glass effect */
+.filtros-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-/*Barra Price*/
-.Price-filter{
-    padding: 1vh 1vh;
+.filtros-modal {
+  width: 90%;
+  max-width: 500px;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 24px;
+  /* Liquid glass effect */
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
 }
-.Barr-Price{
-    -webkit-appearance: none !important;
-    width: 80%;
-    height: 2vh;
-    background: transparent;
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+.filtros-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 2px solid #fca311;
+}
+
+.titulo-filtros {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+}
+
+.btn-cerrar-filtros {
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.btn-cerrar-filtros:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: rotate(90deg);
+}
+
+.contenedor-filtros {
+  padding: 2rem;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.filtro {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.filtro-titulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.filtro-componente {
+  padding: 0.5rem 0;
+}
+
+/* Price Filter Bar */
+.Price-filter {
+  padding: 1rem 0;
+}
+
+.Barr-Price {
+  -webkit-appearance: none !important;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+  border-radius: 10px;
+}
+
 .Barr-Price::-webkit-slider-runnable-track {
-    height: 50%;
-    background: #CC594E; /* Color de tu preferencia */
-    border-radius: 100px;
-    border-color: 1px solid #D6C9B4;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .Barr-Price::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 1rem;
-    height: 1rem;
-    background: #993F38; /* Mismo color o diferente */
-    border-radius: 50%;
-    margin-top: -3px; /* Alinea verticalmente */
-    cursor: pointer;
-    transition: 1s ease;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #fca311;
+  border-radius: 50%;
+  margin-top: -8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .Barr-Price::-webkit-slider-thumb:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
+  background: #e89500;
 }
 
-/*Check box */
-.check-box-container{
-    display: flex;
-    padding: 1.5vh 2vh;
+/* Checkbox */
+.check-box-container {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+  border-radius: 12px;
 }
+
+.check-box-container:hover {
+  background: rgba(252, 163, 17, 0.1);
+}
+
 .check input[type="checkbox"] {
   display: none;
 }
-/*Caja*/
+
 .custom-checkmark {
-    margin: 0 1vh;
-    width: 20px;
-    height: 20px;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    display: inline-block;
-    position: relative;
-    background-color: white;
-    transition: all 0.3s;
-    cursor: pointer;
+  margin: 0 1rem 0 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* Checkmark visible cuando está seleccionado */
+.check input[type="checkbox"]:checked + .custom-checkmark {
+  background: #fca311;
+  border-color: #fca311;
+}
+
 .check input[type="checkbox"]:checked + .custom-checkmark::after {
   content: "";
   position: absolute;
-  left: 5px;
-  top: 1px;
+  left: 7px;
+  top: 3px;
   width: 6px;
   height: 12px;
-  border: solid #993F38;
-  border-width: 0 2px 2px 0;
+  border: solid #000000;
+  border-width: 0 3px 3px 0;
   transform: rotate(45deg);
+}
+
+.check-box-container label {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #000000;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+/* Floating filter button for desktop */
+.btn-abrir-filtros {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fca311;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #000000;
+  box-shadow: 0 8px 24px rgba(252, 163, 17, 0.4);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.btn-abrir-filtros:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 32px rgba(252, 163, 17, 0.5);
+  background: #e89500;
+}
+
+/* Scrollbar styling for modal */
+.filtros-modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filtros-modal::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.filtros-modal::-webkit-scrollbar-thumb {
+  background: #fca311;
+  border-radius: 10px;
+}
+
+.filtros-modal::-webkit-scrollbar-thumb:hover {
+  background: #e89500;
 }

@@ -1,0 +1,89 @@
+"use client"
+
+import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import "../styles/Navbar.css"
+import logo from "../assets/logo-verne.webp"
+import sec from "../json/navbar.json"
+import array from "../json/libro-categorias.json"
+
+function Navbar() {
+  const [busqueda, setBusqueda] = useState("")
+  const [categoria, setCategoria] = useState("")
+  const [menuOpen, setMenuOpen] = useState(false)
+  const navigate = useNavigate()
+
+  const manejarBusqueda = (e) => {
+    e.preventDefault()
+    if (busqueda.trim() !== "") {
+      navigate(`/resultados?query=${encodeURIComponent(busqueda)}&categoria=${encodeURIComponent(categoria)}`)
+    }
+  }
+
+  return (
+    <nav className="navbar-modern">
+      <div className="navbar-container">
+        {/* Logo */}
+        <Link to="/" className="navbar-logo">
+          <img src={logo || "/placeholder.svg"} alt="Verne Learning" />
+          <div className="logo-text">
+            <span className="logo-title">Verne</span>
+            <span className="logo-subtitle">Learning</span>
+          </div>
+        </Link>
+
+        {/* Search Bar */}
+        <form className="navbar-search" onSubmit={manejarBusqueda}>
+          <input
+            type="text"
+            placeholder="Buscar libros..."
+            value={busqueda}
+            onChange={(e) => setBusqueda(e.target.value)}
+            className="search-input"
+          />
+          <select value={categoria} onChange={(e) => setCategoria(e.target.value)} className="search-select">
+            <option value="">Todas las categorías</option>
+            {array.categorias.map((item, index) => (
+              <option key={index} value={item}>
+                {item}
+              </option>
+            ))}
+          </select>
+          <button type="submit" className="search-button">
+            <i className="bi bi-search"></i>
+          </button>
+        </form>
+
+        {/* Desktop Navigation */}
+        <div className="navbar-links">
+          {sec.secciones.map((item, i) => (
+            <Link to={item.ruta} key={i} className="nav-link">
+              {item.nombre}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button className="mobile-menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          <span className={`hamburger ${menuOpen ? "active" : ""}`}></span>
+          <span className={`hamburger ${menuOpen ? "active" : ""}`}></span>
+          <span className={`hamburger ${menuOpen ? "active" : ""}`}></span>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+        {sec.secciones.map((item, i) => (
+          <Link to={item.ruta} key={i} className="mobile-nav-link" onClick={() => setMenuOpen(false)}>
+            {item.nombre}
+          </Link>
+        ))}
+      </div>
+
+      {/* Academic Note */}
+      <div className="academic-note">Sitio con fines académicos</div>
+    </nav>
+  )
+}
+
+export default Navbar
