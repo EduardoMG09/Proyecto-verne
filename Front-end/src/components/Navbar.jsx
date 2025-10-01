@@ -1,36 +1,40 @@
-"use client"
-
-import { useState } from "react"
-import { Link, useNavigate } from "react-router-dom"
-import "../styles/Navbar.css"
-import logo from "../assets/logo-verne.webp"
-import sec from "../json/navbar.json"
-import array from "../json/libro-categorias.json"
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "../styles/Navbar.css";
+import logo from "../assets/logo-verne.webp";
+import sec from "../json/navbar.json";
+import array from "../json/libro-categorias.json";
 
 function Navbar() {
-  const [busqueda, setBusqueda] = useState("")
-  const [categoria, setCategoria] = useState("")
-  const [menuOpen, setMenuOpen] = useState(false)
-  const navigate = useNavigate()
+  const [busqueda, setBusqueda] = useState("");
+  const [categoria, setCategoria] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const manejarBusqueda = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (busqueda.trim() !== "") {
-      navigate(`/resultados?query=${encodeURIComponent(busqueda)}&categoria=${encodeURIComponent(categoria)}`)
+      navigate(
+        `/resultados?query=${encodeURIComponent(
+          busqueda
+        )}&categoria=${encodeURIComponent(categoria)}`
+      );
     }
-  }
+  };
 
   return (
     <nav className="navbar-modern">
       <div className="navbar-container">
         {/* Logo */}
-        <Link to="/" className="navbar-logo">
-          <img src={logo || "/placeholder.svg"} alt="Verne Learning" />
+        <div className="logo-titulo">
+          <Link to="/" className="navbar-logo">
+            <img src={logo || "/placeholder.svg"} alt="Verne Learning" />
+          </Link>
           <div className="logo-text">
             <span className="logo-title">Verne</span>
             <span className="logo-subtitle">Learning</span>
           </div>
-        </Link>
+        </div>
 
         {/* Search Bar */}
         <form className="navbar-search" onSubmit={manejarBusqueda}>
@@ -41,7 +45,11 @@ function Navbar() {
             onChange={(e) => setBusqueda(e.target.value)}
             className="search-input"
           />
-          <select value={categoria} onChange={(e) => setCategoria(e.target.value)} className="search-select">
+          <select
+            value={categoria}
+            onChange={(e) => setCategoria(e.target.value)}
+            className="search-select"
+          >
             <option value="">Todas las categorías</option>
             {array.categorias.map((item, index) => (
               <option key={index} value={item}>
@@ -64,7 +72,10 @@ function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button className="mobile-menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="mobile-menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           <span className={`hamburger ${menuOpen ? "active" : ""}`}></span>
           <span className={`hamburger ${menuOpen ? "active" : ""}`}></span>
           <span className={`hamburger ${menuOpen ? "active" : ""}`}></span>
@@ -74,7 +85,12 @@ function Navbar() {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
         {sec.secciones.map((item, i) => (
-          <Link to={item.ruta} key={i} className="mobile-nav-link" onClick={() => setMenuOpen(false)}>
+          <Link
+            to={item.ruta}
+            key={i}
+            className="mobile-nav-link"
+            onClick={() => setMenuOpen(false)}
+          >
             {item.nombre}
           </Link>
         ))}
@@ -83,7 +99,7 @@ function Navbar() {
       {/* Academic Note */}
       <div className="academic-note">Sitio con fines académicos</div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

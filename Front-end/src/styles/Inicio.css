@@ -1,5 +1,7 @@
-/* File created for inicio page specific styles with liquid glass */
 .page-container {
   min-height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }

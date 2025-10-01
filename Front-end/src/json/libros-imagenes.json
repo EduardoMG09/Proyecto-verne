@@ -13,7 +13,7 @@
       "calificacion": 4.8,
       "id":1,
       "precio": 298,
-      "categoria": ["Novela","Literatura","Clasicos"],
+      "categoria": ["Novela","Literatura-mexicana-mexicana","Clasicos"],
       "autor": "Gabriel García Márquez",
       "reseña": "Obra maestra del realismo mágico que narra la historia de la familia Buendía a través de siete generaciones en el pueblo ficticio de Macondo.",
       "imagen": "/Image/110 años.webp"
@@ -105,7 +105,7 @@
       "precio": 275,
       "categoria":["Clasicos","Filosofia","Fantasia"],
       "autor": "Dante Alighieri",
-      "reseña": "Obra cumbre de la literatura universal que narra el viaje del poeta por el Infierno, Purgatorio y Paraíso, explorando temas de redención y justicia divina.",
+      "reseña": "Obra cumbre de la Literatura-mexicana-mexicana universal que narra el viaje del poeta por el Infierno, Purgatorio y Paraíso, explorando temas de redención y justicia divina.",
       "imagen": "/Image/divina comedia.jpg"
     },
     "Día": {
@@ -132,7 +132,7 @@
       "precio": 440,
       "categoria":["Novela","Clasicos","Drama"],
       "autor": "Miguel de Cervantes",
-      "reseña": "Obra maestra de la literatura española que narra las aventuras del ingenioso hidalgo y su fiel escudero, explorando la realidad y la fantasía.",
+      "reseña": "Obra maestra de la Literatura-mexicana española que narra las aventuras del ingenioso hidalgo y su fiel escudero, explorando la realidad y la fantasía.",
       "imagen": "/Image/don quijote.jpg"
     },
     "El ejercito Mexicano durante la segunda guerra mundial": {
@@ -166,7 +166,7 @@
       "calificacion": 4.6,
       "id":18,
       "precio": 241,
-      "categoria":["Literatura","Clasicos"],
+      "categoria":["Literatura-mexicana","Clasicos"],
       "autor": "Juan Rulfo",
       "reseña": "Colección de cuentos que retrata la vida rural mexicana con un realismo crudo y poético, explorando temas de violencia y desesperanza.",
       "imagen": "/Image/el llano en llamas.webp"
@@ -229,7 +229,7 @@
       "calificacion": 4.3,
       "id":25,
       "precio": 236,
-      "categoria":["Novela","Literatura"],
+      "categoria":["Novela","Literatura-mexicana"],
       "autor": "Gabriel García Márquez",
       "reseña": "Última novela del autor colombiano que narra la historia de Ana Magdalena Bach y su ritual anual de liberación personal.",
       "imagen": "/Image/en agosto nos vemos.webp"
@@ -393,7 +393,7 @@
       "precio": 140,
       "categoria":["Infantil"],
       "autor": "Maurice Sendak",
-      "reseña": "Clásico de la literatura infantil que ayuda a los niños a enfrentar sus miedos a través de la aventura imaginativa de Max.",
+      "reseña": "Clásico de la Literatura-mexicana infantil que ayuda a los niños a enfrentar sus miedos a través de la aventura imaginativa de Max.",
       "imagen": "/Image/los monstruos.png"
     },
     "Meditaciones": {
@@ -454,9 +454,9 @@
       "calificacion": 4.7,
       "id":50,
       "precio": 377,
-      "categoria":["Terror","Literatura","Clasicos"],
+      "categoria":["Terror","Literatura-mexicana","Clasicos"],
       "autor": "Juan Rulfo",
-      "reseña": "Obra maestra de la literatura mexicana que narra la búsqueda de un hombre por su padre en el pueblo fantasmal de Comala.",
+      "reseña": "Obra maestra de la Literatura-mexicana mexicana que narra la búsqueda de un hombre por su padre en el pueblo fantasmal de Comala.",
       "imagen": "/Image/PEDRO PARAMO.jpg"
     },
     "El niño con la pijama de rayas": {
@@ -526,7 +526,7 @@
       "calificacion": 4.8,
       "id":57,
       "precio": 150,
-      "categoria": ["Literatura","Juvenil"],
+      "categoria": ["Literatura-mexicana","Juvenil"],
       "autor": "Clarice Lispector",
       "reseña": "Novela introspectiva que explora la adolescencia y el despertar a la vida adulta con la prosa poética característica de la autora.",
       "imagen": "/Image/Yo Nunca vi television.webp"

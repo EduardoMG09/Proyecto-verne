@@ -8,16 +8,15 @@ function Categorias(){
     return (
         <div className="categorias-container">
             <div className="titulo-inicio-1">
-                Inicio: Categorias
+                Categorias
             </div>
             <div className="categorias">
             {
                 Object.entries(cat.categorias).map(([categoria, info], index) =>(
                     <Link to={info.ruta} key={index}>
                         <Categoria 
-                        name={categoria}
+                        categoria={categoria}
                         key={index}
-                        img={info.imagen}
                         />
                     </Link>
                 ))

@@ -1,0 +1,60 @@
+.category-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.category-row-inner {
+    width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.category-row-inner::-webkit-scrollbar {
+  display: none; /* Oculta la barra de scroll */
+}
+
+.book-card {
+    flex: 0 0 15%;
+    aspect-ratio: 2/2.7;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.book-card img {
+  width: 70%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  aspect-ratio: 1/1.6;
+  object-fit: cover;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
