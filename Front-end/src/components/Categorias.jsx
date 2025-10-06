@@ -4,26 +4,20 @@ import "../styles/Categorias.css";
 import Categoria from "./Categoria";
 import cat from "../json/categorias.json";
 
-function Categorias(){
-    return (
-        <div className="categorias-container">
-            <div className="titulo-inicio-1">
-                Categorias
-            </div>
-            <div className="categorias">
-            {
-                Object.entries(cat.categorias).map(([categoria, info], index) =>(
-                    <Link to={info.ruta} key={index}>
-                        <Categoria 
-                        categoria={categoria}
-                        key={index}
-                        />
-                    </Link>
-                ))
-            }
-            </div>
-        </div>
-    )
+function Categorias() {
+  return (
+    <div className="categorias-container">
+      <div className="titulo-inicio-1">Categorias</div>
+      <div className="categorias">
+        {Object.entries(cat.categorias).map(([categoria, info], index) => (
+          <Categoria 
+          categoria={categoria} 
+          key={index} 
+          ruta={info.ruta} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Categorias;

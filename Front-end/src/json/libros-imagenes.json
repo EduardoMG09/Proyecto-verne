@@ -4,7 +4,7 @@
       "calificacion": 4.2,
       "id":0,
       "precio": 199,
-      "categoria":["Motivacional","Filosofia"],
+      "categoria":["Motivacional","Filosofía"],
       "autor": "Miguel Ruiz",
       "reseña": "Una guía práctica basada en la sabiduría tolteca que presenta cuatro principios fundamentales para transformar tu vida y encontrar la libertad personal.",
       "imagen": "/Image/4 acuerdos.jpg"
@@ -13,7 +13,7 @@
       "calificacion": 4.8,
       "id":1,
       "precio": 298,
-      "categoria": ["Novela","Literatura-mexicana-mexicana","Clasicos"],
+      "categoria": ["Novela","Literatura-mexicana","Clásicos"],
       "autor": "Gabriel García Márquez",
       "reseña": "Obra maestra del realismo mágico que narra la historia de la familia Buendía a través de siete generaciones en el pueblo ficticio de Macondo.",
       "imagen": "/Image/110 años.webp"
@@ -22,7 +22,7 @@
       "calificacion": 4.8,
       "id":2,
       "precio": 370,
-      "categoria": ["Fantasia","Juvenil","Romance"],
+      "categoria": ["Fantasía","Juvenil","Romance"],
       "autor": "Rebecca Yarros",
       "reseña": "Primera entrega de la saga que sigue a Violet Sorrengail en su peligroso entrenamiento en el Colegio de Guerra de Basgiath, donde los dragones y la magia definen el destino.",
       "imagen": "/Image/alas de sangre.webp"
@@ -40,7 +40,7 @@
       "calificacion": 4.1,
       "id":4,
       "precio": 420,
-      "categoria":["Fantasia","Terror"],
+      "categoria":["Fantasía","Terror"],
       "autor": "Camilla Läckberg",
       "reseña": "Novela gótica que mezcla elementos sobrenaturales con misterio, explorando los secretos oscuros de una pequeña comunidad.",
       "imagen": "/Image/bruja.webp"
@@ -67,7 +67,7 @@
       "calificacion": 4.8,
       "id":7,
       "precio": 437,
-      "categoria":["Novela","Fantasia","Historia"],
+      "categoria":["Novela","Fantasía","Historia"],
       "autor": "J.J. Benítez",
       "reseña": "Primera entrega de la saga que combina ciencia ficción y elementos religiosos, siguiendo a un militar que viaja en el tiempo para presenciar la vida de Jesús.",
       "imagen":"/Image/caballo de troya.jpg"
@@ -85,7 +85,7 @@
       "calificacion": 4.5,
       "id":9,
       "precio": 177,
-      "categoria":["Terror","Clasicos"],
+      "categoria":["Terror","Clásicos"],
       "autor": "Edgar Allan Poe",
       "reseña": "Colección de relatos que definen el género gótico, explorando los rincones más oscuros de la psique humana con maestría narrativa.",
       "imagen": "/Image/cuentos goticos.jpg"
@@ -94,7 +94,7 @@
       "calificacion": 4.7,
       "id":10,
       "precio": 120,
-      "categoria":["Fantasia","Novela"],
+      "categoria":["Fantasía","Novela"],
       "autor": "Varios autores",
       "reseña": "Antología de relatos cortos que combinan elementos fantásticos y misteriosos, perfectos para leer en las horas de vigilia nocturna.",
       "imagen": "/Image/cuentos para una noche de insomnio.png"
@@ -103,7 +103,7 @@
       "calificacion": 4.8,
       "id":11,
       "precio": 275,
-      "categoria":["Clasicos","Filosofia","Fantasia"],
+      "categoria":["Clásicos","Filosofía","Fantasía"],
       "autor": "Dante Alighieri",
       "reseña": "Obra cumbre de la Literatura-mexicana-mexicana universal que narra el viaje del poeta por el Infierno, Purgatorio y Paraíso, explorando temas de redención y justicia divina.",
       "imagen": "/Image/divina comedia.jpg"
@@ -121,7 +121,7 @@
       "calificacion": 4.8,
       "id":13,
       "precio": 368,
-      "categoria":["Terror","Clasicos"],
+      "categoria":["Terror","Clásicos"],
       "autor": "Bram Stoker",
       "reseña": "Novela gótica que definió el mito moderno del vampiro, combinando horror, romance y crítica social en la Inglaterra victoriana.",
       "imagen": "/Image/drac2.jpg"
@@ -130,7 +130,7 @@
       "calificacion": 4.7,
       "id":14,
       "precio": 440,
-      "categoria":["Novela","Clasicos","Drama"],
+      "categoria":["Novela","Clásicos","Drama"],
       "autor": "Miguel de Cervantes",
       "reseña": "Obra maestra de la Literatura-mexicana española que narra las aventuras del ingenioso hidalgo y su fiel escudero, explorando la realidad y la fantasía.",
       "imagen": "/Image/don quijote.jpg"
@@ -139,7 +139,7 @@
       "calificacion": 4.7,
       "id":15,
       "precio": 232,
-      "categoria":["Historia","Politica"],
+      "categoria":["Historia","Política"],
       "autor": "Blanca Torres Ramírez",
       "reseña": "Análisis histórico detallado sobre la participación de México en la Segunda Guerra Mundial y el papel de sus fuerzas armadas.",
       "imagen": "/Image/ejercito.jpg"
@@ -148,7 +148,7 @@
       "calificacion": 4.7,
       "id":16,
       "precio": 540,
-      "categoria":["Politica","Historia","Filosofia"],
+      "categoria":["Política","Historia","Filosofía"],
       "autor": "Sun Tzu",
       "reseña": "Tratado militar clásico que trasciende el campo de batalla, ofreciendo estrategias aplicables a los negocios y la vida diaria.",
       "imagen": "/Image/el arte de la guerra.webp"
@@ -157,7 +157,7 @@
       "calificacion": 4.6,
       "id":17,
       "precio": 296,
-      "categoria":["Motivacional","Drama","Filosofia"],
+      "categoria":["Motivacional","Drama","Filosofía"],
       "autor": "Viktor Frankl",
       "reseña": "Testimonio poderoso sobre la experiencia en campos de concentración y la búsqueda de sentido como fuerza fundamental de la existencia humana.",
       "imagen": "/Image/el hombre en busca de sentido.jpg"
@@ -166,7 +166,7 @@
       "calificacion": 4.6,
       "id":18,
       "precio": 241,
-      "categoria":["Literatura-mexicana","Clasicos"],
+      "categoria":["Literatura-mexicana","Clásicos"],
       "autor": "Juan Rulfo",
       "reseña": "Colección de cuentos que retrata la vida rural mexicana con un realismo crudo y poético, explorando temas de violencia y desesperanza.",
       "imagen": "/Image/el llano en llamas.webp"
@@ -193,7 +193,7 @@
       "calificacion": 4.8,
       "id":21,
       "precio": 624,
-      "categoria":["Politica","Clasicos","Filosofia"],
+      "categoria":["Política","Clásicos","Filosofía"],
       "autor": "Nicolás Maquiavelo",
       "reseña": "Tratado político fundamental que examina el poder y la naturaleza humana, estableciendo principios sobre el arte de gobernar.",
       "imagen": "/Image/EL PRINCIPE.webp"
@@ -202,7 +202,7 @@
       "calificacion": 4.8,
       "id":22,
       "precio": 199,
-      "categoria":["Infantil","Clasicos"],
+      "categoria":["Infantil","Clásicos"],
       "autor": "Antoine de Saint-Exupéry",
       "reseña": "Fábula poética que, bajo la apariencia de un cuento infantil, reflexiona sobre la amistad, el amor y la esencia de la vida.",
       "imagen": "/Image/El principito.webp"
@@ -238,7 +238,7 @@
       "calificacion": 4.7,
       "id":26,
       "precio": 258,
-      "categoria":["Terror","Clasicos"],
+      "categoria":["Terror","Clásicos"],
       "autor": "Mary Shelley",
       "reseña": "Novela gótica pionera de la ciencia ficción que explora los límites de la ciencia y las consecuencias de jugar a ser Dios.",
       "imagen": "/Image/frankestein.jpg"
@@ -247,7 +247,7 @@
       "calificacion": 3.8,
       "id":27,
       "precio": 247,
-      "categoria":["Politica"],
+      "categoria":["Política"],
       "autor": "Andrés Manuel López Obrador",
       "reseña": "Reflexiones del expresidente mexicano sobre su mandato y visión política, presentando su perspectiva sobre la transformación del país.",
       "imagen": "/Image/GRACIAS.webp"
@@ -256,7 +256,7 @@
       "calificacion": 4.4,
       "id":28,
       "precio": 538,
-      "categoria":["Novela","Clasicos"],
+      "categoria":["Novela","Clásicos"],
       "autor": "León Tolstói",
       "reseña": "Épica novela que retrata la sociedad rusa durante las guerras napoleónicas, explorando temas de amor, guerra y el sentido de la historia.",
       "imagen": "/Image/guerra y paz.webp"
@@ -265,7 +265,7 @@
       "calificacion": 4.5,
       "id":29,
       "precio": 234,
-      "categoria":["Fantasia","Mitologia"],
+      "categoria":["Fantasía","Mitología"],
       "autor": "Brian Froud",
       "reseña": "Compendio ilustrado que explora el mundo de las hadas y criaturas mágicas, combinando mitología celta con arte fantástico.",
       "imagen": "/Image/hadas.jpg"
@@ -283,7 +283,7 @@
       "calificacion": 4.8,
       "id":31,
       "precio": 517,
-      "categoria":["Ecologia"],
+      "categoria":["Ecología"],
       "autor": "Lucía Puenzo",
       "reseña": "Novela que entrelaza la botánica con la memoria personal, explorando la relación entre los seres humanos y el mundo natural.",
       "imagen": "/Image/herbario.webp"
@@ -292,7 +292,7 @@
       "calificacion": 4.5,
       "id":32,
       "precio": 355,
-      "categoria":["Clasicos","Historia"],
+      "categoria":["Clásicos","Historia"],
       "autor": "Homero",
       "reseña": "Epopeya clásica que narra los eventos de la Guerra de Troya, explorando temas de honor, ira y destino en la antigua Grecia.",
       "imagen": "/Image/iliada.jpg"
@@ -301,7 +301,7 @@
       "calificacion": 5.0,
       "id":33,
       "precio": 416,
-      "categoria":["Ecologia","Historia"],
+      "categoria":["Ecología","Historia"],
       "autor": "Jorge Volpi",
       "reseña": "Ensayo que examina la relación entre el ser humano y el medio ambiente, cuestionando nuestro papel en el ecosistema global.",
       "imagen": "/Image/infraespecie.webp"
@@ -310,7 +310,7 @@
       "calificacion": 4.7,
       "id":34,
       "precio": 320,
-      "categoria":["Motivacional","Filosofia"],
+      "categoria":["Motivacional","Filosofía"],
       "autor": "Daniel Goleman",
       "reseña": "Obra revolucionaria que presenta la inteligencia emocional como factor clave para el éxito personal y profesional.",
       "imagen": "/Image/inteligencia emocional.webp"
@@ -319,7 +319,7 @@
       "calificacion": 4.7,
       "id":35,
       "precio": 200,
-      "categoria":["Politica","Novela"],
+      "categoria":["Política","Novela"],
       "autor": "Héctor Aguilar Camín",
       "reseña": "Novela política que explora las contradicciones y dilemas de la izquierda mexicana a través de personajes complejos y situaciones morales.",
       "imagen": "/Image/izquierda.webp"
@@ -337,7 +337,7 @@
       "calificacion": 4.9,
       "id":37,
       "precio": 399,
-      "categoria":["Fantasia","Juvenil"],
+      "categoria":["Fantasía","Juvenil"],
       "autor": "J.K. Rowling",
       "reseña": "Segunda entrega de la saga de Harry Potter, donde el joven mago debe enfrentar una misteriosa amenaza en Hogwarts.",
       "imagen": "/Image/la canara de los secretos.webp"
@@ -364,7 +364,7 @@
       "calificacion": 4.8,
       "id":40,
       "precio": 305,
-      "categoria":["Juvenil","Fantasia"],
+      "categoria":["Juvenil","Fantasía"],
       "autor": "J.K. Rowling",
       "reseña": "Primera entrega de la saga de Harry Potter que introduce el mundo mágico y las aventuras del joven mago en Hogwarts.",
       "imagen": "/Image/la piedra silosofal.webp"
@@ -373,7 +373,7 @@
       "calificacion": 4.8,
       "id":41,
       "precio": 367,
-      "categoria":["Fantasia","Juvenil"],
+      "categoria":["Fantasía","Juvenil"],
       "autor": "Alex Hirsch",
       "reseña": "Compendio oficial de Gravity Falls que revela los secretos de Bill Cipher y expande el universo de la serie animada.",
       "imagen": "/Image/LIBRO DE BILL.webp"
@@ -382,7 +382,7 @@
       "calificacion": 4.9,
       "id":42,
       "precio": 189,
-      "categoria":["Fantasia","Juvenil","Drama"],
+      "categoria":["Fantasía","Juvenil","Drama"],
       "autor": "James Dashner",
       "reseña": "Distopía juvenil que sigue a Thomas y otros jóvenes atrapados en un laberinto, luchando por descubrir la verdad sobre su situación.",
       "imagen":"/Image/maze runner.jpg"
@@ -400,7 +400,7 @@
       "calificacion": 4.5,
       "id":44,
       "precio": 161,
-      "categoria":["Filosofia"],
+      "categoria":["Filosofía"],
       "autor": "Marco Aurelio",
       "reseña": "Reflexiones filosóficas del emperador romano sobre la vida, el deber y la naturaleza humana, fundamentos del estoicismo.",
       "imagen": "/Image/meditaciones.jpg"
@@ -409,7 +409,7 @@
       "calificacion": 4.6,
       "id":45,
       "precio": 612,
-      "categoria":["Filosofia","Clasicos"],
+      "categoria":["Filosofía","Clásicos"],
       "autor": "Franz Kafka",
       "reseña": "Relato existencial que narra la transformación de Gregor Samsa en un insecto, explorando temas de alienación y condición humana.",
       "imagen": "/Image/metamorfosis.webp"
@@ -418,7 +418,7 @@
       "calificacion": 4.3,
       "id":46,
       "precio": 480,
-      "categoria":["Historia","Mitologia"],
+      "categoria":["Historia","Mitología"],
       "autor": "María Tena",
       "reseña": "Compendio completo de los mitos y leyendas del pueblo azteca, explorando su cosmogonía y sistema de creencias.",
       "imagen": "/Image/mitologia azteca.webp"
@@ -427,7 +427,7 @@
       "calificacion": 4.8,
       "id":47,
       "precio": 204,
-      "categoria":["Mitologia","Clasicos"],
+      "categoria":["Mitología","Clásicos"],
       "autor": "Homero",
       "reseña": "Epopeya clásica que narra el épico viaje de Ulises de regreso a Ítaca, explorando temas de perseverancia y destino.",
       "imagen": "/Image/odisea.jpg"
@@ -445,7 +445,7 @@
       "calificacion": 4.8,
       "id":49,
       "precio": 339,
-      "categoria":["Romance","Novela","Clasicos"],
+      "categoria":["Romance","Novela","Clásicos"],
       "autor": "Jane Austen",
       "reseña": "Novela romántica que critica la sociedad inglesa del siglo XIX a través de la relación entre Elizabeth Bennet y Mr. Darcy.",
       "imagen": "/Image/orgullo.jpg"
@@ -454,7 +454,7 @@
       "calificacion": 4.7,
       "id":50,
       "precio": 377,
-      "categoria":["Terror","Literatura-mexicana","Clasicos"],
+      "categoria":["Terror","Literatura-mexicana","Clásicos"],
       "autor": "Juan Rulfo",
       "reseña": "Obra maestra de la Literatura-mexicana mexicana que narra la búsqueda de un hombre por su padre en el pueblo fantasmal de Comala.",
       "imagen": "/Image/PEDRO PARAMO.jpg"
@@ -472,7 +472,7 @@
       "calificacion": 4.7,
       "id":52,
       "precio": 429,
-      "categoria":["Ecologia"],
+      "categoria":["Ecología"],
       "autor": "Rachel Carson",
       "reseña": "Obra pionera del movimiento ecologista que expone los peligros de los pesticidas y su impacto en el medio ambiente.",
       "imagen": "/Image/primavera silenciosa.jpg"
@@ -481,7 +481,7 @@
       "calificacion": 4.2,
       "id":53,
       "precio": 340,
-      "categoria":["Filosofia","Clasicos"],
+      "categoria":["Filosofía","Clásicos"],
       "autor": "Franz Kafka",
       "reseña": "Novela existencial que narra la pesadilla kafkiana de Josef K., acusado de un crimen que nunca se le revela.",
       "imagen": "/Image/proceso}.jpg"
@@ -499,7 +499,7 @@
       "calificacion": 4.8,
       "id":55,
       "precio": 269,
-      "categoria":["Drama","Clasicos","Politica"],
+      "categoria":["Drama","Clásicos","Política"],
       "autor": "George Orwell",
       "reseña": "Fábula política que critica los regímenes totalitarios a través de la historia de una granja donde los animales se rebelan.",
       "imagen": "/Image/rebelion en la granja.webp"
@@ -517,14 +517,14 @@
       "calificacion": 4.8,
       "id":57,
       "precio": 299,
-      "categoria":["Motivacional","Filosofia"],
+      "categoria":["Motivacional","Filosofía"],
       "autor": "Brian Tracy",
       "reseña": "Guía práctica sobre el poder del pensamiento positivo y cómo las creencias personales pueden transformar la realidad.",
       "imagen":"/Image/si lo crees lo creas.jpg"
     },
     "Yo nunca vi television": {
       "calificacion": 4.8,
-      "id":57,
+      "id":58,
       "precio": 150,
       "categoria": ["Literatura-mexicana","Juvenil"],
       "autor": "Clarice Lispector",
@@ -533,12 +533,21 @@
     },
     "Viaje al centro de la tierra": {
       "calificacion": 4.8,
-      "id":58,
+      "id":59,
       "precio": 328,
-      "categoria":["Fantasia","Clasicos","Novela"],
+      "categoria":["Fantasía","Clásicos","Novela"],
       "autor": "Julio Verne",
       "reseña": "Aventura clásica de ciencia ficción que narra la expedición de un profesor y su sobrino hacia el centro de la Tierra.",
       "imagen": "/Image/centro de la tierra.jpg"
+    },
+    "La noche de tlatelolco": {
+      "calificacion": 4.6,
+      "id":60,
+      "precio": 428,
+      "categoria":["Historia","Novela","Drama"],
+      "autor": "Elena Poniatowska",
+      "reseña": "La historia de aquella masacre ocurrida en la plaza de las tres culturas en la Ciudad de México aquel 2 de octube de 1968, basada en testimonios de los mismos vecinos, estudiantes y profesores que fueron testigos de uno de los evento que quedó marcado en la historia de México.",
+      "imagen": "/Image/la noche de tlatelolco.jpg"
     }
   }
 }

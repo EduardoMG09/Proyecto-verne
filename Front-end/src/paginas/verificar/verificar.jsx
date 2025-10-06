@@ -1,34 +1,17 @@
-import React , { useEffect, useState }from 'react';
-import '../../styles/App.css';
-import NavbarMobile from '../../components/NavbarMobile.jsx';
-import Header from '../../components/Header.jsx';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import Busqueda from '../../components/Busqueda.jsx';
-import Checkout from '../../components/Checkout.jsx';
-import BusquedaMobile from '../../components/BusquedaMobile.jsx';
+import React from "react";
+import "../../styles/App.css";
+import Navbar from "../../components/Navbar.jsx";
+import Checkout from "../../components/Checkout.jsx";
 
 function Verificar() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Limpieza del evento
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-    return (
-    <>
-    {isMobile ? <NavbarMobile /> :<Header />}
-    {isMobile ? <BusquedaMobile /> :<Busqueda />}
-    <Checkout />
-    </>
-  )
+  return (
+    <div className="inicio-contain">
+      <Navbar />
+      <div className="verificar-contain">
+        <Checkout />
+      </div>
+    </div>
+  );
 }
 
-export default Verificar
+export default Verificar;

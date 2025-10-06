@@ -1,35 +1,20 @@
-import React , { useState, useEffect } from 'react';
-import '../../styles/App.css';
-import NavbarMobile from '../../components/NavbarMobile.jsx';
-import Header from '../../components/Header.jsx';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import Busqueda from '../../components/Busqueda.jsx';
+import React from "react";
+import "../../styles/App.css";
+import Navbar from "../../components/Navbar.jsx";
 import Login from "../../components/Login.jsx";
-import BusquedaMobile from '../../components/BusquedaMobile.jsx';
+import "../../styles/Verificar.css";
+import "../../styles/Inicio.css"; // Para fondo/colores
 
 function App() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Limpieza del evento
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
-    <>
-    {isMobile ? <NavbarMobile /> :<Header />}
-    {isMobile ? <BusquedaMobile /> :<Busqueda />}
-    
-    <Login />
-    </>
-  )
+    <div className="inicio-container">
+      <Navbar />
+      {/* ...contenido actual de verificar... */}
+      <div className="mi-cuenta-content">
+        <Login />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
