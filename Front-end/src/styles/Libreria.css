@@ -3,14 +3,19 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 140px 2rem 2rem 2rem;
+  padding: 15rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none !important;
 }
 
 .libreria {
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
   animation: fadeIn 0.6s ease-out;
 }
 
@@ -41,60 +46,77 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 0.7rem;
   align-items: center;
   flex-direction: column;
   text-decoration: none !important;
 }
-
+.autor-libro {
+  width: 100%;
+  color: #b5b3b3;
+  line-height: 1.2rem;
+  height: 1.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* número máximo de líneas */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
+}
 .titulo-libro {
-  width: 55%;
-  font-size: 1.1rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  height: 2.4rem;
   font-family: "Poppins", serif;
   color: #000000;
-  text-align: start;
   text-decoration: none !important;
   font-weight: 550;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* número máximo de líneas */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .calificacion-libro {
+  width: 100%;
   color: #000000;
-  font-family: "Tinos", serif;
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 0.25rem;
+  font-family: "Poppins", serif;
+  font-size: 0.7rem;
   opacity: 0.8;
 }
-
+.star-icon{
+  height: 100%;
+  margin: 0 0.3rem;
+  color: #e89500;
+}
 .precio-libro {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #fca311;
-  text-align: center;
-  padding: 0.5rem;
-  font-family: "Outfit", sans-serif;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ====== Botón agregar al carrito ====== */
 .btn-agregar {
-  padding: 1rem;
+  padding: 0.6rem 0.4rem 0.8rem 0.4rem;
 }
 
 .btn-agregar-carrito {
   width: 100%;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
+  padding: 0.7rem 0.7rem;
+  font-size: 0.7rem;
   border-radius: 16px;
   border: none;
   cursor: pointer;
   color: #000000;
   background: #fca311;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   z-index: 10;
-  box-shadow: 0 4px 16px rgba(252, 163, 17, 0.3);
   transition: all 0.3s ease;
 }
 
@@ -127,7 +149,7 @@
 
 /* Libros dentro de categoria-stock: tamaño fijo y proporcional */
 .categoria-stock .container-libro {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -147,9 +169,65 @@
 }
 
 .categoria-stock .portada-libro {
-  width: 15vh;
+  width: 100%;
   aspect-ratio: 2 / 3;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+/* ====== Estilos para las tarjetas de libreria (map de Libro.jsx) ====== */
+.container-libro {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  min-height: 320px; /* fuerza consistencia vertical */
+}
+
+.container-libro > a {
+  display: block;
+  width: 100%;
+}
+
+.container-libro .imagen-libro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+}
+
+.container-libro .portada-libro {
+  width: 100%;
+  height: 100%;
+  max-height: 320px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.container-libro .info-libro {
+  padding: 0.6rem 0.8rem;
+  align-items: flex-start;
+}
+
+.container-libro .titulo-libro {
+  font-size: 0.95rem;
+  line-height: 1.15rem;
+  height: 2.4rem;
+}
+
+.container-libro .calificacion-libro,
+.container-libro .precio-libro {
+  margin-top: 0.35rem;
+}
+
+.container-libro .btn-agregar {
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* ====== Media Queries ====== */
@@ -159,8 +237,8 @@
   }
 
   .libreria {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .categoria-stock .container-libro {

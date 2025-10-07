@@ -9,6 +9,7 @@ function Libreria() {
 
   return (
     <div className="container-libreria">
+      <div className="titulo-libreria">Productos</div>
       <div className="libreria">
         {Object.entries(lib.libros)
           .filter(([_, info]) => info.precio <= precioMaximo)

@@ -61,15 +61,14 @@
 
 /* Cada libro ocupa un ancho fijo para crear el efecto de aparición */
 .categoria-stock > * {
-  flex: 0 0 35vh;
-  min-width: 35vh;
-  max-width: 35vh;
-  height: 320px;
+  flex: 0 0 20vh;
+  min-width: 20vh;
+  max-width: 20vh;
+  height: 100px;
   scroll-snap-align: start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   align-items: center;
-  background-color: #666;
   flex-direction: column; 
 }
 

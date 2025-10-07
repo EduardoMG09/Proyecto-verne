@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Libreria.css";
 import { useCart } from "../hooks/useCart";
 import { Link } from "react-router-dom";
+import { FaStar } from "react-icons/fa";
 
 function Libro(props) {
   const { addToCart, isInCart, getItemQuantity } = useCart();
@@ -33,8 +34,9 @@ function Libro(props) {
       </Link>
 
       <div className="info-libro">
+        <div className="autor-libro">{props.autor}</div>
         <div className="titulo-libro">{props.titulo}</div>
-        <div className="calificacion-libro">Calificación: {props.rate}</div>
+        <div className="calificacion-libro">Calificación: {props.rate}<FaStar className="star-icon"/></div>
         <div className="precio-libro">$ {props.precio}.00</div>
       </div>
 

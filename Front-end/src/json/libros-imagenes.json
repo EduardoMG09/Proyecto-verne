@@ -526,7 +526,7 @@
       "calificacion": 4.8,
       "id":58,
       "precio": 150,
-      "categoria": ["Literatura-mexicana","Juvenil"],
+      "categoria": ["Literatura-mexicana","Infantil"],
       "autor": "Clarice Lispector",
       "reseña": "Novela introspectiva que explora la adolescencia y el despertar a la vida adulta con la prosa poética característica de la autora.",
       "imagen": "/Image/Yo Nunca vi television.webp"
@@ -548,6 +548,60 @@
       "autor": "Elena Poniatowska",
       "reseña": "La historia de aquella masacre ocurrida en la plaza de las tres culturas en la Ciudad de México aquel 2 de octube de 1968, basada en testimonios de los mismos vecinos, estudiantes y profesores que fueron testigos de uno de los evento que quedó marcado en la historia de México.",
       "imagen": "/Image/la noche de tlatelolco.jpg"
+    },
+    "El futuro que elegimos": {
+      "calificacion": 4.5,
+      "id":61,
+      "precio": 518,
+      "categoria":["Ecología"],
+      "autor": "Christiana Figueres",
+      "reseña": "Es un llamado urgente y esperanzador a la acción frente a la crisis climática. Los autores —que participaron directamente en las negociaciones internacionales que llevaron al Acuerdo de París (2015)— nos presentan dos posibles escenarios para mediados del siglo XXI: uno donde no hacemos nada, y otro donde logramos transformar nuestro sistema económico y social hacia la sostenibilidad.",
+      "imagen": "/Image/El futuro que elegimos.jpg"
+    },
+    "Arráncame la vida": {
+      "calificacion": 4.5,
+      "id":62,
+      "precio": 520,
+      "categoria":["Política","Novela","Historia","Literatura-mexicana"],
+      "autor": "Angeles Mastretta",
+      "reseña": "Ambientada en el México posrevolucionario, esta novela cuenta la vida de Catalina Guzmán, una joven que se casa con un político carismático y dominante, el general Andrés Ascencio. A medida que pasa el tiempo, Catalina descubre su propia voz y aprende a tomar control de su vida. Es una obra poderosa sobre la emancipación femenina y el papel de la mujer en una sociedad machista.",
+      "imagen": "/Image/Arráncame la vida.jpg"
+    },
+    "Los de abajo": {
+      "calificacion": 4.5,
+      "id":63,
+      "precio": 489,
+      "categoria":["Historia","Literatura-mexicana"],
+      "autor": "Mariano Azuela",
+      "reseña": "Ambientada en el México posrevolucionario, esta novela cuenta la vida de Catalina Guzmán, una joven que se casa con un político carismático y dominante, el general Andrés Ascencio. A medida que pasa el tiempo, Catalina descubre su propia voz y aprende a tomar control de su vida. Es una obra poderosa sobre la emancipación femenina y el papel de la mujer en una sociedad machista.",
+      "imagen": "/Image/los de abajo.jpeg"
+    },
+    "Bajo la misma estrella": {
+      "calificacion": 4.6,
+      "id":64,
+      "precio": 340,
+      "categoria":["Romance","Drama","Juvenil"],
+      "autor": "John Green",
+      "reseña": "La historia de dos adolescentes que se enamoran mientras luchan contra el cáncer. Una conmovedora reflexión sobre la vida, el amor y la pérdida.",
+      "imagen": "/Image/bajo la misma estrella.jpg"
+    },
+    "El hombre mas rico de babilonia": {
+      "calificacion": 4.8,
+      "id":64,
+      "precio": 340,
+      "categoria":["Finanzas","Motivacional"],
+      "autor": "George S. Clason",
+      "reseña": "Una colección de parábolas sobre la riqueza y la prosperidad ambientadas en la antigua Babilonia. Ofrece consejos financieros atemporales y sabiduría sobre la gestión del dinero.",
+      "imagen": "/Image/el hombre mas rico de babilonia.jpg"
+    },
+    "Los secretos de la mente millonaria": {
+      "calificacion": 4.8,
+      "id":65,
+      "precio": 219,
+      "categoria":["Finanzas"],
+      "autor": "T. Harv Eker",
+      "reseña": "Una colección de parábolas sobre la riqueza y la prosperidad ambientadas en la antigua Babilonia. Ofrece consejos financieros atemporales y sabiduría sobre la gestión del dinero.",
+      "imagen": "/Image/secretos mente millonaria.jpeg"
     }
   }
 }
