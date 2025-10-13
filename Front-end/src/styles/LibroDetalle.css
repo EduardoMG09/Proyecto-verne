@@ -1,8 +1,13 @@
+:root{
+  --lg-blur: 18px;         /* intensidad del blur líquido */
+  --lg-sat: 120%;          /* saturación del vidrio */
+  --lg-radius: 16px;       /* radio del card */
+  --lg-alpha-top: 0.55;    /* opacidad del gradiente superior */
+  --lg-alpha-bot: 0.40;    /* opacidad del gradiente inferior */
+}
 /* Updated with new color scheme and modern layout */
 .detalle-container {
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
   padding: 140px 2rem 2rem 2rem;
   animation: fadeIn 0.6s ease-out;
 }
@@ -19,178 +24,51 @@
 }
 
 .container-detalle-inner {
+  margin-top: 5vh;
   font-family: "Poppins", sans-serif;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2rem;
 }
 
 /* Superior Section */
 .container-up {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.container-left-up {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  background-color: #e5e5e5;
   border-radius: 12px;
 }
-
-.container-right-up {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.detalle-container-imagen {
+.container-up img {
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.detalle-img {
-  max-height: 500px;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-.detalle-container-titulo h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #000000;
-  font-family: "DM Serif Display", serif;
-  line-height: 1.2;
-}
-
-.detalle-container-autor h1 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #666666;
-  font-family: "Outfit", sans-serif;
+  aspect-ratio: 2 / 2.5;
+  object-fit: contain;
 }
 
 /* Inferior Section */
-.container-down {
-  width: 100%;
+/* Card “liquid glass” */
+.container-down{
+  position: relative;
+  width: 90%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 3rem 2rem;
   gap: 2rem;
+  border-radius: var(--lg-radius);
+  border: 1px solid rgba(255,255,255,0.18);
+  background:
+    linear-gradient(135deg,
+      rgba(255,255,255,0),
+      rgba(255,255,255,0)
+    );
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
-.container-left-down {
-  flex: 1.5;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.container-right-down {
-  flex: 1;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.detalle-container-descripcion h1 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #000000;
-  margin-bottom: 1rem;
-  font-family: "Outfit", sans-serif;
-}
-
-.detalle-container-descripcion h2 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #333333;
-  line-height: 1.6;
-}
-
-.detalle-container-precio {
-  margin-bottom: 1.5rem;
-}
-
-.detalle-container-precio h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fca311;
-  font-family: "Outfit", sans-serif;
-}
-
-.detalle-container-rate {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid #e5e5e5;
-}
-
-.detalle-container-rate h1 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.detalle-container-rate label {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #fca311;
-}
-
-.detalle-container-categoria h1 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.detalle-container-categoria ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.detalle-container-categoria ul li {
-  list-style-type: none;
-}
-
-.detalle-container-categoria ul .item-categoria {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #fca311;
-  color: #000000;
-  border-radius: 20px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.detalle-container-categoria ul .item-categoria:hover {
-  transform: scale(1.05);
-  background-color: #e89500;
-}
 
 /* Mobile */
 @media (max-width: 768px) {

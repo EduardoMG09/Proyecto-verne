@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Libro from "./Libro.jsx";
+import ItemLibro from "./ItemLibro.jsx";
 import lib from "../json/libros-imagenes.json";
 import "../styles/Libreria.css";
 import { FiltrosContext } from "../context/Filtro.jsx";
@@ -14,10 +14,13 @@ function Libreria() {
         {Object.entries(lib.libros)
           .filter(([_, info]) => info.precio <= precioMaximo)
           .map(([libro, info], index) => (
-            <Libro
+            <ItemLibro
               titulo={libro}
               key={index}
               id={info.id}
+              autor={info.autor}
+              reseña={info.reseña}
+              categoria={info.categoria}
               img={info.imagen}
               rate={info.calificacion}
               precio={info.precio}

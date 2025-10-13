@@ -1,0 +1,66 @@
+.item-libro {
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #eceaea;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    overflow: visible; /* permitir que la imagen sobresalga */
+}
+.item-libro-inner{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 1rem 0 0 0;
+    gap: 1rem;
+}
+.item-libro-img {
+    width: 35%;
+    height: 260px; /* altura uniforme para miniaturas en lista */
+    aspect-ratio: 2 / 3;
+    object-fit: contain; /* contain para recorte uniforme */
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: translateY(-14%); /* sobresale por la parte superior */
+    z-index: 6;
+}
+
+.item-libro-inner:hover .item-libro-img{
+    transform: translateY(-18%);
+}
+.item-libro-info{
+    width: 60%;
+    padding: 2rem 0 0 1rem;
+}
+.item-libro-titulo{
+    font-size: 2.5vh;
+    font-weight: 500;
+    overflow: hidden;
+}
+.item-libro-autor{
+    font-size: 1.5vh;
+    font-weight: 350;
+}
+.item-libro-rate{
+    font-size: 1.8vh;
+    color: #e0951c;
+}
+.item-libro-reseña{
+    font-size: 1.5vh;
+    margin-top: 1vh;
+    height: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-categorias{
+    border-top: 2px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    font-size: 2vh;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 1vh;
+}

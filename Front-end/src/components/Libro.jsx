@@ -19,6 +19,8 @@ function Libro(props) {
       id: props.id,
       titulo: props.titulo,
       precio: props.precio,
+      reseña: props.reseña || "hola", // Valor por defecto si no existe
+      autor: props.autor || "Desconocido", // Valor por defecto si no existe
       rate: props.rate || 0, // Valor por defecto si no existe
       img: props.img || "", // Valor por defecto si no existe
     };

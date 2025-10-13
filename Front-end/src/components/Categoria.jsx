@@ -19,7 +19,7 @@ function Categoria(props) {
   // Filtrar y limitar a los primeros 6 libros de la categoría (ignorando mayúsculas/minúsculas y tildes)
   const librosFiltrados = librosArray
     .filter(libro => libro.categoria.some(cat => cat === categoriaProp))
-    .slice(0, 7);
+    .slice(0, 8);
 
   return (
     <div className="categoria-contenedor">

@@ -1,5 +1,9 @@
 {
     "categorias":{
+        "Aventura":{
+            "ruta":"/categoria_aventura",
+            "imagen":"/Image/categories/aventura_icon.svg"
+        },
         "Clásicos":{
             "ruta":"/categoria_clasicos",
             "imagen":"/Image/categories/clasicos_icon.svg"
@@ -18,6 +22,10 @@
         "Filosofía":{
             "ruta":"/categoria_filosofia",
             "imagen":"/Image/categories/filosofia_icon.svg"
+        },
+        "Ficción":{
+            "ruta":"/categoria_ficcion",
+            "imagen":"/Image/categories/ficcion_icon.svg"
         },
         "Finanzas":{
             "ruta":"/categoria_finanzas",

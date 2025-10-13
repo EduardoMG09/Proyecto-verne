@@ -9,7 +9,7 @@
       "reseña": "Una guía práctica basada en la sabiduría tolteca que presenta cuatro principios fundamentales para transformar tu vida y encontrar la libertad personal.",
       "imagen": "/Image/4 acuerdos.jpg"
     },
-    "100 años de soledad": {
+    "Cien años de soledad": {
       "calificacion": 4.8,
       "id":1,
       "precio": 298,
@@ -25,13 +25,13 @@
       "categoria": ["Fantasía","Juvenil","Romance"],
       "autor": "Rebecca Yarros",
       "reseña": "Primera entrega de la saga que sigue a Violet Sorrengail en su peligroso entrenamiento en el Colegio de Guerra de Basgiath, donde los dragones y la magia definen el destino.",
-      "imagen": "/Image/alas de sangre.webp"
+      "imagen": "/Image/alas de sangre.jpg"
     },
     "Ángeles y demonios":{
       "calificacion": 4.8,
       "id":3,
       "precio": 428,
-      "categoria": ["Novela","Terror"],
+      "categoria": ["Novela","Drama","Ficción"],
       "autor": "Dan Brown",
       "reseña": "Thriller que combina ciencia, religión y misterio mientras Robert Langdon debe detener una conspiración que amenaza al Vaticano.",
       "imagen":"/Image/angeles y demonios.jpg"
@@ -58,7 +58,7 @@
       "calificacion": 4.6,
       "id":6,
       "precio": 391,
-      "categoria":["Historia","Drama"],
+      "categoria":["Historia","Drama","Ficción"],
       "autor": "Michael Morpurgo",
       "reseña": "Conmovedora historia narrada desde la perspectiva de un caballo durante la Primera Guerra Mundial, explorando el vínculo entre humanos y animales en tiempos de guerra.",
       "imagen": "/Image/caballo de guerra.jpg"
@@ -67,7 +67,7 @@
       "calificacion": 4.8,
       "id":7,
       "precio": 437,
-      "categoria":["Novela","Fantasía","Historia"],
+      "categoria":["Novela","Fantasía","Historia","Ficción"],
       "autor": "J.J. Benítez",
       "reseña": "Primera entrega de la saga que combina ciencia ficción y elementos religiosos, siguiendo a un militar que viaja en el tiempo para presenciar la vida de Jesús.",
       "imagen":"/Image/caballo de troya.jpg"
@@ -130,7 +130,7 @@
       "calificacion": 4.7,
       "id":14,
       "precio": 440,
-      "categoria":["Novela","Clásicos","Drama"],
+      "categoria":["Novela","Clásicos","Drama","Literatura-mexicana"],
       "autor": "Miguel de Cervantes",
       "reseña": "Obra maestra de la Literatura-mexicana española que narra las aventuras del ingenioso hidalgo y su fiel escudero, explorando la realidad y la fantasía.",
       "imagen": "/Image/don quijote.jpg"
@@ -139,7 +139,7 @@
       "calificacion": 4.7,
       "id":15,
       "precio": 232,
-      "categoria":["Historia","Política"],
+      "categoria":["Historia","Política","Drama"],
       "autor": "Blanca Torres Ramírez",
       "reseña": "Análisis histórico detallado sobre la participación de México en la Segunda Guerra Mundial y el papel de sus fuerzas armadas.",
       "imagen": "/Image/ejercito.jpg"
@@ -292,7 +292,7 @@
       "calificacion": 4.5,
       "id":32,
       "precio": 355,
-      "categoria":["Clásicos","Historia"],
+      "categoria":["Clásicos","Historia","Mitología","Ficción"],
       "autor": "Homero",
       "reseña": "Epopeya clásica que narra los eventos de la Guerra de Troya, explorando temas de honor, ira y destino en la antigua Grecia.",
       "imagen": "/Image/iliada.jpg"
@@ -378,11 +378,11 @@
       "reseña": "Compendio oficial de Gravity Falls que revela los secretos de Bill Cipher y expande el universo de la serie animada.",
       "imagen": "/Image/LIBRO DE BILL.webp"
     },
-    "Maze Runner":{
+    "Maze Runner: correr o morir":{
       "calificacion": 4.9,
       "id":42,
       "precio": 189,
-      "categoria":["Fantasía","Juvenil","Drama"],
+      "categoria":["Fantasía","Juvenil","Drama","Ficción"],
       "autor": "James Dashner",
       "reseña": "Distopía juvenil que sigue a Thomas y otros jóvenes atrapados en un laberinto, luchando por descubrir la verdad sobre su situación.",
       "imagen":"/Image/maze runner.jpg"
@@ -400,7 +400,7 @@
       "calificacion": 4.5,
       "id":44,
       "precio": 161,
-      "categoria":["Filosofía"],
+      "categoria":["Filosofía","Mitología","Clásicos"],
       "autor": "Marco Aurelio",
       "reseña": "Reflexiones filosóficas del emperador romano sobre la vida, el deber y la naturaleza humana, fundamentos del estoicismo.",
       "imagen": "/Image/meditaciones.jpg"
@@ -535,7 +535,7 @@
       "calificacion": 4.8,
       "id":59,
       "precio": 328,
-      "categoria":["Fantasía","Clásicos","Novela"],
+      "categoria":["Fantasía","Clásicos","Novela","Aventura"],
       "autor": "Julio Verne",
       "reseña": "Aventura clásica de ciencia ficción que narra la expedición de un profesor y su sobrino hacia el centro de la Tierra.",
       "imagen": "/Image/centro de la tierra.jpg"
@@ -602,6 +602,141 @@
       "autor": "T. Harv Eker",
       "reseña": "Una colección de parábolas sobre la riqueza y la prosperidad ambientadas en la antigua Babilonia. Ofrece consejos financieros atemporales y sabiduría sobre la gestión del dinero.",
       "imagen": "/Image/secretos mente millonaria.jpeg"
+    },
+    "IT": {
+      "calificacion": 4.7,
+      "id":66,
+      "precio": 430,
+      "categoria":["Terror"],
+      "autor": "Stephen King",
+      "reseña": "Una novela de terror que sigue a un grupo de niños que se enfrentan a una entidad maligna que toma la forma de un payaso. Es una historia sobre la amistad, el miedo y el poder de la memoria.",
+      "imagen": "/Image/IT.jpg"
+    },
+    "Deja de ser tú: La mente crea la realidad": {
+      "calificacion": 4.8,
+      "id":67,
+      "precio": 310,
+      "categoria":["Motivacional","Filosofía"],
+      "autor": "Joe Dispenza",
+      "reseña": "Una obra que explora la conexión entre la mente y la realidad, ofreciendo herramientas para transformar la vida a través del cambio de pensamientos y creencias.",
+      "imagen": "/Image/deja de ser tú.jpg"
+    },
+    "El Negociador": {
+      "calificacion": 4.5,
+      "id":68,
+      "precio": 341,
+      "categoria":["Finanzas"],
+      "autor": "Arturo Elias Ayub",
+      "reseña": "Una obra que ofrece estrategias y tácticas para negociar de manera efectiva en el mundo empresarial.",
+      "imagen": "/Image/el negociador.jpg"
+    },
+    "Hábitos atómicos": {
+      "calificacion": 4.8,
+      "id":69,
+      "precio": 286,
+      "categoria":["Motivacional","Filosofía"],
+      "autor": "James Clear",
+      "reseña": "Una guía práctica para formar buenos hábitos y deshacerse de los malos, basada en la ciencia del comportamiento humano.",
+      "imagen": "/Image/habitos atomicos.jpg"
+    },
+    "Vuelta al mundo en 80 días": {
+      "calificacion": 4.8,
+      "id":70,
+      "precio": 219,
+      "categoria":["Clásicos","Aventura"],
+      "autor": "Jules Verne",
+      "reseña": "Un emocionante relato sobre el viaje de Phileas Fogg, quien intenta dar la vuelta al mundo en 80 días. La historia está llena de aventuras, desafíos y personajes memorables.",
+      "imagen": "/Image/vuelta al mundo en 80 dias.jpg"
+    },
+    "1984": {
+      "calificacion": 4.8,
+      "id":71,
+      "precio": 219,
+      "categoria":["Ficción"],
+      "autor": "George Orwell",
+      "reseña": "Una novela distópica que explora los temas de la vigilancia, la censura y la opresión en una sociedad totalitaria.",
+      "imagen": "/Image/1984.jpg"
+    },
+    "Robot salvaje": {
+      "calificacion": 4.8,
+      "id":72,
+      "precio": 208,
+      "categoria":["Aventura","Fantasía","Ficción","Juvenil"],
+      "autor": "Peter Brown",
+      "reseña": "Una novela que sigue las aventuras de un robot en un mundo post-apocalíptico, explorando temas de identidad y humanidad.",
+      "imagen": "/Image/robot salvaje.jpg"
+    },
+    "Terror en el titanic": {
+      "calificacion": 4.5,
+      "id":73,
+      "precio": 162,
+      "categoria":["Ficción","Infantil","Historia","Juvenil","Aventura"],
+      "autor": "Jim Wallace",
+      "reseña": "Una novela que sigue las aventuras de un grupo de niños a bordo del Titanic, explorando temas de amistad y valentía en medio de la tragedia.",
+      "imagen": "/Image/terror en el titanic.jpg"
+    },
+    "Las aventuras de Tom Sawyer": {
+      "calificacion": 4.7,
+      "id":74,
+      "precio": 219,
+      "categoria":["Ficción","Aventura","Clásicos","Juvenil"],
+      "autor": "Mark Twain",
+      "reseña": "Las aventuras de un joven en el sur de los Estados Unidos, que explora temas de amistad, libertad y la lucha contra la injusticia.",
+      "imagen": "/Image/las aventuras de tom sawyer.jpg"
+    },
+    "Veinte mil leguas de viaje submarino": {
+      "calificacion": 4.7,
+      "id":75,
+      "precio": 405,
+      "categoria":["Ficción","Aventura","Clásicos","Ficción"],
+      "autor": "Jules Verne",
+      "reseña": "Una novela que sigue las aventuras del profesor Aronnax y su encuentro con el submarino Nautilus, explorando las profundidades del océano y sus misterios.",
+      "imagen": "/Image/viaje submarino.jpg"
+    },
+    "El jinete sin cabeza": {
+      "calificacion": 4.6,
+      "id":76,
+      "precio": 120,
+      "categoria":["Infantil"],
+      "autor": "Washington Irving",
+      "reseña": "Una novela que sigue las aventuras de Ichabod Crane, un maestro de escuela que se encuentra con el legendario jinete sin cabeza en una noche oscura.",
+      "imagen": "/Image/jinete sin cabeza infantil.jpg"
+    },
+    "El anónimo": {
+      "calificacion": 4.4,
+      "id":77,
+      "precio": 380,
+      "categoria":["Terror","Drama"],
+      "autor": "Natasha Preston",
+      "reseña": "Una novela que sigue las aventuras de un grupo de jóvenes que se enfrentan a sus peores miedos en un mundo distópico.",
+      "imagen": "/Image/anonimo.jpg"
+    },
+    "El caballero de la armadura oxidada": {
+      "calificacion": 4.7,
+      "id":78,
+      "precio": 250,
+      "categoria":["Ficción","Infantil","Motivacional"],
+      "autor": "Robert Fisher",
+      "reseña": "Una fábula moderna sobre un caballero que busca su verdadera identidad y propósito en la vida.",
+      "imagen": "/Image/armadura oxidada.jpg"
+    },
+    "Alicia en el país de las maravillas": {
+      "calificacion": 4.7,
+      "id":79,
+      "precio": 200,
+      "categoria":["Aventura","Infantil","Fantasía","Clásicos"],
+      "autor": "Lewis Carroll",
+      "reseña": "Una historia surrealista sobre una niña que cae por un agujero de conejo y entra en un mundo de fantasía lleno de criaturas extrañas y situaciones absurdas.",
+      "imagen": "/Image/alicia en el pais de las maravillas.jpg"
+    },
+    "La ladrona de libros": {
+      "calificacion": 4.8,
+      "id":80,
+      "precio": 499,
+      "categoria":["Ficción","Historia","Drama","Novela"],
+      "autor": "Markus Zusak",
+      "reseña": "Una novela que sigue la vida de una joven en la Alemania nazi, explorando el poder de las palabras y la resistencia en tiempos oscuros.",
+      "imagen": "/Image/la ladrona de libros.jpg"
     }
   }
 }
