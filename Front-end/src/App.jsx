@@ -23,6 +23,8 @@ import Novela from "../src/paginas/novela/Novela.jsx"
 import Politica from "../src/paginas/politica/Politica.jsx"
 import Romance from "../src/paginas/romance/Romance.jsx"
 import Terror from "../src/paginas/terror/Terror.jsx"
+import Aventura from "../src/paginas/aventura/Aventura.jsx"
+import Ficcion from "../src/paginas/ficcion/Ficcion.jsx"
 import AboutLibro from "./paginas/AboutLibro/AboutLibro.jsx";
 import { CartProvider } from "./context/Cart.jsx";
 import { FiltrosProvider } from "./context/Filtro.jsx";
@@ -39,7 +41,9 @@ function App(){
       <Route path="/verificar" element={<Verificar />} />
       <Route path="/resultados" element={<Resultado />} />
       <Route path="/categoria_clasicos" element={<Clasicos />} />
+  <Route path="/categoria_aventura" element={<Aventura />} />
       <Route path="/categoria_drama" element={<Drama />} />
+  <Route path="/categoria_ficcion" element={<Ficcion />} />
       <Route path="/categoria_ecologia" element={<Ecologia />} />
       <Route path="/categoria_fantasia" element={<Fantasia />} />
       <Route path="/categoria_filosofia" element={<Filosofia />} />

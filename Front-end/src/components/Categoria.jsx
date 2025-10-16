@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Categorias.css";
 import Libro from "./Libro";
 import libros from "../json/libros-imagenes.json";
@@ -21,6 +22,8 @@ function Categoria(props) {
     .filter(libro => libro.categoria.some(cat => cat === categoriaProp))
     .slice(0, 8);
 
+  const categoria_name = props.categoria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
   return (
     <div className="categoria-contenedor">
       <div className="categoria-titulo">
@@ -42,6 +45,10 @@ function Categoria(props) {
           />
         ))}
       </div>
+      
+            <div className="categoria-link">
+              <Link to={`/categoria_${categoria_name}`}>Ver más</Link>
+            </div>
     </div>
   );
 }
