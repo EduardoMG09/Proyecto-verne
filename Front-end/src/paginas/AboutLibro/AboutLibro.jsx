@@ -7,7 +7,8 @@ import Navbar from "../../components/Navbar";
 
 function LibroDetalle() {
   const { id } = useParams();
-  const libro = Object.entries(lib.libros)[id];
+  // Buscar por el campo id del JSON para evitar errores de orden en Object.entries
+  const libro = Object.entries(lib.libros).find(([_titulo, info]) => info.id === Number(id));
 
   if (!libro) {
     return <p>Libro no encontrado</p>;

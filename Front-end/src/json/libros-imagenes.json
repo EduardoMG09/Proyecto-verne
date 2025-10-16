@@ -587,7 +587,7 @@
     },
     "El hombre mas rico de babilonia": {
       "calificacion": 4.8,
-      "id":64,
+      "id":65,
       "precio": 340,
       "categoria":["Finanzas","Motivacional"],
       "autor": "George S. Clason",
@@ -596,7 +596,7 @@
     },
     "Los secretos de la mente millonaria": {
       "calificacion": 4.8,
-      "id":65,
+      "id":66,
       "precio": 219,
       "categoria":["Finanzas"],
       "autor": "T. Harv Eker",
@@ -605,7 +605,7 @@
     },
     "IT": {
       "calificacion": 4.7,
-      "id":66,
+      "id":67,
       "precio": 430,
       "categoria":["Terror"],
       "autor": "Stephen King",
@@ -614,7 +614,7 @@
     },
     "Deja de ser tú: La mente crea la realidad": {
       "calificacion": 4.8,
-      "id":67,
+      "id":68,
       "precio": 310,
       "categoria":["Motivacional","Filosofía"],
       "autor": "Joe Dispenza",
@@ -623,7 +623,7 @@
     },
     "El Negociador": {
       "calificacion": 4.5,
-      "id":68,
+      "id":69,
       "precio": 341,
       "categoria":["Finanzas"],
       "autor": "Arturo Elias Ayub",
@@ -632,7 +632,7 @@
     },
     "Hábitos atómicos": {
       "calificacion": 4.8,
-      "id":69,
+      "id":70,
       "precio": 286,
       "categoria":["Motivacional","Filosofía"],
       "autor": "James Clear",
@@ -641,7 +641,7 @@
     },
     "Vuelta al mundo en 80 días": {
       "calificacion": 4.8,
-      "id":70,
+      "id":71,
       "precio": 219,
       "categoria":["Clásicos","Aventura"],
       "autor": "Jules Verne",
@@ -650,7 +650,7 @@
     },
     "1984": {
       "calificacion": 4.8,
-      "id":71,
+      "id":72,
       "precio": 219,
       "categoria":["Ficción"],
       "autor": "George Orwell",
@@ -659,7 +659,7 @@
     },
     "Robot salvaje": {
       "calificacion": 4.8,
-      "id":72,
+      "id":73,
       "precio": 208,
       "categoria":["Aventura","Fantasía","Ficción","Juvenil"],
       "autor": "Peter Brown",
@@ -668,7 +668,7 @@
     },
     "Terror en el titanic": {
       "calificacion": 4.5,
-      "id":73,
+      "id":74,
       "precio": 162,
       "categoria":["Ficción","Infantil","Historia","Juvenil","Aventura"],
       "autor": "Jim Wallace",
@@ -677,7 +677,7 @@
     },
     "Las aventuras de Tom Sawyer": {
       "calificacion": 4.7,
-      "id":74,
+      "id":75,
       "precio": 219,
       "categoria":["Ficción","Aventura","Clásicos","Juvenil"],
       "autor": "Mark Twain",
@@ -686,7 +686,7 @@
     },
     "Veinte mil leguas de viaje submarino": {
       "calificacion": 4.7,
-      "id":75,
+      "id":76,
       "precio": 405,
       "categoria":["Ficción","Aventura","Clásicos","Ficción"],
       "autor": "Jules Verne",
@@ -695,7 +695,7 @@
     },
     "El jinete sin cabeza": {
       "calificacion": 4.6,
-      "id":76,
+      "id":77,
       "precio": 120,
       "categoria":["Infantil"],
       "autor": "Washington Irving",
@@ -704,7 +704,7 @@
     },
     "El anónimo": {
       "calificacion": 4.4,
-      "id":77,
+      "id":78,
       "precio": 380,
       "categoria":["Terror","Drama"],
       "autor": "Natasha Preston",
@@ -713,7 +713,7 @@
     },
     "El caballero de la armadura oxidada": {
       "calificacion": 4.7,
-      "id":78,
+      "id":79,
       "precio": 250,
       "categoria":["Ficción","Infantil","Motivacional"],
       "autor": "Robert Fisher",
@@ -722,7 +722,7 @@
     },
     "Alicia en el país de las maravillas": {
       "calificacion": 4.7,
-      "id":79,
+      "id":80,
       "precio": 200,
       "categoria":["Aventura","Infantil","Fantasía","Clásicos"],
       "autor": "Lewis Carroll",
@@ -731,12 +731,12 @@
     },
     "La ladrona de libros": {
       "calificacion": 4.8,
-      "id":80,
+      "id":81,
       "precio": 499,
       "categoria":["Ficción","Historia","Drama","Novela"],
       "autor": "Markus Zusak",
       "reseña": "Una novela que sigue la vida de una joven en la Alemania nazi, explorando el poder de las palabras y la resistencia en tiempos oscuros.",
-      "imagen": "/Image/la ladrona de libros.jpg"
+      "imagen": "/Image/ladrona de libros.jpg"
     }
   }
 }

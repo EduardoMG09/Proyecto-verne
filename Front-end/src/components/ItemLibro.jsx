@@ -4,7 +4,7 @@ import "../styles/ItemLibro.css";
 
 function ItemLibro(props) {
   return (
-    <div className="item-libro">
+    <Link to={`/libro/${props.id}`} className="item-libro">
       <div className="item-libro-inner">
           <img src={props.img} alt={props.titulo} className="item-libro-img" />
         <div className="item-libro-info">
@@ -26,7 +26,7 @@ function ItemLibro(props) {
           </span>
         ))}
       </div>
-    </div>
+    </Link>
   );
 }
 

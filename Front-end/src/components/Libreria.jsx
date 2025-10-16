@@ -11,12 +11,13 @@ function Libreria() {
     <div className="container-libreria">
       <div className="titulo-libreria">Productos</div>
       <div className="libreria">
-        {Object.entries(lib.libros)
+        {[...Object.entries(lib.libros)]
+          .sort((a, b) => a[1].id - b[1].id)
           .filter(([_, info]) => info.precio <= precioMaximo)
-          .map(([libro, info], index) => (
+          .map(([libro, info]) => (
             <ItemLibro
               titulo={libro}
-              key={index}
+              key={info.id}
               id={info.id}
               autor={info.autor}
               reseña={info.reseña}
