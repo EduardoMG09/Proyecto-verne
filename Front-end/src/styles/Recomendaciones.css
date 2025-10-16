@@ -35,4 +35,22 @@
   border: 1px solid #ececec;
 }
 
-/*Recomendacion componente*/
+/* Viewport para un solo recomendado a la vez */
+.recomendado-viewport {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px; /* asegura espacio para el contenido */
+}
+
+.recomendado-slide {
+  animation: recFade 0.5s ease-in-out;
+}
+
+@keyframes recFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Nota: estilos de .container-recomendado movidos a Recomendado.css para evitar interferencia de layout global */
