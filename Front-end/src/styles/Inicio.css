@@ -1,7 +1,9 @@
 .page-container {
+  top: 12vh;
   min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: white;
+  background-color: #f9f9f9;
 }
