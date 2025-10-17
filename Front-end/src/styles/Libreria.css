@@ -171,7 +171,7 @@
 .categoria-stock .portada-libro {
   width: 100%;
   aspect-ratio: 2 / 3;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* ====== Estilos para las tarjetas de libreria (map de Libro.jsx) ====== */
@@ -204,8 +204,8 @@
   width: 100%;
   height: 260px; /* altura uniforme para todas las portadas */
   max-height: 320px;
-  aspect-ratio: 2 / 3;
-  object-fit: cover; /* cover asegura recorte uniforme */
+  aspect-ratio: 2.3 / 3;
+  object-fit: contain; /* cover asegura recorte uniforme */
   border-radius: 6px;
 }
 

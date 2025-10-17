@@ -7,33 +7,61 @@
   gap: 1rem;
   align-items: center;
   padding: 1rem;
-  background: #dfdedd;
+  background-color: #111; /* fallback solo visible si no hay imagen */
+  position: relative;
   border: 1px solid transparent;
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 7px 23px rgba(0,0,0,0.09);
+}
+
+.container-recomendado.has-bg{
+  background-size: cover; /* cubre todo el componente */
+  background-position: top center; /* mostrar parte superior de la portada */
+  background-repeat: no-repeat;
+}
+
+.container-recomendado.has-bg::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Más oscuro del lado izquierdo (donde está el texto), aclarando hacia la derecha */
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.80) 0%,
+    rgba(0,0,0,0.60) 35%,
+    rgba(0,0,0,0.30) 70%,
+    rgba(0,0,0,0.05) 100%
+  );
+  pointer-events: none; /* no bloquea interacciones */
+  z-index: 0;
 }
 .container-recomendado div{
   padding: 3vh;
+  position: relative; /* asegurar que el texto esté sobre el overlay */
+  z-index: 1;
 }
 
 .container-recomendado div h2{
-  color: #000;
+  color: #fff;
   font-size: 1.7rem;
   margin: 0 1vh 1rem 0;
   line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 .star-rec{
   color: #e0951c;
 }
 .container-recomendado p{
   margin: 0;
-  color: #000;
+  color: #ffffff; /* texto más claro para mayor contraste */
   display: -webkit-box;
   -webkit-line-clamp: 4;
   line-clamp: 4;
   font-size: 1.1rem;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
 .container-recomendado img{
@@ -42,6 +70,7 @@
   object-fit: contain;
   border-radius: 8px;
   background: transparent;
+  z-index: 1; /* por encima del overlay */
 }
 
 @media (max-width: 768px){
