@@ -41,9 +41,9 @@ function App(){
       <Route path="/verificar" element={<Verificar />} />
       <Route path="/resultados" element={<Resultado />} />
       <Route path="/categoria_clasicos" element={<Clasicos />} />
-  <Route path="/categoria_aventura" element={<Aventura />} />
+      <Route path="/categoria_aventura" element={<Aventura />} />
       <Route path="/categoria_drama" element={<Drama />} />
-  <Route path="/categoria_ficcion" element={<Ficcion />} />
+      <Route path="/categoria_ficcion" element={<Ficcion />} />
       <Route path="/categoria_ecologia" element={<Ecologia />} />
       <Route path="/categoria_fantasia" element={<Fantasia />} />
       <Route path="/categoria_filosofia" element={<Filosofia />} />
@@ -51,7 +51,7 @@ function App(){
       <Route path="/categoria_historia" element={<Historia />} />
       <Route path="/categoria_infantil" element={<Infantil />} />
       <Route path="/categoria_juvenil" element={<Juvenil />} />
-      <Route path="/categoria_literatura" element={<Literatura />} />
+      <Route path="/categoria_literatura-mexicana" element={<Literatura />} />
       <Route path="/categoria_mitologia" element={<Mitologia />} />
       <Route path="/categoria_motivacional" element={<Motivacional />} />
       <Route path="/categoria_novela" element={<Novela />} />

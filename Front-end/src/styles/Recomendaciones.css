@@ -59,3 +59,27 @@
 }
 
 /* Nota: estilos de .container-recomendado movidos a Recomendado.css para evitar interferencia de layout global */
+/* Base desktop ya resuelto en 1280–1366px */
+@media (min-width: 1440px) { /* L desktop */
+  .container-recomendaciones {
+    width: 100%;
+    margin-top: 9rem;
+  }
+  .container-recomendaciones.in-category {
+    margin-top: 18rem;
+  }
+}
+
+@media (min-width: 1920px) { /* 24″ FHD */
+  .container-recomendaciones {
+    width: 100%;
+    margin-top: 20rem;
+  }
+  .container-recomendaciones.in-category {
+    margin-top: 18rem;
+  }
+}
+
+@media (min-width: 2560px) { /* 27″ QHD o 4K@150% */
+  
+}
