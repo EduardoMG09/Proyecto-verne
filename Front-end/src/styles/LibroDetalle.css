@@ -8,8 +8,12 @@
 /* Updated with new color scheme and modern layout */
 .detalle-container {
   width: 100%;
-  padding: 140px 2rem 2rem 2rem;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: fadeIn 0.6s ease-out;
+  font-size: "Poppins", sans-serif;
 }
 
 @keyframes fadeIn {
@@ -24,12 +28,11 @@
 }
 
 .container-detalle-inner {
-  margin-top: 5vh;
+  top: 1vh;
   font-family: "Poppins", sans-serif;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
 }
 
 /* Superior Section */
@@ -44,7 +47,14 @@
   aspect-ratio: 2 / 2.5;
   object-fit: contain;
 }
-
+.categorias{
+  padding: 1vh;
+}
+.categoria{
+  margin: 0 2vh;
+  text-align: center;
+  justify-content: center;
+}
 /* Inferior Section */
 /* Card “liquid glass” */
 .container-down{
@@ -53,22 +63,72 @@
   display: flex;
   flex-direction: column;
   padding: 3rem 2rem;
-  gap: 2rem;
   border-radius: var(--lg-radius);
   border: 1px solid rgba(255,255,255,0.18);
-  background:
-    linear-gradient(135deg,
-      rgba(255,255,255,0),
-      rgba(255,255,255,0)
-    );
-  box-shadow:
-    0 20px 50px rgba(0,0,0,0.08),
-    inset 0 1px 0 rgba(255,255,255,0.6);
   overflow: hidden;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
-
+.detalle-title{
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 1vh 0;
+}
+.detalle-author{
+  font-size: 1rem;
+  margin: 0 0 2vh 0;
+  color: #787777;
+}
+.detalle-star{
+  color: #e0951c;
+}
+.detalle-calificacion{
+  font-size: 1rem;
+  margin-bottom: 2vh;
+}
+.categorias{
+  margin-bottom: 2vh;
+}
+.categorias h3{
+  font-size: 2vh;
+  margin-bottom: 1vh;
+}
+.item-circle{
+  color: #000;
+  font-size: 0.7vh;
+}
+.detalle-precio{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 3vh;
+}
+.detalle-description{
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 3vh;
+}
+.btn-item-carrito{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn-item-carrito button{
+  width: 30%;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #079214;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-item-carrito button:hover{
+  background-color: #05670d;
+}
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -94,9 +154,3 @@
   }
 }
 
-/* Tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .detalle-container-titulo h1 {
-    font-size: 2.5rem;
-  }
-}
