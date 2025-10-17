@@ -47,7 +47,7 @@ function Categoria(props) {
       </div>
       
             <div className="categoria-link">
-              <Link to={`/categoria_${categoria_name}`}>Ver más</Link>
+              <Link to={`/categoria_${categoria_name}`} className="btn-inicio-categoria">Ver más</Link>
             </div>
     </div>
   );
