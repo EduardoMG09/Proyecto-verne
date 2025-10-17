@@ -39,7 +39,7 @@ function Compras(){
     // Si el carrito está vacío
     if (cart.length === 0) {
         return (
-            <div className="contenedor-compras">
+            <div className="contenedor-compras empty">
                 <div className="contenedor-compras-2">
                     <div className="carrito-vacio">
                         <h2>Tu carrito está vacío</h2>

@@ -28,6 +28,7 @@ function Resultados() {
               id={info.id}
               rate={info.calificacion}
               precio={info.precio}
+              autor={info.autor}
               img={info.imagen}
             />
           ))

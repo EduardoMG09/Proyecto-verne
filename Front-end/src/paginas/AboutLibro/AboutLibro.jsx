@@ -5,9 +5,11 @@ import lib from "../../json/libros-imagenes.json";
 import "../../styles/LibroDetalle.css";
 import Navbar from "../../components/Navbar";
 import { FaCircle } from "react-icons/fa";
+import { useCart } from "../../hooks/useCart";
 
 function LibroDetalle() {
   const { id } = useParams();
+  const { addToCart, isInCart, getItemQuantity } = useCart();
   // Buscar por el campo id del JSON para evitar errores de orden en Object.entries
   const libro = Object.entries(lib.libros).find(
     ([_titulo, info]) => info.id === Number(id)
@@ -18,6 +20,20 @@ function LibroDetalle() {
   }
 
   const [titulo, info] = libro;
+
+  const handleAddToCart = () => {
+    if (!info?.id || !titulo || !info?.precio) return;
+    const producto = {
+      id: info.id,
+      titulo,
+      precio: info.precio,
+      reseña: info.reseña || "",
+      autor: info.autor || "Desconocido",
+      rate: info.calificacion || 0,
+      img: info.imagen || "",
+    };
+    addToCart(producto);
+  };
 
   return (
     <div className="page-container">
@@ -60,7 +76,11 @@ function LibroDetalle() {
               Precio: ${info.precio}.00
             </div>
             <div className="btn-item-carrito">
-              <button>Añadir al carrito</button>
+              <button onClick={handleAddToCart}>
+                {isInCart(info.id)
+                  ? `Agregar más (${getItemQuantity(info.id)} en carrito)`
+                  : "Añadir al carrito"}
+              </button>
             </div>
           </div>
         </div>

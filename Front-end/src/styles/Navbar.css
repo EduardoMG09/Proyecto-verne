@@ -96,10 +96,10 @@
   font-size: 0.95rem;
   font-family: "Varela Round", sans-serif;
   /* Liquid glass effect */
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(246, 242, 242, 0.886);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  color: #828282;
+  color: #4f4e4e;
   transition: all 0.3s ease;
 }
 
@@ -109,8 +109,8 @@
 
 .search-input:focus {
   outline: none;
-  border-color: #fca311;
-  background: rgba(255, 255, 255, 0.7);
+  
+  background: rgba(246, 242, 242, 0.886);
   box-shadow: 0 4px 16px rgba(252, 252, 17, 0.2);
 }
 
@@ -121,10 +121,11 @@
   font-size: 0.95rem;
   font-family: "Varela Round", sans-serif;
   /* Liquid glass effect */
-  background: rgba(255, 255, 255, 0.6);
+  
+  background: rgba(246, 242, 242, 0.886);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  color: #828282;
+  color: #4f4e4e;
   cursor: pointer;
   transition: all 0.3s ease;
   min-width: 150px;
