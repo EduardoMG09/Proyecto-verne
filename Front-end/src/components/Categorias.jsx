@@ -7,7 +7,7 @@ import cat from "../json/categorias.json";
 function Categorias() {
   return (
     <div className="categorias-container">
-      <div className="titulo-inicio-1">Categorias</div>
+      <div className="titulo-inicio-1">Conoce todas nuestras categorias de libros</div>
       <div className="categorias">
         {Object.entries(cat.categorias).map(([categoria, info], index) => (
           <Categoria 

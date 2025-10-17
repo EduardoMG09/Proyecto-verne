@@ -1,39 +1,19 @@
-import React , { useState ,  useEffect }from "react";
+import React from "react";
 import '../../styles/App.css';
-import Header from '../../components/Header.jsx';
-import NavbarMobile from "../../components/NavbarMobile.jsx";
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import Busqueda from '../../components/Busqueda.jsx';
+import Navbar from '../../components/Navbar.jsx';
 import Libros_categoria from "../../components/Libros-categoria.jsx";
 import Filtros from "../../components/Filtros.jsx";
-import BusquedaMobile from "../../components/BusquedaMobile.jsx";
+import Recomendaciones from "../../components/Recomendaciones.jsx";
 
-function Novela() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  
-    useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
-      };
-  
-      window.addEventListener("resize", handleResize);
-  
-      // Limpieza del evento
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
-    
+function Historia() {
   return (
     <>
-    {isMobile ? <NavbarMobile /> :<Header />}
-    {isMobile ? <BusquedaMobile /> :<Busqueda />}
-    <Libros_categoria
-    categoria="Historia" 
-    />
-    <Filtros/>
+      <Navbar />
+      <Recomendaciones categoria="Historia" />
+      <Libros_categoria categoria="Historia" />
+      <Filtros />
     </>
-  )
+  );
 }
 
-export default Novela;
+export default Historia;

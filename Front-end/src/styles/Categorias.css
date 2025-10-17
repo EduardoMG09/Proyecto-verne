@@ -1,7 +1,8 @@
 .categorias-container{
   width: 100%;
   height: 100%;
-  margin-top: 12rem;
+  margin-top: 1rem;
+  padding: 1vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +40,12 @@
   font-weight: 400;
   color: #666;
 }
-
+.titulo-inicio-1{
+  font-family: "Poppins", sans-serif;
+  width: 85%;
+  font-weight: 600;
+  font-size: 3vh;
+}
 /* Contenedor con scroll horizontal */
 .categoria-stock {
   width: 100%;

@@ -8,6 +8,11 @@
   gap: 1rem;
 }
 
+/* En páginas de categoría (cuando se pasa prop categoria), añade margen extra para despejar la Navbar fija */
+.container-recomendaciones.in-category {
+  margin-top: 11rem;
+}
+
 .container-recomendaciones h2 {
   width: 100%;
   max-width: 1200px;

@@ -38,14 +38,14 @@ function Recomendaciones({ categoria }) {
         if (!ordered.length) return;
         const t = setInterval(() => {
             setIndex((i) => (i + 1) % ordered.length);
-        }, 10000);
+        }, 7000);
         return () => clearInterval(t);
     }, [ordered.length]);
 
     const current = ordered[index] || null;
 
     return (
-        <div className="container-recomendaciones">
+        <div className={`container-recomendaciones ${categoria ? 'in-category' : ''}`}>
             <h2>Recomendaciones</h2>
             <div className="recomendado-viewport" aria-live="polite" aria-atomic="true">
                 {current ? (
