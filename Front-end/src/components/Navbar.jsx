@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 import logo from "../assets/logo-verne.webp";
 import sec from "../json/navbar.json";
@@ -65,9 +65,14 @@ function Navbar() {
         {/* Desktop Navigation */}
         <div className="navbar-links">
           {sec.secciones.map((item, i) => (
-            <Link to={item.ruta} key={i} className="nav-link">
+            <NavLink
+              to={item.ruta}
+              key={i}
+              end={item.ruta === "/"}
+              className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            >
               {item.nombre}
-            </Link>
+            </NavLink>
           ))}
         </div>
 
@@ -85,14 +90,15 @@ function Navbar() {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
         {sec.secciones.map((item, i) => (
-          <Link
+          <NavLink
             to={item.ruta}
             key={i}
-            className="mobile-nav-link"
+            end={item.ruta === "/"}
+            className={({ isActive }) => `mobile-nav-link ${isActive ? "active" : ""}`}
             onClick={() => setMenuOpen(false)}
           >
             {item.nombre}
-          </Link>
+          </NavLink>
         ))}
       </div>
 

@@ -187,6 +187,12 @@
   
 }
 
+/* Estado activo: borde inferior amarillo para la sección actual */
+.nav-link.active {
+  border-bottom: 2px solid #fca311;
+  color: #fca311;
+}
+
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -249,6 +255,13 @@
   background: rgba(252, 163, 17, 0.2);
   color: #fca311;
   padding-left: 2.5rem;
+}
+
+/* Estado activo en menú móvil: borde izquierdo amarillo */
+.mobile-nav-link.active {
+  border-left: 3px solid #fca311;
+  background: rgba(252, 163, 17, 0.15);
+  color: #fca311;
 }
 
 .academic-note {
