@@ -1,42 +1,21 @@
 /* Complete redesign with liquid glass/glassmorphism aesthetic */
 .mi-cuenta {
   position: absolute;
-  right: 10%;
-  top: 30%;
-  width: 70%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.7fr 2fr;
+  top: 25%;
+  right: 5%;
+  left: 5%;
+  width: 90%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
-
-.titulo-micuenta {
-  display: flex;
-  grid-area: 1 / 1 / 2 / 3;
-  width: 100%;
-}
-
-.titulo-cuenta {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  border-radius: 24px;
-  padding: 2rem;
-  /* Liquid glass effect */
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  color: #000000;
-}
-
 .login-side,
 .sign-side {
-  padding: 2.5rem;
+  width: 55%;
+  padding: 2rem 2.5rem;
   border-radius: 24px;
   /* Liquid glass effect */
   background: rgba(255, 255, 255, 0.6);
@@ -45,21 +24,17 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
-
-.login-side {
-  grid-area: 2 / 1 / 2 / 2;
+.perfil-card {
+  width: 50%;
+  padding: 2rem 2.5rem;
+  border-radius: 24px;
+  /* Liquid glass effect */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
-
-.sign-side {
-  grid-area: 2 / 2 / 2 / 3;
-}
-
-.login,
-.sign-up {
-  display: flex;
-  flex-direction: column;
-}
-
 h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -67,10 +42,33 @@ h2 {
   margin-bottom: 1.5rem;
   font-family: "Outfit", sans-serif;
 }
+.perfil-card h2 {
+  width: 40%;
+  text-align: center;
+  font-size: 2.7rem;
+  border-bottom: 5px solid #fca311 ;
+}
+.perfil-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.perfil-datos p{
+  font-size: 1.1rem;
 
+}
+.perfil-contenido .perfil-foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+} 
 .email-items,
 .password-items {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -109,7 +107,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .submit {
