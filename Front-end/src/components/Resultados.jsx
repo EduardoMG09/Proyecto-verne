@@ -19,6 +19,7 @@ function Resultados() {
 
   return (
     <div className="container-libreria">
+      <div className="titulo-libreria" style={{ fontSize: 40}}>Resultados de la búsqueda</div>
       <div className="libreria">
         {resultados.length > 0 ? (
           resultados.map(([titulo, info], index) => (

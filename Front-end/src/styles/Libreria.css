@@ -3,13 +3,22 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 15rem 2rem 2rem 2rem;
+  padding: 6rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none !important;
 }
-
+.titulo-libreria{
+  width: 90% ;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0 2vh;
+  border-left: 5px solid #e89500;
+  color: #000000;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
 .libreria {
   width: 90%;
   display: grid;
