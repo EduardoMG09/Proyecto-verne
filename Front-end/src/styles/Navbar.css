@@ -382,4 +382,8 @@
     justify-self: end;
     align-self: center;
   }
+  .academic-note {
+    padding: 0.1rem;
+    font-size: 0.7rem;
+  }
 }

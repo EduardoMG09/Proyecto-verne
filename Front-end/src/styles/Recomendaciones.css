@@ -82,3 +82,9 @@
 @media (min-width: 2560px) { /* 27″ QHD o 4K@150% */
   
 }
+@media (max-width: 600px){
+  .container-recomendaciones {
+    margin: 5rem auto 0 auto;
+    padding: 0 1rem;
+  }
+}

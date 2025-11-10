@@ -94,6 +94,8 @@
   width: 100%;
   color: #000000;
   font-family: "Poppins", serif;
+  display: flex;
+  align-items: center;
   font-size: 0.7rem;
   opacity: 0.8;
 }
@@ -241,7 +243,7 @@
 }
 
 /* ====== Media Queries ====== */
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
   .container-libreria {
     padding: 120px 1rem 2rem 1rem;
   }
@@ -268,16 +270,43 @@
   }
 }
 
-/* Ajustes responsivos para scroll horizontal */
-@media (max-width: 768px) {
+@media (max-width: 599px){
+  .libreria {
+    grid-template-columns: 1fr;
+  }
+  .titulo-libreria{
+    font-size: 1.5rem;
+    padding: 0 1vh;
+  }
   .categoria-stock .container-libro {
-    min-width: 160px;
-    max-width: 180px;
-    height: 260px;
+    min-width: 150px;
+    max-width: 160px;
+    height: 250px;
   }
   .categoria-stock .portada-libro {
     width: 90%;
     height: 100%;
+  }
+  .container-libro{
+    min-height: 380px;
+  }
+  .info-libro{
+    padding: 0;
+    margin: 0;
+  }
+  .autor-libro {
+    font-size: 0.75rem;
+  }
+  .titulo-libro {
+    font-size: 0.9rem;
+  }
+  .precio-libro {
+    font-size: 0.8rem;
+  }
+  .btn-agregar-carrito {
+    font-size: 0.65rem;
+    padding: 0.5rem;
+    margin-top: 0;
   }
 }
 

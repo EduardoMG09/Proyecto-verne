@@ -73,12 +73,30 @@
   z-index: 1; /* por encima del overlay */
 }
 
-@media (max-width: 768px){
+@media (min-width: 600px) and (max-width: 768px){
   .container-recomendado{
     grid-template-columns: 1fr;
   }
   .container-recomendado img{
     height: 220px;
     order: -1;
+  }
+}
+@media (max-width: 599px){
+  .container-recomendado{
+    width: 95%;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .container-recomendado img{
+    height: 180px;
+    order: -1;
+  }
+  .container-recomendado div h2{
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
+  }
+  .container-recomendado p{
+    font-size: 1rem;
   }
 }
