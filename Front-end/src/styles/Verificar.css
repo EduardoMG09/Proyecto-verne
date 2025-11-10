@@ -1,12 +1,11 @@
-/* Complete redesign with liquid glass/glassmorphism aesthetic */
 .checkout-container {
   position: absolute;
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  left: 19%;
+  left: 5%;
   top: 20%;
-  width: 80%;
+  width: 90%;
   gap: 2rem;
 }
 

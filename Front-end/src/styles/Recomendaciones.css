@@ -1,16 +1,15 @@
 .container-recomendaciones {
-  width: 94%; /* un poco más ancho que .categorias (90%) */
-  margin: 8rem auto 0 auto; /* centrado y con separación superior menor que categorias */
+  width: 100%; /* un poco más ancho que .categorias (90%) */
+  margin: 7rem auto 0 auto; /* centrado y con separación superior menor que categorias */
   display: flex;
   flex-direction: column;
   align-items: center; /* centra contenido interno */
   justify-content: center;
   gap: 1rem;
 }
-
 /* En páginas de categoría (cuando se pasa prop categoria), añade margen extra para despejar la Navbar fija */
 .container-recomendaciones.in-category {
-  margin-top: 11rem;
+  margin-top: 5rem;
 }
 
 .container-recomendaciones h2 {
@@ -63,7 +62,7 @@
 @media (min-width: 1440px) { /* L desktop */
   .container-recomendaciones {
     width: 100%;
-    margin-top: 9rem;
+    margin-top: 5rem;
   }
   .container-recomendaciones.in-category {
     margin-top: 18rem;
