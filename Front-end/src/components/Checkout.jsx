@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { FaSpinner } from "react-icons/fa";
 import "../styles/Verificar.css";
 import { useCart } from "../hooks/useCart";
 
 function Checkout() {
   const { cart, clearCart, getTotalItems, getTotalPrice } = useCart();
   const [librosCompra, setLibrosCompra] = useState([]);
+  const [loadingPay, setLoadingPay] = useState(false);
 
   const [formData, setFormData] = useState({
     nombre: "",
@@ -49,39 +51,41 @@ function Checkout() {
   };
 
   const handlePagar = async () => {
-    if (!formValid) {
-      alert("Primero confirma tu información antes de pagar.");
+    if (!formValid || loadingPay) {
+      if (!formValid) alert("Primero confirma tu información antes de pagar.");
       return;
     }
-
+    setLoadingPay(true);
     const usuario = JSON.parse(localStorage.getItem("usuario"));
     const libros = JSON.parse(localStorage.getItem("librosCompra")) || [];
-
     try {
-      const res = await fetch("https://backend-verne.onrender.com/api/checkout/", {
+      const res = await fetch("http://10.18.243.171:3000/api/checkout/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           nombre: usuario.nombre,
           correo: usuario.correo,
           libros: libros.map((l) => ({
-          titulo: l.titulo,
-          cantidad: l.quantity,
-          precio: l.precio,
-          total: l.precio * l.quantity,
-        })),
-        total: Math.round(getTotalPrice() * 1.16),
+            titulo: l.titulo,
+            cantidad: l.quantity,
+            precio: l.precio,
+            total: l.precio * l.quantity,
+          })),
+          total: Math.round(getTotalPrice() * 1.16),
         }),
       });
-
       const data = await res.json();
-      alert(data.message);
-
+      if (!res.ok) {
+        throw new Error(data.error || "Error en el servidor");
+      }
+      alert(data.message || "Compra procesada");
       localStorage.removeItem("librosCompra");
-      clearCart(); // Vacía el carrito tras comprar
+      clearCart();
     } catch (error) {
       console.error("Error en el pago:", error);
       alert("Hubo un problema al procesar el pago.");
+    } finally {
+      setLoadingPay(false);
     }
   };
 
@@ -161,8 +165,24 @@ function Checkout() {
           </div>
         </div>
         <div className="botones-compra">
-          <button className="btn-proceder-pago" onClick={handlePagar}>
-            Pagar
+          <button
+            className="btn-proceder-pago"
+            onClick={handlePagar}
+            disabled={loadingPay}
+            style={{
+              opacity: loadingPay ? 0.7 : 1,
+              cursor: loadingPay ? "not-allowed" : "pointer",
+              position: "relative",
+            }}
+          >
+            {loadingPay ? (
+              <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <FaSpinner className="spin" style={{ animation: "spin 0.9s linear infinite" }} />
+                Procesando...
+              </span>
+            ) : (
+              "Pagar"
+            )}
           </button>
         </div>
       </div>
@@ -171,3 +191,9 @@ function Checkout() {
 }
 
 export default Checkout;
+
+// Simple CSS-in-JS for spinner fallback if no global style:
+// Puedes mover esta animación a tu hoja CSS global.
+const style = document.createElement("style");
+style.innerHTML = `@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`;
+document.head.appendChild(style);
