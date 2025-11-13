@@ -26,7 +26,14 @@
             </tr>
           </thead>
           <tbody>
-            {{listaLibros}}
+            {% for l in libros %}
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:10px; color:#333;">{{ l.titulo }}</td>
+              <td style="padding:10px; color:#333; text-align:center;">{{ l.cantidad }}</td>
+              <td style="padding:10px; color:#333; text-align:center;">${{ l.precio }}</td>
+              <td style="padding:10px; color:#333; text-align:center;">${{ l.total }}</td>
+            </tr>
+            {% endfor %}
           </tbody>
         </table>
         <p style="text-align: right; margin-top: 20px; font-size: 18px;">
@@ -38,6 +45,7 @@
       <td style="text-align: center; padding-top: 20px;">
         <p style="color: #000000;">Gracias por comprar en <strong>Verne Learning</strong> 📚</p>
         <h5 style="text-align: center; color: #323131;">Sitio con fines académicos, no se ejecutó ningun pedido real.</h5>
+        <a href="https://paolacortezeducacion.com/">Visitame en:https://paolacortezeducacion.com/</a>
       </td>
     </tr>
   </table>

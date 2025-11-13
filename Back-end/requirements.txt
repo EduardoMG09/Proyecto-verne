@@ -1,5 +1,8 @@
-Flask==3.0.3
-python-dotenv==1.0.1
-requests==2.32.3
+flask
+Flask
+python-dotenv
+gunicorn
+requests
+resend
 Flask-Cors
 flask-cors

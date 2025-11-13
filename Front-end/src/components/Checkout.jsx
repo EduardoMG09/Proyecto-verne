@@ -18,7 +18,8 @@ function Checkout() {
 
   useEffect(() => {
     const usuario = JSON.parse(localStorage.getItem("usuario"));
-    const librosGuardados = JSON.parse(localStorage.getItem("librosCompra")) || [];
+    const librosGuardados =
+      JSON.parse(localStorage.getItem("librosCompra")) || [];
     if (usuario) {
       setFormData((prev) => ({
         ...prev,
@@ -56,10 +57,16 @@ function Checkout() {
       return;
     }
     setLoadingPay(true);
+
     const usuario = JSON.parse(localStorage.getItem("usuario"));
     const libros = JSON.parse(localStorage.getItem("librosCompra")) || [];
+
+    // 👇 aquí decides el correo destino (ejemplo fijo o tomado de algún estado)
+    const destino = "profe@paolacortezeducacion.com";
+    // o const destino = selectedProfesorEmail;
+
     try {
-      const res = await fetch("http://10.18.243.171:3000/api/checkout/", {
+      const res = await fetch("http://127.0.0.1:5000/api/checkout/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -72,12 +79,15 @@ function Checkout() {
             total: l.precio * l.quantity,
           })),
           total: Math.round(getTotalPrice() * 1.16),
+          destino, // 👈 aquí va el email destino dinámico
         }),
       });
+
       const data = await res.json();
       if (!res.ok) {
         throw new Error(data.error || "Error en el servidor");
       }
+
       alert(data.message || "Compra procesada");
       localStorage.removeItem("librosCompra");
       clearCart();
@@ -176,8 +186,13 @@ function Checkout() {
             }}
           >
             {loadingPay ? (
-              <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                <FaSpinner className="spin" style={{ animation: "spin 0.9s linear infinite" }} />
+              <span
+                style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+              >
+                <FaSpinner
+                  className="spin"
+                  style={{ animation: "spin 0.9s linear infinite" }}
+                />
                 Procesando...
               </span>
             ) : (
