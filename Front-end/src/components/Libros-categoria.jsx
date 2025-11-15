@@ -5,7 +5,7 @@ import Libro from "../components/Libro.jsx";
 import { FiltrosContext } from "../context/Filtro.jsx";
 
 function Libros_categoria(props){
-    const { precioMaximo } = useContext(FiltrosContext);
+    const { precioMaximo, calificacionMinima } = useContext(FiltrosContext);
     // Filtrar por categoría exacta (respetando acentos) y ordenar por id ascendente
     const librosFiltrados = Object.entries(libros.libros)
         .filter(([_, info]) => info.categoria && info.categoria.includes(props.categoria))
@@ -18,7 +18,7 @@ function Libros_categoria(props){
             <div className="libreria-2">
             {
                 librosFiltrados
-                .filter(([_,info]) => info.precio <= precioMaximo)
+                .filter(([_,info]) => info.precio <= precioMaximo && info.calificacion >= calificacionMinima)
                 .map(([nombre, info]) =>(
                     <Libro
                     titulo={nombre}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/Filtros-mobile.css";
 import "rc-slider/assets/index.css";
 import PriceFilter from "./PriceFilter";
-import CheckBox from "./CheckboxFilter";
+import RatingFilter from "./RatingFilter";
 
 function FiltrosModal() {
     const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +47,7 @@ function FiltrosModal() {
                     <div className="filtro filtro-rating">
                         <div className="filtro-titulo">Filtrar por calificación:</div>
                         <div className="filtro-componente">
-                            <CheckBox name="Calificacion" />
+                            <RatingFilter />
                         </div>
                     </div>
                 </div>

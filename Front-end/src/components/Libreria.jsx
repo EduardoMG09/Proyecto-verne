@@ -5,7 +5,7 @@ import "../styles/Libreria.css";
 import { FiltrosContext } from "../context/Filtro.jsx";
 
 function Libreria() {
-  const { precioMaximo } = useContext(FiltrosContext);
+  const { precioMaximo, calificacionMinima } = useContext(FiltrosContext);
 
   return (
     <div className="container-libreria">
@@ -13,7 +13,7 @@ function Libreria() {
       <div className="libreria">
         {[...Object.entries(lib.libros)]
           .sort((a, b) => a[1].id - b[1].id)
-          .filter(([_, info]) => info.precio <= precioMaximo)
+          .filter(([_, info]) => info.precio <= precioMaximo && info.calificacion >= calificacionMinima)
           .map(([libro, info]) => (
             <ItemLibro
               titulo={libro}

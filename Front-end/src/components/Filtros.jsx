@@ -4,7 +4,7 @@ import { useState } from "react"
 import "../styles/Filtros.css"
 import "rc-slider/assets/index.css"
 import PriceFilter from "./PriceFilter"
-import CheckBox from "./CheckboxFilter"
+import RatingFilter from "./RatingFilter"
 
 function Filtros() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,16 +32,10 @@ function Filtros() {
                     <PriceFilter />
                   </div>
                 </div>
-                <div className="filtro filtro-stock">
-                  <div className="filtro-titulo">Filtrar por existencia:</div>
-                  <div className="filtro-componente">
-                    <CheckBox name="Existencia" />
-                  </div>
-                </div>
                 <div className="filtro filtro-rating">
                   <div className="filtro-titulo">Filtrar por calificación:</div>
                   <div className="filtro-componente">
-                    <CheckBox name="Calificacion" />
+                    <RatingFilter />
                   </div>
                 </div>
               </div>
