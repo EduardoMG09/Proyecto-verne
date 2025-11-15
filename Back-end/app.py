@@ -26,6 +26,7 @@ CORS(
     resources={
         r"/api/*": {
             "origins": [
+                "https://vernelearning.paolacortezeducacion.com",
                 "https://verne.paolacortezeducacion.com",
                 # "http://localhost:5173",
                 # "http://192.168.1.206:5173",
