@@ -62,7 +62,7 @@ function LibroDetalle() {
               <label>{`(${info.calificacion})`}</label>
             </div>
             <div className="categorias">
-              <h3>Categorias</h3>
+              <h3>Categorias:</h3>
               {Object.entries(info.categoria).map((categoria, index) => (
                 <label key={index} className="categoria">
                   <FaCircle className="item-circle" /> {categoria[1]}

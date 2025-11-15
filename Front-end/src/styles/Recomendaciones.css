@@ -1,6 +1,6 @@
 .container-recomendaciones {
   width: 100%; /* un poco más ancho que .categorias (90%) */
-  margin: 7rem auto 0 auto; /* centrado y con separación superior menor que categorias */
+  margin: 4rem auto 0 auto; /* centrado y con separación superior menor que categorias */
   display: flex;
   flex-direction: column;
   align-items: center; /* centra contenido interno */
@@ -9,14 +9,13 @@
 }
 /* En páginas de categoría (cuando se pasa prop categoria), añade margen extra para despejar la Navbar fija */
 .container-recomendaciones.in-category {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
-
 .container-recomendaciones h2 {
   width: 100%;
   max-width: 1200px;
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #222;
 }
@@ -42,10 +41,10 @@
 /* Viewport para un solo recomendado a la vez */
 .recomendado-viewport {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   position: relative;
   overflow: hidden;
-  min-height: 200px; /* asegura espacio para el contenido */
+  min-height: 500px; /* asegura espacio para el contenido */
 }
 
 .recomendado-slide {
@@ -65,7 +64,7 @@
     margin-top: 5rem;
   }
   .container-recomendaciones.in-category {
-    margin-top: 18rem;
+    margin-top: 8rem;
   }
 }
 

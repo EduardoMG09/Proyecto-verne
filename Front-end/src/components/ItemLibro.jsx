@@ -12,7 +12,7 @@ function ItemLibro(props) {
           <div className="item-libro-autor">Por: {props.autor}</div>
           <div className="item-libro-precio">${props.precio}.00</div>
           <div className="item-libro-rate">
-            {"★".repeat(props.rate)}
+            <p style={{ color: "#000"}}>Calificación:</p> {"★".repeat(props.rate)}
             {"☆".repeat(5 - props.rate)}
           </div>
           <div className="item-libro-reseña"><strong>Reseña: </strong>{props.reseña}</div>

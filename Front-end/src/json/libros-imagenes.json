@@ -737,6 +737,33 @@
       "autor": "Markus Zusak",
       "reseña": "Una novela que sigue la vida de una joven en la Alemania nazi, explorando el poder de las palabras y la resistencia en tiempos oscuros.",
       "imagen": "/Image/ladrona de libros.jpg"
+    },
+    "Aquiles": {
+      "calificacion": 4.8,
+      "id":82,
+      "precio": 415,
+      "categoria":["Ficción","Novela"],
+      "autor": "Madeline Miller",
+      "reseña": "Reinterpretación moderna de la mitología griega que narra la vida de Aquiles desde una perspectiva íntima y humana, explorando temas de amor, destino y heroísmo.  ",
+      "imagen": "/Image/aquiles.jpg"
+    },
+    "Las 48 leyes del poder": {
+      "calificacion": 4.8,
+      "id":83,
+      "precio": 500,
+      "categoria":["Finanzas","Motivacional"],
+      "autor": "Robert Greene",
+      "reseña": "Un libro que explora las estrategias y tácticas para obtener y mantener el poder en diversas situaciones sociales y profesionales.",
+      "imagen": "/Image/48 leyes del poder.jpg"
+    },
+    "La psicología del dinero": {
+      "calificacion": 4.8,
+      "id":84,
+      "precio": 296,
+      "categoria":["Finanzas"],
+      "autor": "Morgan Housel",
+      "reseña": "Un libro que explora la relación entre las personas y el dinero, ofreciendo perspectivas sobre cómo tomar decisiones financieras inteligentes basadas en la psicología humana.",
+      "imagen": "/Image/psicologia del dinero.jpg"
     }
   }
 }

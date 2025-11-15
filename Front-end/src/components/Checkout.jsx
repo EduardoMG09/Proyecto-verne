@@ -66,7 +66,7 @@ function Checkout() {
     // o const destino = selectedProfesorEmail;
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/checkout/", {
+      const res = await fetch("https://backend-verne.onrender.com/api/checkout/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -123,7 +123,7 @@ function Checkout() {
 
           <div className="billing-address-checkout">
             <label className="bill-label-checkout">
-              <h2>Billing address</h2>
+              <h3>Billing address</h3>
             </label>
             <div className="full-name">
               <input

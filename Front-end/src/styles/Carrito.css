@@ -324,6 +324,16 @@
 
 @media (max-width: 768px) {
   .contenedor-compras {
-    padding: 120px 1rem 2rem 1rem;
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  .empty{
+    width: 100%;
+  }
+  .contenedor-compras-2{
+    width: 100%;
+  }
+  .carrito-vacio {
+    width: 90%;
+    padding: 3rem 1rem;
   }
 }

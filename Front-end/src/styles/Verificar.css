@@ -7,6 +7,7 @@
   top: 20%;
   width: 90%;
   gap: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .contenedor-checkout-formulario {
@@ -81,8 +82,8 @@
   padding: 1rem 0;
 }
 
-.bill-label-checkout h2 {
-  font-size: 1.5rem;
+.bill-label-checkout h3 {
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -241,8 +242,47 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(252, 163, 17, 0.4);
 }
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .checkout-container {
+    top: 20%;
+    width: 90%;
+  }
+  .contenedor-checkout-formulario{
+    width: 100%;
+  }
+  .contenedor-checkout-formulario h2{
+    font-size: 1.5vh;
+  }
+  .resumen-compra-2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .checkout h2{
+    font-size: 1.5rem;
+  }
+  .email-items-checkout, .billing-address-checkout{
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .email-label-checkout h3, .bill-label-checkout h2{
+    font-size: 1rem;
+  }
+  .full-name input{
+    width: 90%;
+  }
+  .submit-checkout{
+    font-size: 1.5vh;
+  }
+  .resumen-compra-2 h3{
+    font-size: 1.5rem;
+  }
+  .resumen-linea{
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
   .checkout-container {
     left: 5%;
     width: 90%;

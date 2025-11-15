@@ -30,7 +30,7 @@
   display: grid;
   grid-template-columns: 0.5fr 0.8fr 1.5fr;
   grid-template-rows: 1fr;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   width: 100%;
   margin: 0 auto;
   gap: 2rem;
@@ -55,7 +55,7 @@
 }
 
 .navbar-logo img {
-  width: 75%;
+  width: 70%;
   aspect-ratio: 1.2/1;
   object-fit: cover;
 }
@@ -67,7 +67,7 @@
 
 .logo-title {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   font-family: "Outfit", sans-serif;
   line-height: 1;
@@ -94,7 +94,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   font-size: 0.95rem;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Poppins", sans-serif;
   /* Liquid glass effect */
   background: rgba(246, 242, 242, 0.886);
   backdrop-filter: blur(10px);
@@ -119,11 +119,10 @@
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   font-size: 0.95rem;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Poppins", sans-serif;
   /* Liquid glass effect */
   
   background: rgba(246, 242, 242, 0.886);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #4f4e4e;
   cursor: pointer;
@@ -171,19 +170,23 @@
 
 .nav-link {
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1.1rem;
   transition: all 0.3s ease;
   position: relative;
-  transition: 0.3s ease;
+  border-radius: 5px;
+  transition: 0.5s ease;
 }
 
 .nav-link:hover {
-  transform: scale(1.02);
-  border-bottom: 2px solid #e89500;
+  transform: scale(1.01);
+  background-color: #403f3f;
   
 }
 
@@ -266,12 +269,12 @@
 
 .academic-note {
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.2rem;
   background: #e0951c;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   font-family: "Varela Round", sans-serif;
 }
 
